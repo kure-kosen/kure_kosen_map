@@ -1,5 +1,4 @@
 # kure_kosen_map
-Using OpenLayers
 
 ## 使い方
 1. 各自featureブランチで開発する
@@ -8,4 +7,4 @@ Using OpenLayers
 
 ## 開発環境
 * OpenLayers : 4.5.0
-* jquery     : 3.2.1(min)
+* jQuery     : 3.2.1(min) : geojsonのデータを取り出すために（現在未実装）
