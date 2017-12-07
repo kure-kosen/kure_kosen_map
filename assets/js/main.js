@@ -1,19 +1,4 @@
 (function() {
-  var vectorLayer = new ol.layer.Vector({
-    source: new ol.source.Vector({
-      format: new ol.format.GeoJSON(),
-      url: 'https://gist.githubusercontent.com/neogis-de/154f4bd155f77e0f3689/raw/5a1642fac4afff463c3ff08beaad55892fe9acd4/geojson.js'
-    }),
-    style: new ol.style.Style({
-      image: new ol.style.Circle( /** @type {olx.style.IconOptions} */ ({
-        radius: 20,
-        fill: new ol.style.Fill({
-          color: '#ffff00'
-        })
-      }))
-    })
-  });
-
   var map = new ol.Map({
     target: 'map',
     interactions: ol.interaction.defaults().extend([
