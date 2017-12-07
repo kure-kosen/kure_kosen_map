@@ -11,6 +11,7 @@
 
 ## 開発時の注意
 * ローカルのgeojsonが読めないときは、CORSが原因の可能性あり
-対策
+### 対策
 1 Chromeを終了
- Win + R で'chrome.exe --disable-web-security --user-data-dir'で起動
+1. Win + R で下記を実行
+'chrome.exe --disable-web-security --user-data-dir'
