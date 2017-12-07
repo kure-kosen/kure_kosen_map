@@ -1,4 +1,19 @@
 (function() {
+  var vectorLayer = new ol.layer.Vector({
+    source: new ol.source.Vector({
+      format: new ol.format.GeoJSON(),
+      url: 'https://gist.githubusercontent.com/neogis-de/154f4bd155f77e0f3689/raw/5a1642fac4afff463c3ff08beaad55892fe9acd4/geojson.js'
+    }),
+    style: new ol.style.Style({
+      image: new ol.style.Circle( /** @type {olx.style.IconOptions} */ ({
+        radius: 20,
+        fill: new ol.style.Fill({
+          color: '#ffff00'
+        })
+      }))
+    })
+  });
+
   var map = new ol.Map({
     target: 'map',
     interactions: ol.interaction.defaults().extend([
@@ -62,6 +77,7 @@
     new ol.layer.Group({
       title: 'Overlays',
       layers: [
+        vectorLayer,
         new ol.layer.Image({
           title: 'Countries',
           source: new ol.source.ImageArcGISRest({
@@ -70,15 +86,6 @@
             url: "https://ons-inspire.esriuk.com/arcgis/rest/services/Administrative_Boundaries/Countries_December_2016_Boundaries/MapServer"
           })
         })
-        // ,
-        // new ol.layer.Vector({
-        //   title: 'geojson',
-        //   source: new ol.source.Vector({
-        //     // projection : 'EPSG:4326',
-        //     url: '../geojson/sample.json'
-        //     // format: new ol.format.GeoJSON()
-        //   })
-        // })
       ]
     })
     ],
@@ -97,22 +104,3 @@
   map.addControl(layerSwitcher);
 
 })();
-
-
-// $.getJSON("assets/geojson/common.geojson", function (data) {
-//     L.geoJson(data, {
-//       style: {
-//         "weight": 3,
-//         "color": "#F42C87",
-//       }
-//     }).addTo(map);
-// });
-
-// ,
-//     new ol.layer.Vector({
-//       title: 'added Layer',
-//       source: new ol.source.Vector({
-//         url: "../geojson/common.geojson",
-//         format: new ol.format.GeoJSON()
-//       })
-//     })
