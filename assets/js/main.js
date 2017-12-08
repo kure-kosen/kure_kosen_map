@@ -61,8 +61,7 @@
     }),
     new ol.layer.Group({
       title: 'Overlays',
-      layers: [
-        vectorLayer,
+      layers: [vectorLayer,kml,
         new ol.layer.Image({
           title: 'Countries',
           source: new ol.source.ImageArcGISRest({

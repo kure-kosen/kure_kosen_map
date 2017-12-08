@@ -14,3 +14,12 @@ var vectorLayer = new ol.layer.Vector({
     }))
   })
 });
+
+var kml = new ol.layer.Vector({
+  title: 'kml',
+  source: new ol.source.Vector({
+    format: new ol.format.KML(),
+    url: 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/assets/kml/kokudo.kml',
+    crossOrigin: 'anonymous'
+  })
+});

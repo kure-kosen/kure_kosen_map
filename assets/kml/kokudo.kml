@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="LineStyle1">
+  <LineStyle>
+  <color>7f000000</color>
+  <width>3</width>
+  </LineStyle>
+</Style>
+<Placemark>
+<name>kure</name>
+<styleUrl>#LineStyle1</styleUrl>
+<LineString>
+<coordinates>132.60175108909607,34.23248111295737 132.6021373271942,34.23201986172262 132.60194420814514,34.231496515915886 132.60160088539124,34.232241617439286</coordinates>
+</LineString>
+</Placemark>
+</Document>
+</kml>
