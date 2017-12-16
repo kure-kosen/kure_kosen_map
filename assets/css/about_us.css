@@ -39,7 +39,7 @@ h5 {
 .card-img-top {
   display: block;
   width: 100%;
-  height: auto;
+  height: 140.625%;
 }
 
 .card-title {
@@ -55,51 +55,11 @@ h5 {
 }
 
 .card-footer {
-  font-size: 1em;
-  position: static;
-  top: 0;
-  left: 0;
+  text-align: right;
   max-width: 100%;
   padding: .75em 1em;
-  color: rgba(0, 0, 0, .4);
   border-top: 1px solid rgba(0, 0, 0, .05) !important;
   background: #fff;
-}
-
-.card-inverse .btn {
-  border: 1px solid rgba(0, 0, 0, .05);
-}
-
-.profile {
-  position: absolute;
-  top: -12px;
-  display: inline-block;
-  overflow: hidden;
-  box-sizing: border-box;
-  width: 25px;
-  height: 25px;
-  margin: 0;
-  border: 1px solid #fff;
-  border-radius: 50%;
-}
-
-.profile-avatar {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
-}
-
-.profile-inline {
-  position: relative;
-  top: 0;
-  display: inline-block;
-}
-
-.profile-inline ~ .card-title {
-  display: inline-block;
-  margin-left: 4px;
-  vertical-align: top;
 }
 
 .text-bold {
@@ -120,43 +80,32 @@ h5 {
   color: rgba(0, 0, 0, .87);
 }
 
-/*.container {
-  @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fontawesome5.0.1/webfonts/');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
-       url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
-       url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
-       url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
-       url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
-
-  font-weight: normal;
-  font-style: normal;
-}
-}
-*/
-/*3rem*/
-
-
-/*.col-sm-4 {
-padding-left: 10px;
-padding-right: 10px;
-padding-bottom: 1em;//special thanksのとこ  適宜調整
-}*/
-
-/*.col-sm-6 {
-padding-left: 10px;
-padding-right: 10px;
-padding-bottom: 1em;//special thanksのとこ  適宜調整
-}*/
-
-.fa-twitter:before
-{
-  color: #00aced ;
+.fa-twitter:before {
+  color: #00aced;
 }
 
 
-.fa-facebook:before
-{
-  color: #305097 ;
+.fa-facebook-official:before {
+  color: #305097;
+}
+
+.fa-github:before {
+  color: #333333;
+}
+
+.fa-steam-square:before {
+  color: gray;
+}
+
+.fa-circle:before {
+  display: none;
+}
+
+.avator {
+  border-radius: 50%;
+  width: 130px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -85px;
 }
