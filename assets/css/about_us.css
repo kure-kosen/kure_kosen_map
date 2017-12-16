@@ -6,6 +6,12 @@ html {
 body {
   min-height: 75rem;
   padding-top: 4.5rem;
+  background-image: url(../img/pta01.png);
+  /*background-image: url(../img/pta02.png);*/
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, .5);
 }
 
 h5 {
@@ -108,4 +114,25 @@ h5 {
   margin-left: auto;
   margin-right: auto;
   margin-top: -85px;
+}
+
+.title1 { font-size: calc(112.5% + 0.25vw) }
+
+h1 {
+  /*font-size: 2em;*/
+  text-align: center;
+}
+
+h1 {
+border-bottom: solid 3px #000000;
+position: relative;
+}
+
+h1:after {
+position: absolute;
+content: " ";
+display: block;
+border-bottom: solid 3px #003FFF;
+bottom: -3px;
+width: 20%;
 }
