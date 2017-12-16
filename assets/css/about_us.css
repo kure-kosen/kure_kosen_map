@@ -120,7 +120,21 @@ h5 {
   color: rgba(0, 0, 0, .87);
 }
 
+/*.container {
+  @font-face {
+  font-family: 'FontAwesome';
+  src: url('../fontawesome5.0.1/webfonts/');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'),
+       url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'),
+       url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
 
+  font-weight: normal;
+  font-style: normal;
+}
+}
+*/
 /*3rem*/
 
 
@@ -135,3 +149,14 @@ padding-left: 10px;
 padding-right: 10px;
 padding-bottom: 1em;//special thanksのとこ  適宜調整
 }*/
+
+.fa-twitter:before
+{
+  color: #00aced ;
+}
+
+
+.fa-facebook:before
+{
+  color: #305097 ;
+}
