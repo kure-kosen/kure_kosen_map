@@ -12,7 +12,6 @@
         'title': 'Base maps',
         layers: [kokudo, osm,
               // assets/layers/base.jsで定義したものをカンマで区切って書く
-
               // watercolorlabels,
               // watercolor,
         ]
