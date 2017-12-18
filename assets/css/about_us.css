@@ -61,11 +61,16 @@ h5 {
 }
 
 .card-footer {
-  text-align: right;
+  text-align: left;
   max-width: 100%;
   padding: .75em 1em;
   border-top: 1px solid rgba(0, 0, 0, .05) !important;
   background: #fff;
+}
+
+.footerright {
+  text-align: right;
+  float: right;
 }
 
 .text-bold {
@@ -89,7 +94,6 @@ h5 {
 .fa-twitter:before {
   color: #00aced;
 }
-
 
 .fa-facebook-official:before {
   color: #305097;
