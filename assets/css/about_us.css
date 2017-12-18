@@ -120,10 +120,11 @@ h5 {
   margin-top: -85px;
 }
 
-.title1 { font-size: calc(112.5% + 0.25vw) }
+.title div h1{
+  font-size: calc(20px + 1.5vw);
+}
 
 h1 {
-  /*font-size: 2em;*/
   text-align: center;
 }
 
@@ -132,11 +133,20 @@ border-bottom: solid 3px #000000;
 position: relative;
 }
 
-h1:after {
+.line1 h1:after {
 position: absolute;
 content: " ";
 display: block;
 border-bottom: solid 3px #003FFF;
+bottom: -3px;
+width: 20%;
+}
+
+.line2 h1:after {
+position: absolute;
+content: " ";
+display: block;
+border-bottom: solid 3px #FF2020;
 bottom: -3px;
 width: 20%;
 }
