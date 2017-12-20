@@ -32,7 +32,6 @@
 }
 .active {
 	display: block;	/* !importantは不要? */
-	z-index: 1;
 /*	top: 6em; */
 	top: 0;
 	right: 0;
