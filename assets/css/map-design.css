@@ -1,7 +1,6 @@
-/*
-ボタン、メニューなどのデザイン aidmiya
-*/
+/* ボタン、メニューなどのデザイン aidmiya */
 
+/* 各種ボタン */
 .ol-button i {
 	color: inherit;
 }
@@ -10,6 +9,7 @@
 	top: 0.5em;
 }
 /* ハンバーガーメニューのボタンの色指定はここ
+そのままではありきたりなので、ハンバーガーボタンだけじゃなくて、全部のボタンの色を変えてみても良いかも(要確認)
 .menubtn button {
 	background-color: rgba(0,60,136,.5);
 }
@@ -17,5 +17,24 @@
 .ol-full-screen {
 	right: 0.5em;
 	top: 3em;
+}
+
+/* メニュー */
+.menu {
+	display: none;
+	position: absolute;
+	width: 40%;
+/*	height: calc( 100vh - 6em ); */
+	height: 100vh;
+	/* 下: とりあえず指定 */
+	background-color: #fff;
+	border-left: 2px solid #00f;
+}
+.active {
+	display: block;	/* !importantは不要? */
+	z-index: 1;
+/*	top: 6em; */
+	top: 0;
+	right: 0;
 }
 
