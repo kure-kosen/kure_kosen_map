@@ -18,7 +18,7 @@ body {
 	border:solid 5px;
 	/*text-align: center;*/
 	margin: 0 auto;
-}  
+}
 
 .button /*アニメーション1*/ {
   display: inline-block;
@@ -134,11 +134,11 @@ display: inline-block;
 position: absolute;
 content: '';
 bottom: -3px;
-left: 0;
+right: -20px;
 width: 0;
 height: 0;
 border: none;
-border-left: solid 15px transparent;
+border-right: solid 15px transparent;
 border-bottom: solid 15px;
 }
 
