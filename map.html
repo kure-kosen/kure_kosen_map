@@ -24,6 +24,17 @@
 -->
     <div id="map" class="map"></div>
 
+    <div class="wrap-menubtn">
+<!--
+     <button class="menubtn" type="button" title="メニューを表示">
+      <i class="fa fa-bars"></i>
+     </button>
+-->
+     <div class="menubtn" type="button" title="メニューを表示">
+      <i class="fa fa-bars"></i>
+     </div>
+    </div>
+
     <!-- (ハンバーガー)メニュー -->
     <div id="menu" class="menu">
      メニュー項目はulタグでつくるのかな。もう少し調べる必要を感じる。<br>
@@ -32,15 +43,15 @@
     </div>
 
 <!--
-12月20日メモ
-ol3-extのハンバーガーボタンとdivで作ったメニューがある
+12月21日メモ
+buttonタグではなくdivで作ったボタンとdivで作ったメニューがある
+問題0 クリックしても何も起こらない
+	->jsを調整?する必要がある
 問題1 開いたら閉じられない(メニューがボタンの上に来るので)
 	->メニューが開いたときにボタンを新設する
 	   / ol3-extのボタンをやめて、bootstrapまたはCSSを使って自力でボタンをつくる
 問題2 フルスクリーンのときにメニューが見えない
-	->z-indexを試すも不可能
-	->マップデータ担当者に聞いてみよう
-もしかして、先にメニューのHTMLを完成させたほうがいいのかな? ここまでCSSとか書かなくてよかった?
+	->issueに書いた
 -->
 
     <script src="assets/js/main.js" type="text/javascript"></script>

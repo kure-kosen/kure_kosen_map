@@ -4,9 +4,32 @@
 .ol-button i {
 	color: inherit;
 }
+/* ol3-ext でボタンをつくるときのみ有効化
 .menubtn {
 	right: 0.5em;
 	top: 0.5em;
+}
+*/
+.wrap-menubtn {
+	position: absolute;
+	z-index: 1;
+	right: 0.5em;
+	top: 0.5em;
+	padding: 0;
+	border: 3px solid rgba(255,255,255,.4);
+	border-radius: 3px;
+}
+button.menubtn, div.menubtn {
+	width: 2em;
+	height: 2em;
+	border: 0;
+	background-color: rgba(0,60,136,.5);
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+}
+button.menubtn:hover, div.menubtn:hover {
+	background-color: #000;
 }
 /* ハンバーガーメニューのボタンの色指定はここ
 そのままではありきたりなので、ハンバーガーボタンだけじゃなくて、全部のボタンの色を変えてみても良いかも(要確認)
@@ -24,7 +47,6 @@
 	display: none;
 	position: absolute;
 	width: 40%;
-/*	height: calc( 100vh - 6em ); */
 	height: 100vh;
 	/* 下: とりあえず指定 */
 	background-color: #fff;
@@ -32,7 +54,6 @@
 }
 .active {
 	display: block;	/* !importantは不要? */
-/*	top: 6em; */
 	top: 0;
 	right: 0;
 }
