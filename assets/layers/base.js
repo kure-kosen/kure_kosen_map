@@ -51,4 +51,3 @@ var watercolorlabels = new ol.layer.Group({
                           })
                         ]
                       });
-
