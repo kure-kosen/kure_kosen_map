@@ -11,7 +11,7 @@ var aed = new ol.layer.Vector({
   title: 'AED',
   source: new ol.source.Vector({
     format: new ol.format.GeoJSON(),
-    url: 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/assets/geojson/20171218.geojson',
+    url: 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/assets/geojson/20171224.geojson',
     crossOrigin: 'anonymous'
   }),
   style: new ol.style.Style({

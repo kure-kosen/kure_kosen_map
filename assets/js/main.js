@@ -21,11 +21,33 @@
         layers: [aed, kml, geocycle]
       })
     ],
+    overlays: [popup],
     view: view
   });
+
+
+
+var select = new ol.interaction.Select({});
+map.addInteraction(select);
+
+// On selected => show/hide popup
+select.getFeatures().on(['add'], function(e)
+  { var feature = e.element;
+    var content = "";
+    content += "<table border=1>"
+    content += "<tr><td>number</td><td>" + feature.get("number") + "</td></tr>"
+    content += "<tr><td>name</td><td>" + feature.get("name") + "</td></tr>"
+    content += "<tr><td>address</td><td>" + feature.get("address") + "</td></tr>"
+    content += "</table>"
+    popup.show(feature.getGeometry().getCoordinates(), content);
+  })
+select.getFeatures().on(['remove'], function(e)
+  { popup.hide();
+  })
 
   var layerSwitcher = new ol.control.LayerSwitcher({
         tipLabel: 'Légende' // Optional label for button
       });
   map.addControl(layerSwitcher);
+
 })();
