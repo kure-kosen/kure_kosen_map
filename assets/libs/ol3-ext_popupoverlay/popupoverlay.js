@@ -3,8 +3,6 @@ ol.Overlay.Popup = function (options) {
   var elt = $("<div>");
   this.element = options.element = elt.get(0);
   this.offsetBox = options.offsetBox;
-  // Anchor div
-  $("<div>").addClass("anchor").appendTo(elt);
   var d = $("<div>").addClass('ol-overlaycontainer-stopevent').appendTo(elt);
   // Content
   this.content = $("<div>").addClass("content").appendTo(d).get(0);
@@ -42,7 +40,6 @@ ol.inherits(ol.Overlay.Popup, ol.Overlay);
 ol.Overlay.Popup.prototype.getClassPositioning = function () {
   var c = "";
   var pos = this.getPositioning();
-  //console.log("pos:::   " + pos);//開いた場所
   if (/bottom/.test(pos)) c += "ol-popup-bottom ";
   if (/top/.test(pos)) c += "ol-popup-top ";
   if (/left/.test(pos)) c += "ol-popup-left ";
@@ -96,28 +93,12 @@ ol.Overlay.Popup.prototype.setPositioning = function (pos) {
   if (pos === undefined)
     return;
 
-  console.log("pos: "+pos);//選択しているもの
   this.autoPositioning = pos.split('-');
-  console.log(this.autoPositioning);
   this.autoPositioning[1]="auto";//ただのautoだったらlengthが1だから2個目にautoを追加している
 
   pos = pos.replace(/auto/g,"center");
   this.setPositioning_(pos);
 }
-
-// {
-//  if (pos === undefined)
-//    return;
-//  if (/auto/.test(pos))
-//    { this.autoPositioning = pos.split('-');
-//  if (this.autoPositioning.length==1) this.autoPositioning[1]="auto";
-// }
-
-// else this.autoPositioning = false;
-// pos = pos.replace(/auto/g,"center");
-// if (pos=="center") pos = "bottom-center";
-// this.setPositioning_(pos);
-// }
 
 ol.Overlay.Popup.prototype.setPositioning_ = function (pos) {
   ol.Overlay.prototype.setPositioning.call(this, pos);
@@ -164,7 +145,6 @@ ol.Overlay.Popup.prototype.show = function (coordinate, html) {
       var p = map.getPixelFromCoordinate(coordinate);
         var s = map.getSize();
         var pos=[];
-        console.log(this.autoPositioning[0]);
         if (this.autoPositioning[0]=='auto') {
           pos[0] = (p[1]<s[1]/3) ? "top" : "bottom";
         } else {
