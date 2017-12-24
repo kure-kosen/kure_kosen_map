@@ -3,3 +3,16 @@ html, body, #map {
   height: 100%;
   width: 100%;
 }
+
+.rotate-north {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .rotate-north {
+  top: 80px;
+}
+
+.ol-rotate {
+  right: 3.5em !important;
+  transition: opacity .25s linear,visibility 0s linear;
+}

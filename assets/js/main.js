@@ -4,7 +4,7 @@ var map = new ol.Map({
     new ol.interaction.DragRotateAndZoom()
   ]),
   controls: ol.control.defaults().extend([
-    new ol.control.FullScreen()
+    new ol.control.FullScreen(),new app.RotateNorthControl()
   ]),
   layers: [
     new ol.layer.Group({
