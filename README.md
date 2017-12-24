@@ -7,11 +7,15 @@
 
 ## 開発環境
 * OpenLayers : 4.5.0
-* jQuery     : 3.2.1(min) : ~~geojsonのデータを取り出すために（現在未実装）~~  
+* jQuery     : 3.2.1(min) : ~~geojsonのデータを取り出すために（現在未実装）~~
 
 ## 開発時の注意
-* ローカルのgeojsonが読めないときは、CORSが原因の可能性あり  
+* ローカルのgeojsonが読めないときは、CORSが原因の可能性あり
 
 1. Chromeを終了
-1. Win + R で下記を実行  
+1. Win + R で下記を実行
 ```chrome.exe --disable-web-security --user-data-dir```
+
+## コードの統一化
+* CSS        : ```<link rel="stylesheet" type="text/css" href="assets/">```
+* JavaScript : ```<script type="text/javascript" src="assets/"></script>```
