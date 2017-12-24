@@ -15,12 +15,9 @@ var aed = new ol.layer.Vector({
               crossOrigin: 'anonymous'
             }),
             style: new ol.style.Style({
-              image: new ol.style.Circle( /** @type {olx.style.IconOptions} */ ({
-                radius: 10,
-                fill: new ol.style.Fill({
-                  color: '#ffff00'
-                })
-              }))
+              image: new ol.style.Icon({
+                src:"C:/Users/kazu/Documents/GitHub/kure_kosen_map/assets/icon/aed.png", scale: 0.2
+              })
             })
           });
 
