@@ -4,7 +4,7 @@ var map = new ol.Map({
     new ol.interaction.DragRotateAndZoom()
   ]),
   controls: ol.control.defaults().extend([
-    new ol.control.FullScreen(),new app.RotateNorthControl()
+    new ol.control.FullScreen(),new app.RotateNorthControl(),new ol.control.ZoomSlider()
   ]),
   layers: [
     new ol.layer.Group({
@@ -23,7 +23,6 @@ var map = new ol.Map({
   overlays: [popup],
   view: view
 });
-
 
 var select = new ol.interaction.Select({});
 map.addInteraction(select);
