@@ -9,15 +9,19 @@ background-size: 75%;*/
 	text-align: center;
 	color: white;
 	/*margin: 0 auto;*/
+	position: relative;
+	bottom: -650px;
 }
 
-.button　/*初めの*/ {
-	font-size: 20px;
+.button/*　初めの*/ {
+	/*font-size: 50px;*/
 	display: inline-block;
-	border-radius: 15px;
+	/*border-radius: 15px;*/
 	border:solid 5px;
-	/*text-align: center;*/
+	text-align: center;
 	margin: 0 auto;
+	/*position: relative;
+	bottom: 50;*/
 }
 
 .button /*アニメーション1*/ {
@@ -28,6 +32,10 @@ background-size: 75%;*/
 	text-decoration: none;
 	line-height: 54px;
 	outline: none;
+	border-radius: 15px;
+	font-size: 30px;
+	transform: scale(3.5);
+
 }
 .button::before,
 .button::after {
@@ -91,6 +99,8 @@ z-index:-2
 	position: relative;
 	padding-left: 25px;
 	display: inline-block;
+	transform: scale(3.5);
+
 }
 
 .aboutus:before {
@@ -128,6 +138,7 @@ display: inline-block;
 	position: relative;
 	padding-left: 25px;
 	display: inline-block;
+	transform: scale(3.5);
 }
 
 .history:before {
@@ -160,6 +171,7 @@ display: inline-block;
 	position: relative;
 	padding-left: 25px;
 	display: inline-block;
+	transform: scale(3.5);
 }
 
 .ures_manual:before {
