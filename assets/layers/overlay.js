@@ -1,6 +1,3 @@
-// パスの指定
-var path = 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/';
-
 // 現在地の円
 var geocycle = new ol.layer.Vector({
                 source: new ol.source.Vector({
@@ -14,12 +11,12 @@ var aed = new ol.layer.Vector({
             title: 'AED',
             source: new ol.source.Vector({
               format: new ol.format.GeoJSON(),
-              url: path + 'assets/geojson/20171224.geojson',
+              url: 'https://kure-kosen.github.io/kure_kosen_map/assets/geojson/20171224.geojson',
               crossOrigin: 'anonymous'
             }),
             style: new ol.style.Style({
               image: new ol.style.Icon({
-                src:path + 'assets/icon/aed.png', scale: 0.2
+                src:"https://kure-kosen.github.io/kure_kosen_map/assets/icon/aed.png", scale: 0.2
               })
             })
           });
@@ -29,7 +26,7 @@ var kml = new ol.layer.Vector({
             title: 'kml',
             source: new ol.source.Vector({
               format: new ol.format.KML(),
-              url: path + 'assets/kml/kokudo.kml',
+              url: 'https://kure-kosen.github.io/kure_kosen_map/assets/kml/kokudo.kml',
               crossOrigin: 'anonymous'
             })
           });
