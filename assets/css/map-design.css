@@ -11,14 +11,19 @@
 }
 */
 .wrap-menubtn {
-	position: absolute;
-	z-index: 1;
 	right: 0.5em;
 	top: 0.5em;
+}
+/* .ol-controlを使うので廃止
+.wrap-menubtn {
+	position: absolute;
+	z-index: 1;
 	padding: 0;
 	border: 3px solid rgba(255,255,255,.4);
 	border-radius: 3px;
 }
+*/
+/* ol-control buttonを使うので廃止
 button.menubtn, div.menubtn {
 	width: 2em;
 	height: 2em;
@@ -28,6 +33,7 @@ button.menubtn, div.menubtn {
 	text-align: center;
 	border-radius: 2px;
 }
+*/
 button.menubtn:hover, div.menubtn:hover {
 	background-color: #000;
 }
