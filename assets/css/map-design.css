@@ -44,7 +44,7 @@ button.menubtn:hover, div.menubtn:hover {
 	background-color: rgba(0,60,136,.5);
 }
 */
-.ol-control .ol-full-screen {
+.ol-full-screen {
 	right: 0.5em;
 	top: 3em;
 }
