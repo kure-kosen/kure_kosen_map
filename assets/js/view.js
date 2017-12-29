@@ -4,4 +4,5 @@ var view = new ol.View({
   // minZoom: 15,//挙動がおかしいからやめたほうがいいかも
   // maxZoom: 17
   // そもそもいらないかな？
+  rotation: kakudo*Math.PI/180,
 });
