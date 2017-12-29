@@ -9,7 +9,9 @@ html, body, #map {
   left: .5em;
 }
 .ol-touch .rotate-north {
-  top: 80px;
+/* [N]がかぶるので使用しない
+  top: 80px; */
+  top: calc( 3em + 200px + 3em );
 }
 
 .ol-rotate {
