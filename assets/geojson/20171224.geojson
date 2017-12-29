@@ -1,0 +1,1957 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.653215,
+          34.223412
+        ]
+      },
+      "properties": {
+        "number": "aed_1",
+        "name": "呉市立仁方小学校",
+        "address": "呉市仁方本町1丁目6-6",
+        "tel": "0823-79-5040"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.625289,
+          34.21204
+        ]
+      },
+      "properties": {
+        "number": "aed_2",
+        "name": "呉市立広南小学校",
+        "address": "呉市広長浜4丁目1-26",
+        "tel": "0823-71-7965"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.627455,
+          34.231887
+        ]
+      },
+      "properties": {
+        "number": "aed_3",
+        "name": "呉市立白岳小学校",
+        "address": "呉市広駅前1丁目6-1",
+        "tel": "0823-71-8094"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.626991,
+          34.238764
+        ]
+      },
+      "properties": {
+        "number": "aed_4",
+        "name": "呉市立広小学校",
+        "address": "呉市広杭本町3-1",
+        "tel": "0823-71-9337"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.635272,
+          34.300972
+        ]
+      },
+      "properties": {
+        "number": "aed_5",
+        "name": "呉市立郷原小学校",
+        "address": "呉市郷原町1584-1",
+        "tel": "0823-77-0018"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.615106,
+          34.242478
+        ]
+      },
+      "properties": {
+        "number": "aed_6",
+        "name": "呉市立横路小学校",
+        "address": "呉市広横路4丁目1-9",
+        "tel": "0823-71-7837"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.594319,
+          34.249082
+        ]
+      },
+      "properties": {
+        "number": "aed_7",
+        "name": "呉市立原小学校",
+        "address": "呉市阿賀北4丁目3-16",
+        "tel": "0823-71-7756"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.562094,
+          34.233367
+        ]
+      },
+      "properties": {
+        "number": "aed_8",
+        "name": "呉市立宮原小学校",
+        "address": "呉市宮原4丁目8-1",
+        "tel": "0823-23-1881"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.569095,
+          34.242271
+        ]
+      },
+      "properties": {
+        "number": "aed_9",
+        "name": "呉市立和庄小学校",
+        "address": "呉市八幡町10-7",
+        "tel": "0823-23-6688"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.571973,
+          34.248073
+        ]
+      },
+      "properties": {
+        "number": "aed_10",
+        "name": "呉市立本通小学校",
+        "address": "呉市寺本町1-10",
+        "tel": "0823-21-0005"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.57755,
+          34.249773
+        ]
+      },
+      "properties": {
+        "number": "aed_11",
+        "name": "呉市立長迫小学校",
+        "address": "呉市長迫町12-5",
+        "tel": "0823-22-3191"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.576895,
+          34.254898
+        ]
+      },
+      "properties": {
+        "number": "aed_12",
+        "name": "呉市立明立小学校",
+        "address": "呉市伏原2丁目6-38",
+        "tel": "0823-21-3396"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.569851,
+          34.253867
+        ]
+      },
+      "properties": {
+        "number": "aed_13",
+        "name": "呉市立荘山田小学校",
+        "address": "呉市東中央3丁目1-23",
+        "tel": "0823-21-3295"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.542562,
+          34.248339
+        ]
+      },
+      "properties": {
+        "number": "aed_14",
+        "name": "呉市立港町小学校",
+        "address": "呉市海岸3丁目5-30",
+        "tel": "0823-21-3015"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.520939,
+          34.278744
+        ]
+      },
+      "properties": {
+        "number": "aed_15",
+        "name": "呉市立落走小学校",
+        "address": "呉市汐見町10-25",
+        "tel": "0823-38-7088"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.515339,
+          34.288192
+        ]
+      },
+      "properties": {
+        "number": "aed_16",
+        "name": "呉市立天応小学校",
+        "address": "呉市天応大浜2丁目1-64",
+        "tel": "0823-38-7584"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.5538,
+          34.298649
+        ]
+      },
+      "properties": {
+        "number": "aed_17",
+        "name": "呉市立昭和西小学校",
+        "address": "呉市焼山宮ケ迫1丁目3-1",
+        "tel": "0823-33-0414"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.59142,
+          34.290838
+        ]
+      },
+      "properties": {
+        "number": "aed_18",
+        "name": "呉市立昭和東小学校",
+        "address": "呉市苗代町39-2",
+        "tel": "0823-33-0108"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.560696,
+          34.28919
+        ]
+      },
+      "properties": {
+        "number": "aed_19",
+        "name": "呉市立昭和中央小学校",
+        "address": "呉市焼山中央4丁目1-1",
+        "tel": "0823-33-0611"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.5463,
+          34.282032
+        ]
+      },
+      "properties": {
+        "number": "aed_20",
+        "name": "呉市立昭和南小学校",
+        "address": "呉市焼山此原町14-1",
+        "tel": "0823-33-7473"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.554783,
+          34.30631
+        ]
+      },
+      "properties": {
+        "number": "aed_21",
+        "name": "呉市立昭和北小学校",
+        "address": "呉市焼山本庄1丁目6-1",
+        "tel": "0823-33-8910"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.693421,
+          34.238036
+        ]
+      },
+      "properties": {
+        "number": "aed_22",
+        "name": "呉市立川尻小学校",
+        "address": "呉市川尻町久俊1丁目5-24",
+        "tel": "0823-87-2170"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.545221,
+          34.175765
+        ]
+      },
+      "properties": {
+        "number": "aed_23",
+        "name": "呉市立波多見小学校",
+        "address": "呉市音戸町波多見9丁目11-1",
+        "tel": "0823-51-2713"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.756674,
+          34.284007
+        ]
+      },
+      "properties": {
+        "number": "aed_24",
+        "name": "呉市立三津口小学校",
+        "address": "呉市安浦町三津口２丁目27-2",
+        "tel": "0823-84-2048"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.738333,
+          34.285479
+        ]
+      },
+      "properties": {
+        "number": "aed_25",
+        "name": "呉市立内海小学校",
+        "address": "呉市安浦町内海北１丁目2-5",
+        "tel": "0823-84-2020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.722315,
+          34.25576
+        ]
+      },
+      "properties": {
+        "number": "aed_26",
+        "name": "呉市立安登小学校",
+        "address": "呉市安浦町安登西５丁目7-19",
+        "tel": "0823-84-2264"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.861845,
+          34.180381
+        ]
+      },
+      "properties": {
+        "number": "aed_27",
+        "name": "呉市立豊小学校",
+        "address": "呉市豊町大長4790-1",
+        "tel": "0823-66-2353"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.623594,
+          34.212579
+        ]
+      },
+      "properties": {
+        "number": "aed_28",
+        "name": "呉市立広南中学校",
+        "address": "呉市広長浜4丁目1-9",
+        "tel": "0823-71-7920"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.63261,
+          34.230724
+        ]
+      },
+      "properties": {
+        "number": "aed_29",
+        "name": "呉市立白岳中学校",
+        "address": "呉市広駅前2丁目11-1",
+        "tel": "0823-74-2121"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.630091,
+          34.242981
+        ]
+      },
+      "properties": {
+        "number": "aed_30",
+        "name": "呉市立広中央中学校",
+        "address": "呉市広吉松2丁目15-1",
+        "tel": "0823-71-8524"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.638089,
+          34.29775
+        ]
+      },
+      "properties": {
+        "number": "aed_31",
+        "name": "呉市立郷原中学校",
+        "address": "呉市郷原町1706",
+        "tel": "0823-77-0014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.615456,
+          34.243064
+        ]
+      },
+      "properties": {
+        "number": "aed_32",
+        "name": "呉市立横路中学校",
+        "address": "呉市広横路4丁目9-15",
+        "tel": "0823-71-7827"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.600815,
+          34.234551
+        ]
+      },
+      "properties": {
+        "number": "aed_33",
+        "name": "呉市立阿賀中学校",
+        "address": "呉市阿賀中央5丁目14-16",
+        "tel": "0823-71-3304"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.541871,
+          34.199326
+        ]
+      },
+      "properties": {
+        "number": "aed_34",
+        "name": "呉市立警固屋中学校",
+        "address": "呉市警固屋7丁目4-1",
+        "tel": "0823-28-0914"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.55528,
+          34.22664
+        ]
+      },
+      "properties": {
+        "number": "aed_35",
+        "name": "呉市立宮原中学校",
+        "address": "呉市船見町1-1",
+        "tel": "0823-21-1468"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.570759,
+          34.244435
+        ]
+      },
+      "properties": {
+        "number": "aed_36",
+        "name": "呉市立和庄中学校",
+        "address": "呉市和庄登町3-18",
+        "tel": "0823-21-6631"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.587093,
+          34.253212
+        ]
+      },
+      "properties": {
+        "number": "aed_37",
+        "name": "呉市立東畑中学校",
+        "address": "呉市東畑2丁目7-38",
+        "tel": "0823-21-6210"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.566312,
+          34.254378
+        ]
+      },
+      "properties": {
+        "number": "aed_38",
+        "name": "呉市立片山中学校",
+        "address": "呉市東片山町13-5",
+        "tel": "0823-21-4995"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.559871,
+          34.252231
+        ]
+      },
+      "properties": {
+        "number": "aed_39",
+        "name": "呉市立呉中央中学校",
+        "address": "呉市西中央4丁目10-52",
+        "tel": "0823-21-2828"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.517472,
+          34.264815
+        ]
+      },
+      "properties": {
+        "number": "aed_40",
+        "name": "呉市立吉浦中学校",
+        "address": "呉市狩留賀町8-6",
+        "tel": "0823-31-7570"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.525075,
+          34.288909
+        ]
+      },
+      "properties": {
+        "number": "aed_41",
+        "name": "呉市立天応中学校",
+        "address": "呉市天応東久保2丁目7-1",
+        "tel": "0823-38-7545"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.556368,
+          34.311401
+        ]
+      },
+      "properties": {
+        "number": "aed_42",
+        "name": "呉市立昭和北中学校",
+        "address": "呉市焼山泉ヶ丘2丁目11-1",
+        "tel": "0823-33-9610"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.677655,
+          34.192914
+        ]
+      },
+      "properties": {
+        "number": "aed_43",
+        "name": "呉市立下蒲刈中学校",
+        "address": "呉市下蒲刈町下島2119",
+        "tel": "0823-65-2024"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.52968,
+          34.18273
+        ]
+      },
+      "properties": {
+        "number": "aed_44",
+        "name": "呉市立音戸中学校",
+        "address": "呉市音戸町南隠渡4丁目15-1",
+        "tel": "0823-51-2731"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.509866,
+          34.151104
+        ]
+      },
+      "properties": {
+        "number": "aed_45",
+        "name": "呉市立明徳中学校",
+        "address": "呉市音戸町藤脇1丁目30-1",
+        "tel": "0823-56-0303"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.692326,
+          34.185657
+        ]
+      },
+      "properties": {
+        "number": "aed_46",
+        "name": "呉市立蒲刈中学校",
+        "address": "呉市蒲刈町向771",
+        "tel": "0823-68-0020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.743908,
+          34.282715
+        ]
+      },
+      "properties": {
+        "number": "aed_47",
+        "name": "呉市立安浦中学校",
+        "address": "呉市安浦町中央４丁目2-1",
+        "tel": "0823-84-5151"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.796153,
+          34.180001
+        ]
+      },
+      "properties": {
+        "number": "aed_48",
+        "name": "呉市立豊浜中学校",
+        "address": "呉市豊浜町豊島3438",
+        "tel": "0846-68-2009"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.563029,
+          34.254655
+        ]
+      },
+      "properties": {
+        "number": "aed_49",
+        "name": "呉市スポーツ会館",
+        "address": "呉市二河町1-8",
+        "tel": "0823-22-1264"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.563843,
+          34.250267
+        ]
+      },
+      "properties": {
+        "number": "aed_50",
+        "name": "呉市体育館",
+        "address": "呉市中央4丁目1-1",
+        "tel": "0823-25-3475"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.626314,
+          34.23251
+        ]
+      },
+      "properties": {
+        "number": "aed_51",
+        "name": "オークアリーナ",
+        "address": "呉市広大新開1丁目7-1",
+        "tel": "0823-74-0909"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.614015,
+          34.232546
+        ]
+      },
+      "properties": {
+        "number": "aed_52",
+        "name": "呉市営温水プール",
+        "address": "呉市広古新開2丁目1-6",
+        "tel": "0823-73-6325"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.693791,
+          34.236925
+        ]
+      },
+      "properties": {
+        "number": "aed_53",
+        "name": "呉市川尻温水プール",
+        "address": "呉市川尻町久俊1丁目1-10",
+        "tel": "0823-87-5555"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.743577,
+          34.166226
+        ]
+      },
+      "properties": {
+        "number": "aed_54",
+        "name": "呉市蒲刈B&G海洋センター",
+        "address": "呉市蒲刈町大浦8160番地",
+        "tel": "0823-66-1166"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.566157,
+          34.248959
+        ]
+      },
+      "properties": {
+        "number": "aed_55",
+        "name": "呉市役所",
+        "address": "呉市中央4丁目1-6",
+        "tel": "0823-25-3100"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.571259,
+          34.247554
+        ]
+      },
+      "properties": {
+        "number": "aed_56",
+        "name": "すこやかセンターくれ",
+        "address": "呉市和庄1丁目2-13",
+        "tel": "0823-25-0080"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.566371,
+          34.250284
+        ]
+      },
+      "properties": {
+        "number": "aed_57",
+        "name": "つばき会館",
+        "address": "呉市中央6丁目2-9",
+        "tel": "0823-25-3414"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.614767,
+          34.232512
+        ]
+      },
+      "properties": {
+        "number": "aed_58",
+        "name": "広市民センター",
+        "address": "呉市広古新開2丁目1-2",
+        "tel": "0823-73-7191"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.557613,
+          34.296714
+        ]
+      },
+      "properties": {
+        "number": "aed_59",
+        "name": "昭和市民センター",
+        "address": "呉市焼山中央2丁目8-12",
+        "tel": "0823-33-0011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.555786,
+          34.241177
+        ]
+      },
+      "properties": {
+        "number": "aed_60",
+        "name": "大和ミュージアム",
+        "address": "呉市宝町5-20",
+        "tel": "0823-25-3017"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.565724,
+          34.250192
+        ]
+      },
+      "properties": {
+        "number": "aed_61",
+        "name": "呉市福祉会館",
+        "address": "呉市中央5丁目12-21",
+        "tel": "0823-25-3500"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.753237,
+          34.180917
+        ]
+      },
+      "properties": {
+        "number": "aed_62",
+        "name": "県民の浜（輝きの館）",
+        "address": "呉市蒲刈町大浦",
+        "tel": "0823-66-1177"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.511545,
+          34.290772
+        ]
+      },
+      "properties": {
+        "number": "aed_63",
+        "name": "呉ポートピアパーク",
+        "address": "呉市天応大浜3丁目2-3",
+        "tel": "0823-38-0560"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.541471,
+          34.187825
+        ]
+      },
+      "properties": {
+        "number": "aed_64",
+        "name": "総合ケアセンターさざなみ",
+        "address": "呉市音戸町高須3-7-15",
+        "tel": "0823-50-0611"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.678471,
+          34.192997
+        ]
+      },
+      "properties": {
+        "number": "aed_65",
+        "name": "公立下蒲刈病院",
+        "address": "呉市下蒲刈町下島2120-4",
+        "tel": "0823-65-3100"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.722461,
+          34.196839
+        ]
+      },
+      "properties": {
+        "number": "aed_66",
+        "name": "蒲刈診療所",
+        "address": "呉市蒲刈町田戸2308-1",
+        "tel": "0823-66-1234"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.754794,
+          34.264318
+        ]
+      },
+      "properties": {
+        "number": "aed_67",
+        "name": "グリーンピアせとうち",
+        "address": "呉市安浦町大字三津口字高須326番48外",
+        "tel": "0823-84-6622"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.744086,
+          34.281568
+        ]
+      },
+      "properties": {
+        "number": "aed_68",
+        "name": "安浦まちづくりセンター",
+        "address": "安浦町中央4丁目3-2",
+        "tel": "0823-84-3636"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.857667,
+          34.183017
+        ]
+      },
+      "properties": {
+        "number": "aed_69",
+        "name": "豊まちづくりセンター",
+        "address": "豊町大長5915-3",
+        "tel": "0823-66-2111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.543614,
+          34.099934
+        ]
+      },
+      "properties": {
+        "number": "aed_70",
+        "name": "倉橋小学校",
+        "address": "倉橋町383-2",
+        "tel": "0823-53-0011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.543614,
+          34.099934
+        ]
+      },
+      "properties": {
+        "number": "aed_71",
+        "name": "倉橋中学校",
+        "address": "倉橋町383-2",
+        "tel": "0823-53-0019"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.529769,
+          34.257796
+        ]
+      },
+      "properties": {
+        "number": "aed_72",
+        "name": "吉浦市民センター",
+        "address": "吉浦東本町1丁目7-23",
+        "tel": "0823-31-0010"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.541038,
+          34.202122
+        ]
+      },
+      "properties": {
+        "number": "aed_73",
+        "name": "警固屋市民センター",
+        "address": "警固屋6丁目3-15",
+        "tel": "0823-28-0406"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.652623,
+          34.223911
+        ]
+      },
+      "properties": {
+        "number": "aed_74",
+        "name": "仁方市民センター",
+        "address": "仁方本町1丁目6-11",
+        "tel": "0823-79-1111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.562583,
+          34.233448
+        ]
+      },
+      "properties": {
+        "number": "aed_75",
+        "name": "宮原市民センター",
+        "address": "宮原4丁目10-1",
+        "tel": "0823-24-2235"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.517997,
+          34.28732
+        ]
+      },
+      "properties": {
+        "number": "aed_76",
+        "name": "天応市民センター",
+        "address": "天応宮町4-15",
+        "tel": "0823-38-7543"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.636433,
+          34.300022
+        ]
+      },
+      "properties": {
+        "number": "aed_77",
+        "name": "郷原市民センター",
+        "address": "郷原町1585-8",
+        "tel": "0823-77-1177"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.533908,
+          34.188202
+        ]
+      },
+      "properties": {
+        "number": "aed_78",
+        "name": "音戸市民センター",
+        "address": "音戸町南隠渡1丁目7-1",
+        "tel": "0823-52-1111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.732466,
+          34.197125
+        ]
+      },
+      "properties": {
+        "number": "aed_79",
+        "name": "蒲刈市民センター",
+        "address": "蒲刈町宮盛1-2",
+        "tel": "0823-66-1111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.559738,
+          34.229848
+        ]
+      },
+      "properties": {
+        "number": "aed_80",
+        "name": "宮原まちづくりセンター",
+        "address": "宮原7丁目4-21",
+        "tel": "0823-22-1016"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.512553,
+          34.102325
+        ]
+      },
+      "properties": {
+        "number": "aed_81",
+        "name": "倉橋まちづくりセンター",
+        "address": "倉橋町431",
+        "tel": "0823-53-0577"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.543614,
+          34.099934
+        ]
+      },
+      "properties": {
+        "number": "aed_82",
+        "name": "倉橋まちづくりセンター釣士田分館",
+        "address": "倉橋町7529",
+        "tel": "0823-56-1880"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.688379,
+          34.187404
+        ]
+      },
+      "properties": {
+        "number": "aed_83",
+        "name": "蒲刈まちづくりセンター",
+        "address": "蒲刈町向1112-29",
+        "tel": "0823-68-0301"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.545453,
+          34.244598
+        ]
+      },
+      "properties": {
+        "number": "aed_84",
+        "name": "二川まちづくりセンター",
+        "address": "築地町3-1",
+        "tel": "0823-21-3961"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.602421,
+          34.243719
+        ]
+      },
+      "properties": {
+        "number": "aed_85",
+        "name": "大空山青年の家",
+        "address": "広町25",
+        "tel": "0823-72-7721"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.563713,
+          34.239964
+        ]
+      },
+      "properties": {
+        "number": "aed_86",
+        "name": "美術館",
+        "address": "幸町4-9",
+        "tel": "0823-25-2007"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.562402,
+          34.24714
+        ]
+      },
+      "properties": {
+        "number": "aed_87",
+        "name": "文化ホール",
+        "address": "中央3丁目10-1",
+        "tel": "0823-25-7878"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.562904,
+          34.246912
+        ]
+      },
+      "properties": {
+        "number": "aed_88",
+        "name": "中央図書館",
+        "address": "中央3丁目10-3",
+        "tel": "0823-21-3014"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.543614,
+          34.099934
+        ]
+      },
+      "properties": {
+        "number": "aed_89",
+        "name": "倉橋体育館・倉橋温水プール",
+        "address": "倉橋町539-1",
+        "tel": "0823-53-0082"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.560832,
+          34.250384
+        ]
+      },
+      "properties": {
+        "number": "aed_90",
+        "name": "呉中央小学校",
+        "address": "西中央3丁目11-13",
+        "tel": "0823-21-2947"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.654023,
+          34.220831
+        ]
+      },
+      "properties": {
+        "number": "aed_91",
+        "name": "仁方中学校",
+        "address": "仁方桟橋通16-8",
+        "tel": "0823-79-1177"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.696455,
+          34.235361
+        ]
+      },
+      "properties": {
+        "number": "aed_92",
+        "name": "川尻市民センター",
+        "address": "川尻町東1丁目1-21",
+        "tel": "0823-87-3310"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.683929,
+          34.187439
+        ]
+      },
+      "properties": {
+        "number": "aed_93",
+        "name": "松濤園",
+        "address": "下蒲刈町下島2277-3",
+        "tel": "0823-65-2900"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.512553,
+          34.102325
+        ]
+      },
+      "properties": {
+        "number": "aed_94",
+        "name": "くらはし桂浜温泉館",
+        "address": "倉橋町431",
+        "tel": "0823-53-2575"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.555139,
+          34.174751
+        ]
+      },
+      "properties": {
+        "number": "aed_95",
+        "name": "大浦崎スポーツセンター大浦崎会館",
+        "address": "音戸町波多見6丁目20-1",
+        "tel": "0823-51-2325"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.629902,
+          34.247016
+        ]
+      },
+      "properties": {
+        "number": "aed_96",
+        "name": "三坂地小学校",
+        "address": "広中迫町4-1",
+        "tel": "0823-71-7054"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.599032,
+          34.233212
+        ]
+      },
+      "properties": {
+        "number": "aed_97",
+        "name": "阿賀小学校",
+        "address": "阿賀南2丁目1-1",
+        "tel": "0823-72-0033"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.542246,
+          34.200237
+        ]
+      },
+      "properties": {
+        "number": "aed_98",
+        "name": "警固屋小学校",
+        "address": "警固屋7丁目5-1",
+        "tel": "0823-28-0011"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.555928,
+          34.22356
+        ]
+      },
+      "properties": {
+        "number": "aed_99",
+        "name": "坪内小学校",
+        "address": "宮原12丁目13-1",
+        "tel": "0823-21-3192"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.551444,
+          34.247601
+        ]
+      },
+      "properties": {
+        "number": "aed_100",
+        "name": "両城小学校",
+        "address": "三条2丁目15-12",
+        "tel": "0823-21-4866"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.529671,
+          34.261071
+        ]
+      },
+      "properties": {
+        "number": "aed_101",
+        "name": "吉浦小学校",
+        "address": "吉浦中町2丁目6-5",
+        "tel": "0823-31-7042"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.671733,
+          34.192197
+        ]
+      },
+      "properties": {
+        "number": "aed_102",
+        "name": "下蒲刈小学校",
+        "address": "下蒲刈町下島3484-3",
+        "tel": "0823-65-2290"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.534694,
+          34.185902
+        ]
+      },
+      "properties": {
+        "number": "aed_103",
+        "name": "音戸小学校",
+        "address": "音戸町南隠渡1丁目12-6",
+        "tel": "0823-51-2731"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.692326,
+          34.185657
+        ]
+      },
+      "properties": {
+        "number": "aed_104",
+        "name": "蒲刈小学校",
+        "address": "蒲刈町向771",
+        "tel": "0823-68-0020"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.543614,
+          34.099934
+        ]
+      },
+      "properties": {
+        "number": "aed_105",
+        "name": "明徳小学校",
+        "address": "倉橋町7490",
+        "tel": "0823-56-0205"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.548811,
+          34.248251
+        ]
+      },
+      "properties": {
+        "number": "aed_106",
+        "name": "両城中学校",
+        "address": "両城2丁目22-15",
+        "tel": "0823-21-4661"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.564701,
+          34.290068
+        ]
+      },
+      "properties": {
+        "number": "aed_107",
+        "name": "昭和中学校",
+        "address": "焼山中央6丁目9-1",
+        "tel": "0823-33-0311"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.692919,
+          34.231709
+        ]
+      },
+      "properties": {
+        "number": "aed_108",
+        "name": "川尻中学校",
+        "address": "川尻町西1丁目23-47",
+        "tel": "0823-87-2072"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.60294,
+          34.233623
+        ]
+      },
+      "properties": {
+        "number": "aed_109",
+        "name": "呉高等学校",
+        "address": "阿賀中央5丁目13-56",
+        "tel": "0823-72-5577"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.600588,
+          34.236526
+        ]
+      },
+      "properties": {
+        "number": "aed_110",
+        "name": "阿賀市民センター",
+        "address": "阿賀中央6丁目2-16",
+        "tel": "0823-73-5252"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.683288,
+          34.186409
+        ]
+      },
+      "properties": {
+        "number": "aed_111",
+        "name": "下蒲刈市民センター",
+        "address": "下蒲刈町下島2361-7",
+        "tel": "0823-65-2311"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.512553,
+          34.102325
+        ]
+      },
+      "properties": {
+        "number": "aed_112",
+        "name": "倉橋市民センター",
+        "address": "倉橋町431",
+        "tel": "0823-53-1111"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.744086,
+          34.281568
+        ]
+      },
+      "properties": {
+        "number": "aed_113",
+        "name": "安浦市民センター",
+        "address": "安浦町中央4丁目3-2",
+        "tel": "0823-84-2261"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.798677,
+          34.176307
+        ]
+      },
+      "properties": {
+        "number": "aed_114",
+        "name": "豊浜市民センター",
+        "address": "豊浜町豊島3526-15",
+        "tel": "0823-68-2211"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.851385,
+          34.181531
+        ]
+      },
+      "properties": {
+        "number": "aed_115",
+        "name": "豊市民センター",
+        "address": "豊町大長5927",
+        "tel": "0823-66-2131"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.544051,
+          34.213646
+        ]
+      },
+      "properties": {
+        "number": "aed_116",
+        "name": "警固屋まちづくりセンター",
+        "address": "警固屋2丁目222",
+        "tel": "0823-28-0200"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.59142,
+          34.290838
+        ]
+      },
+      "properties": {
+        "number": "aed_117",
+        "name": "昭和東まちづくりセンター",
+        "address": "苗代町３９－２",
+        "tel": "0823-34-0345"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.672064,
+          34.192455
+        ]
+      },
+      "properties": {
+        "number": "aed_118",
+        "name": "下蒲刈まちづくりセンター",
+        "address": "下蒲刈町下島1628-1",
+        "tel": "0823-65-2027"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.798677,
+          34.176307
+        ]
+      },
+      "properties": {
+        "number": "aed_119",
+        "name": "豊浜まちづくりセンター",
+        "address": "豊浜町豊島3526-15",
+        "tel": "0823-68-2213"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.673459,
+          34.263157
+        ]
+      },
+      "properties": {
+        "number": "aed_120",
+        "name": "野呂山ビジターセンター",
+        "address": "川尻町板休5502-238",
+        "tel": "0823-70-5338"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.563334,
+          34.240322
+        ]
+      },
+      "properties": {
+        "number": "aed_121",
+        "name": "入船山公園多目的広場",
+        "address": "幸町4-6",
+        "tel": "0823-21-1037"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          132.560091,
+          34.248454
+        ]
+      },
+      "properties": {
+        "number": "aed_122",
+        "name": "水道局本庁舎",
+        "address": "西中央3丁目1-5",
+        "tel": "0823-26-1600"
+      }
+    }
+  ]
+}

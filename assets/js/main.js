@@ -4,37 +4,46 @@ var map = new ol.Map({
     new ol.interaction.DragRotateAndZoom()
   ]),
   controls: ol.control.defaults().extend([
-    new ol.control.FullScreen()
+    new ol.control.FullScreen(),new app.RotateNorthControl(),new ol.control.ZoomSlider()
   ]),
   layers: [
-    new ol.layer.Tile({
-      source: new ol.source.OSM()
+    new ol.layer.Group({
+      'title': 'Base maps',
+      layers: [kokudo, osm,
+        // assets/layers/base.jsで定義したものをカンマで区切って書く
+        // watercolorlabels,
+        // watercolor,
+      ]
+    }),
+    new ol.layer.Group({
+      title: 'Overlays',
+      layers: [aed, kml, geocycle]
     })
   ],
-  view: new ol.View({
-    center: ol.proj.fromLonLat([132.601271,34.232102]),
-    zoom: 16,
-    // minZoom: 15,//挙動がおかしいからやめたほうがいいかも
-    // maxZoom: 17
-    // そもそもいらないかな？
-  })
+  overlays: [popup],
+  view: view
 });
 
+var select = new ol.interaction.Select({});
+map.addInteraction(select);
 
-// $.getJSON("assets/geojson/common.geojson", function (data) {
-//     L.geoJson(data, {
-//       style: {
-//         "weight": 3,
-//         "color": "#F42C87",
-//       }
-//     }).addTo(map);
-// });
+// On selected => show/hide popup
+select.getFeatures().on(['add'], function(e) {
+  var feature = e.element;
+  var content = "";
+  content += "<table border=1>"
+  content += "<tr><td>number</td><td>" + feature.get("number") + "</td></tr>"
+  content += "<tr><td>name</td><td>" + feature.get("name") + "</td></tr>"
+  content += "<tr><td>address</td><td>" + feature.get("address") + "</td></tr>"
+  content += "</table>"
+  popup.show(feature.getGeometry().getCoordinates(), content);
+})
+select.getFeatures().on(['remove'], function(e) {
+  popup.hide();
+})
 
-// ,
-//     new ol.layer.Vector({
-//       title: 'added Layer',
-//       source: new ol.source.Vector({
-//         url: "../geojson/common.geojson",
-//         format: new ol.format.GeoJSON()
-//       })
-//     })
+var layerSwitcher = new ol.control.LayerSwitcher({
+  tipLabel: 'Légende' // Optional label for button
+});
+map.addControl(layerSwitcher);
+

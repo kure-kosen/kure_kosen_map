@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/ol.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <script type="text/javascript" src="assets/libs/ol/ol.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol/ol.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/map-design.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" type="text/css">
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/ol.js" type="text/javascript"></script>
+    <!-- ol3-extを用いたボタン表示に使う -->
     <script src="assets/js/buttoncontrol.js" type="text/javascript"></script>
     <title>呉高専マップ</title>
   </head>
@@ -30,7 +30,7 @@
       <i class="fa fa-bars"></i>
      </button>
 -->
-     <div class="menubtn" type="button" title="メニューを表示">
+     <div class="menubtn" title="メニューを表示">
       <i class="fa fa-bars"></i>
      </div>
     </div>
@@ -54,7 +54,43 @@ buttonタグではなくdivで作ったボタンとdivで作ったメニュー�
 	->issueに書いた
 -->
 
-    <script src="assets/js/main.js" type="text/javascript"></script>
+    <div id="info" style="display: none;"></div>
+    <label for="track">
+      track position
+      <input id="track" type="checkbox"/>
+    </label>
+    <p>
+      position accuracy : <code id="accuracy"></code>&nbsp;&nbsp;
+      altitude : <code id="altitude"></code>&nbsp;&nbsp;
+      altitude accuracy : <code id="altitudeAccuracy"></code>&nbsp;&nbsp;
+      heading : <code id="heading"></code>&nbsp;&nbsp;
+      speed : <code id="speed"></code>
+    </p>
+
+    <div class="options">
+      <input id="ck" type="checkbox" onchange="if (this.checked) popup.addPopupClass('shadow'); else popup.removePopupClass('shadow');" />
+      <label for="ck">shadow</label>
+      <br />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+
+    <script type="text/javascript" src="assets/js/view.js"></script>
+    <script type="text/javascript" src="assets/js/geolocaton.js"></script>
+    <script type="text/javascript" src="assets/js/rotate.js"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-ext_popupoverlay/popupoverlay.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-ext_popupoverlay/popupoverlay.css">
+
+    <script type="text/javascript" src="assets/js/popup.js"></script>
+
+    <script type="text/javascript" src="assets/layers/base.js"></script>
+    <script type="text/javascript" src="assets/layers/overlay.js"></script>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
     <script src="assets/js/map-design.js" type="text/javascript"></script>
   </body>
 </html>
