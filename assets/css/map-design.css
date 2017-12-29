@@ -65,3 +65,13 @@ button.menubtn:hover, div.menubtn:hover {
 	right: 0;
 }
 
+/* ポップアップの表 */
+.ol-popup table {
+	border: 0;
+}
+.ol-popup td {
+	border: 0;
+	padding: 2px;
+	border-left: 2px solid rgba(0, 60, 136, 0.5);
+}
+
