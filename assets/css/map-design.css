@@ -1,13 +1,14 @@
 /* ボタン、メニューなどのデザイン aidmiya */
+/* なお、map.cssにも手を加えることがあります */
 
 /* 各種ボタン */
-.ol-button i {
-	color: inherit;
-}
 /* ol3-ext でボタンをつくるときのみ有効化
 .menubtn {
 	right: 0.5em;
 	top: 0.5em;
+}
+.ol-button i {
+	color: inherit;
 }
 */
 .wrap-menubtn {
@@ -33,17 +34,17 @@ button.menubtn, div.menubtn {
 	text-align: center;
 	border-radius: 2px;
 }
-*/
 button.menubtn:hover, div.menubtn:hover {
 	background-color: #000;
 }
+*/
 /* ハンバーガーメニューのボタンの色指定はここ
 そのままではありきたりなので、ハンバーガーボタンだけじゃなくて、全部のボタンの色を変えてみても良いかも(要確認)
 .menubtn button {
 	background-color: rgba(0,60,136,.5);
 }
 */
-.ol-full-screen {
+.ol-control .ol-full-screen {
 	right: 0.5em;
 	top: 3em;
 }
@@ -58,8 +59,8 @@ button.menubtn:hover, div.menubtn:hover {
 	background-color: #fff;
 	border-left: 2px solid #00f;
 }
-.active {
-	display: block;	/* !importantは不要? */
+.menu.active {
+	display: block;
 	top: 0;
 	right: 0;
 }
