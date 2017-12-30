@@ -96,6 +96,7 @@ button.menubtn:hover, div.menubtn:hover {
 	/* 高さはどう指定? */
 	height: calc( 100vh - 18.5em );
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .menu .menu-content, .menu .menu-content a {
 	color: #c81e00;
