@@ -15,6 +15,8 @@
 1. Chromeを終了
 1. Win + R で下記を実行
 ```chrome.exe --disable-web-security --user-data-dir```
+
+* assets/layers/overlay.jsの中のパスがローカルになっていないか確認しよう
 ---
 ## コードの統一化
 ### Tag
