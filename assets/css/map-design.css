@@ -56,11 +56,11 @@ button.menubtn:hover, div.menubtn:hover {
 	position: absolute;
 	width: 48%;
 	max-width: 270px;
-	height: 100vh;	
+	height: 100%;
 	top: 0;
 	right: 0;
 	background-color: rgba(245,245,245,.8);
-
+	/* 100vhを超えればスクロールできるのでそれがわかるようにする */
 	overflow: auto;
 }
 .menu.active {
