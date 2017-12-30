@@ -7,12 +7,14 @@ window.onload = function() {
 
 // 要素
 var menu_element = document.getElementById("menu");
-var menubtn_element = document.getElementsByClassName("menubtn");
+var openmenu_element = document.getElementById("openmenu");
+var closemenu_element = document.getElementById("closemenu");
 
 // ハンバーガーボタン(buttonたぐ)の動作
-menubtn_element.onclick = function() {showMenu()};
+openmenu_element.onclick = function() {toggleMenu()};
+closemenu_element.onclick = function() {toggleMenu()};
 
-function showMenu() {
+function toggleMenu() {
 	menu_element.classList.toggle("active");
 }
 

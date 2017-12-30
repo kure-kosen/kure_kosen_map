@@ -30,19 +30,91 @@
     </button>
 -->
     <div class="ol-touch"> <!-- ボタン類 -->
+     <!-- 開くボタン -->
      <div class="ol-control wrap-menubtn">
-      <button class="menubtn" type="button" title="メニューを表示">
+      <button id="openmenu" class="menubtn" type="button" title="メニューを表示">
        <i class="fa fa-bars"></i>
       </button>
      </div>
     </div>
 
     <!-- (ハンバーガー)メニュー -->
-    <div id="menu" class="menu">
-     メニュー項目はulタグでつくるのかな。もう少し調べる必要を感じる。<br>
-     開くと閉じられないのが今(12/20)の問題点。ほら、ボタンが消えた。<br>
-     あと、フルスクリーンにしてからハンバーガーを押してもメニューが見えない。フルスクリーン時にはメニューが表示されないのだ。
-    </div>
+    <nav id="menu" class="menu">
+     <div class="menu-top">
+      <div class="ol-touch"> <!-- メニューのボタン類 -->
+       <!-- 閉じるボタン 表示・非表示はclassで切り替え -->
+       <div class="ol-control wrap-menubtn">
+        <button id="closemenu" class="menubtn" type="button" title="メニューを閉じる">
+         <i class="fa fa-times"></i>
+        </button>
+       </div>
+      </div>
+      <div class="menu-title">
+       Menu
+      </div>
+     </div>
+     <ul class="menu-list">
+      <li>建物ジャンプ</li>
+     </ul>
+     <div class="menu-buildings">
+     <ul>
+      <li>
+       図書館棟
+      </li>
+      <li>
+       管理棟
+      </li>
+      <li>
+       普通教室棟
+      </li>
+      <li>
+       機械工学科棟
+      </li>
+      <li>
+       電気情報工学科棟
+      </li>
+      <li>
+       建築学科棟
+      </li>
+      <li>
+       環境都市工学科棟
+      </li>
+      <li>
+       専攻科棟<br>
+       (協働研究センター棟)
+      </li>
+      <li>
+       第2普通教室棟
+      </li>
+      <li>
+       静心館
+      </li>
+      <li>
+       (第1)体育館
+      </li>
+      <li>
+       第2体育館
+      </li>
+      <li>
+       (学生)食堂
+      </li>
+     <!--
+      <li></li>
+      <li></li>
+      <li></li>
+     -->
+     </ul>
+     </div>
+     <ul class="menu-list menu-content">
+      <li>使い方</li>
+      <li>この地図ができるまで</li>
+     </ul>
+     <ul class="menu-list menu-about">
+      <li>利用規約など</li>
+      <li>About Us</li>
+      <li>呉高専HPへ</li>
+     </ul>
+    </nav>
 
 <!--
 12月21日メモ

@@ -55,14 +55,14 @@ button.menubtn:hover, div.menubtn:hover {
 	position: absolute;
 	width: 40%;
 	height: 100vh;
+	top: 0;
+	right: 0;
 	/* 下: とりあえず指定 */
 	background-color: #fff;
 	border-left: 2px solid #00f;
 }
 .menu.active {
 	display: block;
-	top: 0;
-	right: 0;
 }
 
 /* ポップアップの表 */
