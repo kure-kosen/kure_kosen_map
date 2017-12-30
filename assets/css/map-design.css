@@ -51,18 +51,47 @@ button.menubtn:hover, div.menubtn:hover {
 
 /* メニュー */
 .menu {
+	font-family: sans-serif;
 	display: none;
 	position: absolute;
-	width: 40%;
+	width: 48%;
+	max-width: 270px;
 	height: 100vh;
 	top: 0;
 	right: 0;
-	/* 下: とりあえず指定 */
-	background-color: #fff;
-	border-left: 2px solid #00f;
+	background-color: rgba(245,245,245,.8);
 }
 .menu.active {
 	display: block;
+}
+.menu-box {
+	padding: 0.7em;
+}
+.menu hr {
+	border: 1px solid #ddd;
+}
+.menu ul {
+	margin: 0;
+	padding: 0;
+	line-height: 150%;
+}
+.menu li {
+	list-style-type: none;
+}
+.menu .menu-list {
+	margin-top: 0.8em;
+}
+.menu .menu-buildings {
+	/* 高さはどう指定? */
+	height: calc( 100vh - 15.5em );
+	overflow: auto;
+}
+.menu .menu-content, .menu .menu-content a {
+	color: #c81e00;
+}
+.menu a {
+	text-decoration: none;
+	color: #333;
 }
 
 /* ポップアップの表 */
