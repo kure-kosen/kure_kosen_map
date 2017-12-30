@@ -96,7 +96,7 @@ button.menubtn:hover, div.menubtn:hover {
 }
 .menu .menu-buildings {
 	/* 高さはどう指定? */
-	height: calc( 100vh - 21em );
+	height: calc( 100vh - 22em );
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 }
