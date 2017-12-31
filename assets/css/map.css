@@ -5,13 +5,13 @@ html, body, #map {
 }
 
 .rotate-north {
-  top: 280px;
+  top: calc( 3em + 280px );
   left: .5em;
 }
 .ol-touch .rotate-north {
 /* [N]がかぶるので使用しない
   top: 80px; */
-  top: calc( 3em + 200px + 3em );
+  top: calc( 3em + 3em + 200px + 3em );
 }
 
 .ol-rotate {
