@@ -55,6 +55,12 @@ button.menubtn:hover, div.menubtn:hover {
 	top: calc( 3em + 0.5em );
 }
 
+/* メニューを閉じるボタン */
+.menu .wrap-closemenubtn {
+	z-index: 1;
+}
+/* .closemenubtnもあります */
+
 /* メニュー */
 .menu {
 	font-family: sans-serif;

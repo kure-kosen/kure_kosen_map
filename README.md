@@ -21,6 +21,8 @@
 ## 動作テストについて
 * aidmiyaのPC上での動作確認: Firefox(57 32bit Ubuntu)、Chromium(63 32bit Ubuntu)
 * aidmiyaのモバイルでの動作確認: Safari running on iPhone 6S Plus
+
+* Safariのシークレットモードで動作確認する時、CSSが読み込まれないことがある。その時は、シークレットを解除してリロードしてみよう
 ---
 ## コードの統一化
 ### Tag
