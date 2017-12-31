@@ -12,6 +12,7 @@
 }
 */
 .wrap-menubtn {
+	position: fixed; /* スクロールによる移動を防ぐ */
 	right: 0.5em;
 	top: 0.5em;
 }
@@ -53,7 +54,6 @@ button.menubtn:hover, div.menubtn:hover {
 .menu {
 	font-family: sans-serif;
 	display: none;
-	position: fixed;
 	width: 48%;
 	max-width: 270px;
 	height: 100%;
