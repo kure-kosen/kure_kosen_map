@@ -16,7 +16,7 @@ html, body, #map {
 
 .ol-rotate {
   right: 3.5em !important;
-  top: calc( 3em + 0.5em );
+  top: calc( 3em + 0.5em ) !important;
   transition: opacity .25s linear,visibility 0s linear;
 }
 

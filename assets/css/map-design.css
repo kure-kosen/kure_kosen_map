@@ -45,7 +45,7 @@ button.menubtn:hover, div.menubtn:hover {
 	background-color: rgba(0,60,136,.5);
 }
 */
-/* .ol-full-screenと.ol-zoomはol.cssのを上書きされている */
+/* .ol-full-screenと.ol-zoomはol.cssのを上書きされている。!importantを使わず、読み込み順で上書きしている */
 .ol-full-screen {
 	right: 0.5em;
 	top: calc( 3em + 3em );
