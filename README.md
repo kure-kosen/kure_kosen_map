@@ -18,6 +18,10 @@
 
 * assets/layers/overlay.jsの中のパスがローカルになっていないか確認しよう
 ---
+## 動作テストについて
+* aidmiyaのPC上での動作確認: Firefox(57 32bit Ubuntu)、Chromium(63 32bit Ubuntu)
+* aidmiyaのモバイルでの動作確認: Safari running on iPhone 6S Plus
+---
 ## コードの統一化
 ### Tag
 * CSS             : ```<link rel="stylesheet" type="text/css" href="assets/">```
