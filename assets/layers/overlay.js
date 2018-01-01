@@ -33,3 +33,12 @@ var kml = new ol.layer.Vector({
               crossOrigin: 'anonymous'
             })
           });
+
+//xyzタイルのサンプル
+var tile = new ol.layer.Tile({
+            title: 'tile',
+            source: new ol.source.XYZ({
+              url: path + 'assets/tiles/{z}/{x}/{y}.png',
+              crossOrigin: 'anonymous'
+            })
+          });

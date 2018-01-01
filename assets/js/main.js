@@ -17,7 +17,7 @@ var map = new ol.Map({
     }),
     new ol.layer.Group({
       title: 'Overlays',
-      layers: [aed, kml, geocycle]
+      layers: [aed, kml, geocycle, tile]
     })
   ],
   overlays: [popup],
