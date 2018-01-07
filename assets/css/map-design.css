@@ -16,6 +16,9 @@
 	right: 0.5em;
 	top: calc( 3em + 0.5em );
 }
+.wrap-openmenu.menuactive {
+	display: none;
+}
 /* .ol-controlを使うので廃止
 .wrap-menubtn {
 	position: absolute;

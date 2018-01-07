@@ -9,6 +9,7 @@ window.onload = function() {
 var menu_element = document.getElementById("menu");
 var openmenu_element = document.getElementById("openmenu");
 var closemenu_element = document.getElementById("closemenu");
+var wrapopen_element = document.getElementById("wrap-openmenu");
 
 // ハンバーガーボタン(buttonたぐ)の動作
 openmenu_element.onclick = function() {toggleMenu()};
@@ -16,6 +17,7 @@ closemenu_element.onclick = function() {toggleMenu()};
 
 function toggleMenu() {
 	menu_element.classList.toggle("active");
+	wrapopen_element.classList.toggle("menuactive");
 }
 
 // ハンバーガーメニューのボタン。OpenLayersの「ol3-ext」(buttoncontrol.js)を使った。
