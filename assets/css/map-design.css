@@ -147,8 +147,8 @@ form .search-box {
 	align-items: center; /* [x]を縦で中央に */
 	height: 2.5em;
 	/* とりあえず見やすくするために */
-	border: 1px solid #000;
-	background-color: #fff;
+	border-bottom: 1px solid rgba(72, 72, 72, 0.7);
+	background-color: #fafafa;
 	box-shadow: 0px 0px 4px 1px rgba(184,184,184,0.8);
 	border-radius: 5px;
 }
@@ -157,6 +157,7 @@ form input[type="text"] {
 	border: 0;
 	border-radius: 5px;
 	height: calc( 2.5em - 2px - 8px );
+	background-color: #fafafa;
 /*	height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
 /*	font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
 }
