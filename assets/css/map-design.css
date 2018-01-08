@@ -156,7 +156,7 @@ form .search-box {
 	border-radius: 5px;
 }
 form input[type="text"] {
-	width: 100%;
+	width: calc( 100% - 3em );
 	border: 0;
 	border-radius: 5px;
 	height: calc( 2.5em - 2px - 8px );
