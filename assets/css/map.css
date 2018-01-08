@@ -32,7 +32,8 @@ html, body, #map {
   margin-top: 212px;
 }
 #map .ol-touch .ol-zoomslider {
-  top: 2.75em;
+/*top: 2.75em; 検索ボックスの影響で下にずらさないといけないのでコメントアウト */
+  top: calc( 2.75em + 3em );
 }
 
 #map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
