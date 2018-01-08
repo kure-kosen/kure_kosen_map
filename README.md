@@ -18,6 +18,12 @@
 
 * assets/layers/overlay.jsの中のパスがローカルになっていないか確認しよう
 ---
+## 俺・aidmiyaのここでの編集方針
+1. 基本的に自分がいじるのは自分で作ったファイルの中(map-design.cssなど)
+2. いじりたいところが他の人の作ったファイルにあったら、そのファイルをいじくる(map.cssなど)
+
+基本この方針でいきます。
+---
 ## 動作テストについて
 * aidmiyaのPC上での動作確認: Firefox(57 32bit Ubuntu)、Chromium(63 32bit Ubuntu)
 * aidmiyaのモバイルでの動作確認: Safari running on iPhone 6S Plus
