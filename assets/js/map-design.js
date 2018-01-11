@@ -1,10 +1,5 @@
 // ボタン、メニューなどのデザイン aidmiya
 
-// 読み込み時
-window.onload = function() {
-	popup.addPopupClass('shadow');
-};
-
 // 要素
 var menu_element = document.getElementById("menu");
 var openmenu_element = document.getElementById("openmenu");

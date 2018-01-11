@@ -63,7 +63,7 @@ ol.Overlay.Popup.prototype.setClosebox = $(this.element).addClass("hasclosebox")
 */
 
 ol.Overlay.Popup.prototype.setPopupClass = function (c) {
-  $(this.element).removeClass().addClass("ol-popup default "+this.getClassPositioning()+" hasclosebox");//編集済み
+  $(this.element).removeClass().addClass("ol-popup default "+this.getClassPositioning()+" hasclosebox shadow");//編集済み
 }
 
 /**
