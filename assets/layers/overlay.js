@@ -42,3 +42,18 @@ var tile = new ol.layer.Tile({
               crossOrigin: 'anonymous'
             })
           });
+
+// var vectorSource = new ol.layer.Vector({
+//             title: 'test1',
+//             source: new ol.source.Vector({
+//               format: new ol.format.GeoJSON(),
+//               url: path + 'assets/geojson/fond_guerre.geojson',
+//               crossOrigin: 'anonymous'
+//             })
+//           });
+
+  var vectorSource = new ol.source.Vector(
+  { url: path + 'assets/geojson/fond_guerre.geojson',
+    projection: 'EPSG:3857',
+    format: new ol.format.GeoJSON()
+  });

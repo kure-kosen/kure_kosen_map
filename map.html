@@ -30,10 +30,24 @@
       <br />
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <div class="options">
+      <h2>Options:</h2>
+      <ul>
+        <li>
+          maxInputs: <input type="number" onchange="search.set('maxItems', Number(this.value));" style="width:3em;" value="10" />
+        </li>
+        <li>
+          search property:
+          <select onchange="search.set('property',this.value); search.search(); console.log(this.value);">
+            <option value="commune">commune</option>
+            <option value="region">region</option>
+            <option value="text">text</option>
+          </select>
+        </li>
+      </ul>
+    </div>
 
-    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="assets/js/gps.js"></script>
 
@@ -48,6 +62,13 @@
 
     <script type="text/javascript" src="assets/layers/base.js"></script>
     <script type="text/javascript" src="assets/layers/overlay.js"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+
+    <script type="text/javascript" src="assets/libs/ol3-search/searchcontrol.js"></script>
+    <script type="text/javascript" src="assets/libs/ol3-search/searchfeaturecontrol.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-search/searchcontrol.css">
 
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
