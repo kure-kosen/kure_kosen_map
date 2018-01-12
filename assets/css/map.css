@@ -31,10 +31,11 @@ html, body, #map {
 #map .ol-touch .ol-zoom .ol-zoom-out {
   margin-top: 212px;
 }
-#map .ol-touch .ol-zoomslider {
-/*top: 2.75em; 検索ボックスの影響で下にずらさないといけないのでコメントアウト */
+
+/*#map .ol-touch .ol-zoomslider {
+top: 2.75em; 検索ボックスの影響で下にずらさないといけないのでコメントアウト
   top: calc( 2.75em + 3em );
-}
+}*/
 
 #map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
 #map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
