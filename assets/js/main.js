@@ -18,7 +18,8 @@ var map = new ol.Map({
     new ol.layer.Group({
       title: 'Overlays',
       layers: [
-      // aed, kml, geocycle, tile,
+      // aed, kml, geocycle,
+       // tile,
       // vectorSource
       ]
     })
@@ -63,9 +64,12 @@ map.addLayer(new ol.layer.Vector({
     })
   })
 }));
+
 // Control Select
-var select = new ol.interaction.Select({});
-map.addInteraction(select);
+
+// var select = new ol.interaction.Select({});
+// map.addInteraction(select);
+
 // Set the control grid reference
 var search = new ol.control.SearchFeature({ //target: $(".options").get(0),
   source: vectorSource,

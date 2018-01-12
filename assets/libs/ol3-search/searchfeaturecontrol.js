@@ -66,3 +66,8 @@ ol.control.SearchFeature.prototype.autocomplete = function (s, cback) {
   }
   return result;
 };
+
+function hoge() {
+  search.set('property', 'name' || 'address' || 'tel');// ||同時選択はむり
+  search.search();
+}

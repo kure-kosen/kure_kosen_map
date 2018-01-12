@@ -53,7 +53,7 @@ var tile = new ol.layer.Tile({
 //           });
 
   var vectorSource = new ol.source.Vector(
-  { url: path + 'assets/geojson/fond_guerre.geojson',
+  { url: path + 'assets/geojson/searchtest.geojson',
     projection: 'EPSG:3857',
     format: new ol.format.GeoJSON()
   });
