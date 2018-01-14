@@ -153,6 +153,7 @@ form input[type="reset"]:hover {
 
 /* 検索ボックス・メニューが開いている時 */
 form.search.menuactive {
-  width: calc( 100% - 270px );
+/*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
+  width: calc( 100% - 48% );
 }
 
