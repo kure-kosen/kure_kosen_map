@@ -142,7 +142,8 @@ button.menubtn:hover, div.menubtn:hover {
 
 /* 検索ボックスのフォーム */
 form.search {
-  width: 30%;
+  width: calc( 100% - 3.5em );
+  max-width: 500px;
   position: absolute;
   top: 0;
   left: 0;
