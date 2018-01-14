@@ -151,10 +151,3 @@ form input[type="reset"]:hover {
   background-color: #ccc;
 }
 
-/* フルスクリーン表示のためのz-index */
-#map form, #map div, #map nav {
-	z-index: 1;
-}
-
-
-
