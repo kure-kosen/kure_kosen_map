@@ -2,15 +2,6 @@
 /* なお、map.cssにも手を加えることがあります */
 
 /* 各種ボタン */
-/* ol3-ext でボタンをつくるときのみ有効化
-.menubtn {
-  right: 0.5em;
-  top: 0.5em;
-}
-.ol-button i {
-  color: inherit;
-}
-*/
 .wrap-menubtn {
   position: fixed; /* スクロールによる移動を防ぐ */
   right: 0.5em;
@@ -19,29 +10,6 @@
 .wrap-openmenu.menuactive {
   display: none;
 }
-/* .ol-controlを使うので廃止
-.wrap-menubtn {
-  position: absolute;
-  z-index: 1;
-  padding: 0;
-  border: 3px solid rgba(255,255,255,.4);
-  border-radius: 3px;
-}
-*/
-/* ol-control buttonを使うので廃止
-button.menubtn, div.menubtn {
-  width: 2em;
-  height: 2em;
-  border: 0;
-  background-color: rgba(0,60,136,.5);
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-}
-button.menubtn:hover, div.menubtn:hover {
-  background-color: #000;
-}
-*/
 /* ハンバーガーメニューのボタンの色指定はここ
 そのままではありきたりなので、ハンバーガーボタンだけじゃなくて、全部のボタンの色を変えてみても良いかも(要確認)
 .menubtn button {
