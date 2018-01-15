@@ -110,9 +110,9 @@
 
 /* 検索ボックスのフォーム */
 form.search {
-  width: calc( 100% - 3.5em );
+  width: calc( 100vw - 3.5em );
   max-width: 500px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -129,7 +129,7 @@ form .search-box {
   border-radius: 5px;
 }
 form input[type="text"] {
-  width: calc( 100% - 3em );
+  width: calc( 100vw - 3em );
   border: 0;
   border-radius: 5px;
   height: calc( 2.5em - 2px - 8px );
@@ -154,6 +154,6 @@ form input[type="reset"]:hover {
 /* 検索ボックス・メニューが開いている時 */
 form.search.menuactive {
 /*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
-  width: calc( 100% - 48% );
+  width: calc( 100vw - 48% );
 }
 

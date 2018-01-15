@@ -10,12 +10,12 @@ html, body, #map {
 }
 
 .rotate-north {
-  top: 280px;
+  top: calc( 3em + 280px );
   left: .5em;
 }
 
 .ol-touch .rotate-north {
-  top: 80px;
+  top: calc( 3em + 3em + 200px + 3em );
 }
 
 .ol-rotate {
@@ -76,3 +76,9 @@ html, body, #map {
   z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+.block {
+  display: block;
+}
+>>>>>>> d4f99eece63e5bcfbdf2f86937f230595e32391a
