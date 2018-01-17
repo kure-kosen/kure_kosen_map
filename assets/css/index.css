@@ -1,11 +1,23 @@
 @media only screen and (max-width: 500px){
-	div1{
-		width: 50%;
+	.div1{
+		position: relative;
+		top: 250px;
+		transform: scale(1.6);
+
 	}
 
-	body{
-		background-color: black;
+	.div2{
+		position: relative;
+		top: 300px;
+		left: 17%;
+		transform: scale(1.4);
 	}
+
+	.div3{
+		position: relative;
+
+	}
+
 }
 
 body {
