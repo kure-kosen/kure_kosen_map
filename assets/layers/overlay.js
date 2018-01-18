@@ -1,5 +1,5 @@
 // パスの指定
-var path = 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/';
+var path = 'https://kure-kosen.github.io/kure_kosen_map/';
 
 // 現在地の円
 var geocycle = new ol.layer.Vector({
