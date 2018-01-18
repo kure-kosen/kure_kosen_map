@@ -10,16 +10,19 @@ html, body, #map {
 }
 
 .rotate-north {
-  top: 280px;
+  top: calc( 3em + 280px );
   left: .5em;
 }
 
 .ol-touch .rotate-north {
-  top: 80px;
+/* [N]がかぶるので使用しない
+  top: 80px; */
+  top: calc( 3em + 3em + 200px + 3em );
 }
 
 .ol-rotate {
   right: 3.5em !important;
+  top: calc( 3em + 0.5em ) !important;
   transition: opacity .25s linear,visibility 0s linear;
 }
 
@@ -34,10 +37,6 @@ html, body, #map {
 
 #map .ol-touch .ol-zoom .ol-zoom-out {
   margin-top: 212px;
-}
-
-#map .ol-touch .ol-zoomslider {
-  top: 2.75em;
 }
 
 #map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],

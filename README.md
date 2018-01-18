@@ -15,6 +15,20 @@
 1. Chromeを終了
 1. Win + R で下記を実行
 ```chrome.exe --disable-web-security --user-data-dir```
+
+* assets/layers/overlay.jsの中のパスがローカルになっていないか確認しよう
+---
+## 俺・aidmiyaのここでの編集方針
+1. 基本的に自分がいじるのは自分で作ったファイルの中(map-design.cssなど)
+2. いじりたいところが他の人の作ったファイルにあったら、そのファイルをいじくる(map.cssなど)
+
+基本この方針でいきます。
+---
+## 動作テストについて
+* aidmiyaのPC上での動作確認: Firefox(57 32bit Ubuntu)、Chromium(63 32bit Ubuntu)
+* aidmiyaのモバイルでの動作確認: Safari running on iPhone 6S Plus
+
+* Safariのシークレットモードで動作確認する時、CSSが読み込まれないことがある。その時は、シークレットを解除してリロードしてみよう
 ---
 ## コードの統一化
 ### Tag
@@ -32,3 +46,4 @@
 * Bootstrap(CSS)  : ```<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">```
 
 * Font Awesome    : ```<link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">```
+
