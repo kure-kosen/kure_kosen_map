@@ -15,14 +15,11 @@ html, body, #map {
 }
 
 .ol-touch .rotate-north {
-/* [N]がかぶるので使用しない
-  top: 80px; */
   top: calc( 3em + 3em + 200px + 3em );
 }
 
 .ol-rotate {
   right: 3.5em !important;
-  top: calc( 3em + 0.5em ) !important;
   transition: opacity .25s linear,visibility 0s linear;
 }
 
@@ -73,4 +70,8 @@ html, body, #map {
 .fullscreenlayer {
   position: absolute;
   z-index: 1;
+}
+
+.block {
+  display: block;
 }
