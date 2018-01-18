@@ -12,126 +12,12 @@
     <title>呉高専マップ</title>
   </head>
   <body>
-
-    <div id="map" class="map"></div>
-
-    <form action="#" method="post" class="search" id="search">
-     <div class="search-box">
-      <input type="text" name="q">
-      <input type="reset" value="&#61453;" class="fa">
-     </div>
-    </form>
-
-    <div class="ol-touch"> <!-- ボタン類 -->
-     <!-- 開くボタン -->
-     <div class="ol-control wrap-menubtn wrap-openmenu" id="wrap-openmenu">
-      <button id="openmenu" class="menubtn" type="button" title="メニューを表示">
-       <i class="fa fa-bars"></i>
-      </button>
-     </div>
+    <div id="fullscreen" class="fullscreen">
+      <div id="map" class="map"></div>
+      <div class="fullscreenlayer">
+        <button class="hoge">aa</button>
+      </div>
     </div>
-
-    <!-- (ハンバーガー)メニュー -->
-    <nav id="menu" class="menu">
-     <div class="menu-box">
-      <div class="menu-top">
-       <div class="ol-touch"> <!-- メニューのボタン類 -->
-        <!-- 閉じるボタン 表示・非表示はclassで切り替え -->
-        <div class="ol-control wrap-menubtn wrap-closemenubtn">
-         <button id="closemenu" class="menubtn closemenubtn" type="button" title="メニューを閉じる">
-          <i class="fa fa-times"></i>
-         </button>
-        </div>
-       </div>
-       <div class="menu-title">
-        Menu
-       </div>
-      </div>
-      <ul class="menu-list">
-       <li class="menu-nohover">建物ジャンプ</li>
-      </ul>
-      <hr>
-      <div class="menu-buildings">
-       <ul>
-        <li>
-         図書館棟<br>
-         (教育センター)
-        </li>
-        <li>
-         管理棟
-        </li>
-        <li>
-         普通教室棟
-        </li>
-        <li>
-         機械工学科棟
-        </li>
-        <li>
-         電気情報工学科棟
-        </li>
-        <li>
-         建築学科棟
-        </li>
-        <li>
-         環境都市工学科棟
-        </li>
-        <li>
-         専攻科棟<br>
-         (協働研究センター棟)
-        </li>
-        <li>
-         第2普通教室棟
-        </li>
-        <li>
-         静心館
-        </li>
-        <li>
-         (第1)体育館
-        </li>
-        <li>
-         第2体育館
-        </li>
-        <li>
-         (学生)食堂
-        </li>
-        <li>
-         技術センター
-        </li>
-        <li>
-         ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>ダミー<br>
-        </li>
-        <!-- 寮は要る?
-         <li></li>
-         <li></li>
-         <li></li>
-        -->
-       </ul>
-      </div>
-      <ul class="menu-list menu-content">
-       <a href="#manual" title="コンテンツ準備中">
-        <li>準備中</li>
-       </a>
-       <a href="#history" title="コンテンツ準備中">
-        <li>準備中</li>
-       </a>
-      </ul>
-      <ul class="menu-list menu-about">
-       <a href="#terms" title="コンテンツ準備中">
-        <li>準備中</li>
-       </a>
-       <a href="about_us.html" title="About Us">
-        <li>About Us</li>
-       </a>
-       <a href="https://www.kure-nct.ac.jp/" title="呉高専HPへ">
-        <li>呉高専HPへ</li>
-       </a>
-      </ul>
-      <footer>
-       (C) 2017-<br>
-       Kuremap Team
-      </footer>
-     </div>
-    </nav>
 
     <div id="info" style="display: none;"></div>
     <label for="track">
@@ -146,16 +32,36 @@
       speed : <code id="speed"></code>
     </p>
 
-    <div class="options">
-      <input id="ck" type="checkbox" onchange="if (this.checked) popup.addPopupClass('shadow'); else popup.removePopupClass('shadow');" />
-      <label for="ck">shadow</label>
+    <div class="direction">
+      <input id="direction" type="checkbox">
+      <label for="direction">向きを上にする</label>
       <br />
+    </div>
+
+    <div class="options">
+      <h2>Options:</h2>
+      <ul>
+        <li>
+          maxInputs: <input type="number" onchange="search.set('maxItems', Number(this.value));" style="width:3em;" value="10" />
+        </li>
+        <li>
+          search property:
+          <select onchange="search.set('property',this.value); search.search(); console.log(this.value);">
+            <option value="commune">commune</option>
+            <option value="region">region</option>
+            <option value="text">text</option>
+            <option value="name">name</option>
+            <option value="address">address</option>
+            <option value="tel">tel</option>
+          </select>
+          <input type="button" onclick="hoge()" value="hoge">
+        </li>
+      </ul>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
-    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+    <script type="text/javascript" src="assets/js/gps.js"></script>
 
     <script type="text/javascript" src="assets/js/view.js"></script>
     <script type="text/javascript" src="assets/js/geolocaton.js"></script>
@@ -168,6 +74,13 @@
 
     <script type="text/javascript" src="assets/layers/base.js"></script>
     <script type="text/javascript" src="assets/layers/overlay.js"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+
+    <script type="text/javascript" src="assets/libs/ol3-search/searchcontrol.js"></script>
+    <script type="text/javascript" src="assets/libs/ol3-search/searchfeaturecontrol.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-search/searchcontrol.css">
 
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/map-design.js"></script>
