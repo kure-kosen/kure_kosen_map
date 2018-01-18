@@ -38,7 +38,7 @@ html, body, #map {
 
 #map .ol-touch .ol-zoomslider {
 /*  top: 2.75em; */
-  top: calc( 1.375em + 3em + 0.5em );
+  top: calc( 1.375em + 3em + 1.5em );
 }
 
 #map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
