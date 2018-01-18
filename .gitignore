@@ -1,0 +1,4 @@
+/assets/tiles/
+*.txt
+*/_*/
+_*.*

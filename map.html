@@ -1,16 +1,85 @@
 <!doctype html>
-<html lang="jp">
+<html lang="ja">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/ol.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/map.css" type="text/css">
-    <script src="assets/js/ol.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    <script type="text/javascript" src="assets/libs/ol/ol.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol/ol.css">
     <title>呉高専マップ</title>
   </head>
   <body>
-    <div id="map" class="map"></div>
-    <script src="assets/js/main.js" type="text/javascript"></script>
+    <div id="fullscreen" class="fullscreen">
+      <div id="map" class="map"></div>
+      <div class="fullscreenlayer">
+        <button class="hoge">aa</button>
+      </div>
+    </div>
+
+    <div id="info" style="display: none;"></div>
+    <label for="track">
+      track position
+      <input id="track" type="checkbox"/>
+    </label>
+    <p>
+      position accuracy : <code id="accuracy"></code>&nbsp;&nbsp;
+      altitude : <code id="altitude"></code>&nbsp;&nbsp;
+      altitude accuracy : <code id="altitudeAccuracy"></code>&nbsp;&nbsp;
+      heading : <code id="heading"></code>&nbsp;&nbsp;
+      speed : <code id="speed"></code>
+    </p>
+
+    <div class="direction">
+      <input id="direction" type="checkbox">
+      <label for="direction">向きを上にする</label>
+      <br />
+    </div>
+
+    <div class="options">
+      <h2>Options:</h2>
+      <ul>
+        <li>
+          maxInputs: <input type="number" onchange="search.set('maxItems', Number(this.value));" style="width:3em;" value="10" />
+        </li>
+        <li>
+          search property:
+          <select onchange="search.set('property',this.value); search.search(); console.log(this.value);">
+            <option value="commune">commune</option>
+            <option value="region">region</option>
+            <option value="text">text</option>
+            <option value="name">name</option>
+            <option value="address">address</option>
+            <option value="tel">tel</option>
+          </select>
+          <input type="button" onclick="hoge()" value="hoge">
+        </li>
+      </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="assets/js/gps.js"></script>
+
+    <script type="text/javascript" src="assets/js/view.js"></script>
+    <script type="text/javascript" src="assets/js/geolocaton.js"></script>
+    <script type="text/javascript" src="assets/js/rotate.js"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-ext_popupoverlay/popupoverlay.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-ext_popupoverlay/popupoverlay.css">
+
+    <script type="text/javascript" src="assets/js/popup.js"></script>
+
+    <script type="text/javascript" src="assets/layers/base.js"></script>
+    <script type="text/javascript" src="assets/layers/overlay.js"></script>
+
+    <script type="text/javascript" src="assets/libs/ol3-layerswitcher/ol3-layerswitcher.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-layerswitcher/ol3-layerswitcher.css">
+
+    <script type="text/javascript" src="assets/libs/ol3-search/searchcontrol.js"></script>
+    <script type="text/javascript" src="assets/libs/ol3-search/searchfeaturecontrol.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/libs/ol3-search/searchcontrol.css">
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
