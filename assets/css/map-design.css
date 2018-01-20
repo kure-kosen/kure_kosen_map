@@ -145,6 +145,22 @@ div.ol-search.ol-control {
   max-width: 500px;
   border-top: 1px solid #ccc;
 }
+.ol-search div input[type="reset"] {
+  position: absolute;
+  right: 0;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 0; /* ボタンクリック時に文字が右下へ下がるのを防ぐため */
+  font-size: 1em;
+  display: block!important;
+}
+.ol-search div input[type="reset"]:hover {
+  background-color: #ccc;
+}
+
 
 
 form .search-box {
