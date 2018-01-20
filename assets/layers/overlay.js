@@ -39,7 +39,7 @@ var kml = new ol.layer.Vector({
 var tile = new ol.layer.Tile({
             title: 'tile',
             source: new ol.source.XYZ({
-              url: path + 'assets/tiles/{z}/{x}/{y}.png',
+              url: path + 'assets/tiles2/{z}/{x}/{y}.png',
               crossOrigin: 'anonymous'
             })
           });
