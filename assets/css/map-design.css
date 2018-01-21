@@ -149,6 +149,7 @@ div.ol-search.ol-control {
   background-color: #f8f8f8;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
+  font-family: sans-serif;
 }
 .ol-search div input[type="reset"] {
   position: absolute;

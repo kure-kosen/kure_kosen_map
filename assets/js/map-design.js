@@ -12,9 +12,9 @@ var searchreset_element = document.createElement("div");
 searchreset_element.innerHTML = '<input type="reset" value="&#61453;" class="fa">';
 var search_element = document.getElementsByClassName("ol-search")[0];
 search_element.appendChild(searchreset_element);
-searchreset_element.onclick = function() {document.querySelector(".ol-search .search").value=""};
 var searchbox_element = document.querySelector('.ol-search input[type="search"]');
 searchbox_element.placeholder = "";
+searchreset_element.onclick = function() {document.querySelector(".ol-search .search").value="";searchbox_element.focus()};
 
 // ハンバーガーボタン(buttonたぐ)の動作
 openmenu_element.onclick = function() {toggleMenu()};
