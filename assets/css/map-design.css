@@ -128,7 +128,7 @@ form.search {
 
 div.ol-search.ol-control {
   width: calc( 100vw - 4em );
-  max-width: 500px;
+  max-width: calc( 500px - 1em );
   position: absolute;
   top: 0;
   left: 0;
@@ -142,7 +142,7 @@ div.ol-search.ol-control {
   display: none;
 }
 .ol-search ul.autocomplete {
-  max-width: 500px;
+  max-width: calc( 500px - 1em );
   border-top: 1px solid #ccc;
 }
 .ol-search div input[type="reset"] {
@@ -160,7 +160,9 @@ div.ol-search.ol-control {
 .ol-search div input[type="reset"]:hover {
   background-color: #ccc;
 }
-
+.ol-search input[type="search"] {
+  width: 100%;
+}
 
 
 form .search-box {
