@@ -83,3 +83,5 @@ search.on('select', function (e) {
     center: p
   });
 });
+
+ol.hash(map);
