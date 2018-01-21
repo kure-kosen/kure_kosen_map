@@ -127,7 +127,7 @@ form.search {
 }
 
 div.ol-search.ol-control {
-  width: calc( 100vw - 4em );
+  width: calc( 100vw - 8em );		/* 後に矢印ボタンを動かしたときに変更する */
   max-width: calc( 500px - 1em );
   position: absolute;
   top: 0;
@@ -137,6 +137,8 @@ div.ol-search.ol-control {
   background-color: #fafafa;
   box-shadow: 0px 0px 4px 1px rgba(184,184,184,0.8);
   border-radius: 5px;
+
+/*  height: 2.5em; */
 }
 .ol-search button {
   display: none;
@@ -144,6 +146,9 @@ div.ol-search.ol-control {
 .ol-search ul.autocomplete {
   max-width: calc( 500px - 1em );
   border-top: 1px solid #ccc;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 .ol-search div input[type="reset"] {
   position: absolute;
