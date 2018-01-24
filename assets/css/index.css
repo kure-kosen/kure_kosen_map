@@ -6,17 +6,9 @@
 		top: 250px;
 	}
 
-	.botton{
-
-	}
-
 	.div2{
 		position: relative;
 		top: 250px;
-	}
-
-	.about_us{
-
 	}
 
 	.div3{
@@ -25,17 +17,9 @@
 
 	}
 
-	.history{
-
-	}
-
 	.div4{
 		position: relative;
 		top: 210px;
-	}
-
-	.user_manual{
-		
 	}
 
 }
@@ -76,6 +60,7 @@ a {
 	font-size: 50px;
 	margin: 0;
 }
+
 .button::before,
 .button::after {
 	position: absolute;
@@ -83,6 +68,7 @@ a {
 	display: block;
 	content: '';
 }
+
 .button,
 .button::before,
 .button::after {
