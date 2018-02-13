@@ -134,8 +134,12 @@ form input[type="text"] {
   border-radius: 5px;
   height: calc( 2.5em - 2px - 8px );
   background-color: #fafafa;
-/*  height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
-/*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
+  margin: 0 3.5em 0 1em;
+  /*  height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
+  /*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
+}
+input[type="text"]:focus {
+  outline: 0;
 }
 form input[type="reset"] {
   position: absolute;
@@ -153,6 +157,6 @@ form input[type="reset"]:hover {
 
 /* 検索ボックス・メニューが開いている時 */
 form.search.menuactive {
-/*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
+  /*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
   width: calc( 100vw - 48% - 1.5em );
 }
