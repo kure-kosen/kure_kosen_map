@@ -3,25 +3,40 @@
 @media only screen and (max-width: 500px){
 	.div1{
 		position: relative;
-		top: 250px;
+		top: 250vh;
 	}
 
 	.div2{
 		position: relative;
-		top: 250px;
+		top: 250vh;
 	}
 
 	.div3{
 		position: relative;
-		top: 230px;
+		top: 230vh;
 
 	}
 
 	.div4{
 		position: relative;
-		top: 210px;
+		top: 210vh;
 	}
 
+}
+
+@media only screen and (min-width: 500px){
+	.div1{
+			position: relative;
+	}
+	.div2{
+			position: relative;
+	}
+	.div3{
+			position: relative;
+	}
+	.div4{
+			position: relative;
+	}
 }
 
 body {
