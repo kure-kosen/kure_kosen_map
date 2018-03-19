@@ -4,7 +4,7 @@ var map = new ol.Map({
     new ol.interaction.DragRotateAndZoom()
   ]),
   controls: ol.control.defaults().extend([
-    new ol.control.FullScreen({source: 'fullscreen'}),new app.RotateNorthControl(),new ol.control.ZoomSlider()
+    new ol.control.FullScreen({source: 'fullscreen'}),new ol.control.ZoomSlider()
   ]),
   layers: [
     new ol.layer.Group({
@@ -85,3 +85,8 @@ search.on('select', function (e) {
 });
 
 ol.hash(map);
+
+// 北ボタン
+$('#north_button').on('click', function() {
+  map.getView().setRotation(0);
+});
