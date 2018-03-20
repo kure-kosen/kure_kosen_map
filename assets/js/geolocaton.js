@@ -1,16 +1,17 @@
-var geolocation = new ol.Geolocation({
-  projection: view.getProjection()
-});
-
 function el(id) {
   return document.getElementById(id);
 }
+
+var geolocation = new ol.Geolocation({
+  projection: view.getProjection()
+});
 
 el('track').addEventListener('change', function() {
   geolocation.setTracking(this.checked);
 });
 
 // update the HTML page when the position changes.
+// position data
 geolocation.on('change', function() {
   el('accuracy').innerText = geolocation.getAccuracy() + ' [m]';
   el('altitude').innerText = geolocation.getAltitude() + ' [m]';
@@ -21,9 +22,7 @@ geolocation.on('change', function() {
 
 // handle geolocation error.
 geolocation.on('error', function(error) {
-  var info = document.getElementById('info');
-  info.innerHTML = error.message;
-  info.style.display = '';
+  alert(error.message);
 });
 
 var accuracyFeature = new ol.Feature();
@@ -50,3 +49,4 @@ geolocation.on('change:position', function() {
   positionFeature.setGeometry(coordinates ?
     new ol.geom.Point(coordinates) : null);
 });
+
