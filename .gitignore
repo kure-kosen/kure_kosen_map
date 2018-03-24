@@ -2,3 +2,6 @@
 *.txt
 */_*/
 _*.*
+index.php
+composer.json
+.DS_Store
