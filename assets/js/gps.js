@@ -1,4 +1,4 @@
-var timer, kakudo = 0;
+var kakudo = 0, timerArray = new Array();
 
 var get_dir = function() {
   window.addEventListener('deviceorientation', function(e) {
@@ -11,12 +11,24 @@ var get_dir = function() {
 
 $('#direction').on('change', function() {
   if($('#direction').prop("checked")) {
-    timer = setInterval(get_dir, 500);
+    start_interval();
   } else {
-    clearInterval(timer);
+    stop_interval();
     kakudo = 0;
     view.animate({
       rotation: 0
     });
   }
 });
+
+function start_interval() {
+  timerArray.push(setInterval(get_dir, 500));
+}
+
+function stop_interval() {
+  if (timerArray.length > 0) {
+    for (var i = 0, j = timerArray.length; i < j; i++) {
+      clearInterval(timerArray .shift());
+    }
+  }
+}
