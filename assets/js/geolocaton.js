@@ -23,7 +23,7 @@ geolocation.on('change', function() {
 // handle geolocation error.
 geolocation.on('error', function(error) {
   alert(error.message);
-});
+}
 
 var accuracyFeature = new ol.Feature();
 geolocation.on('change:accuracyGeometry', function() {
