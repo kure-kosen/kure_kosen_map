@@ -16,4 +16,3 @@ function toggleMenu() {
 	wrapopen_element.classList.toggle("menuactive");
 	searchform_element.classList.toggle("menuactive");
 }
-
