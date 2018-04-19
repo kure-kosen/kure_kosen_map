@@ -3,19 +3,13 @@
 
 /* 各種ボタン */
 .wrap-menubtn {
-  position: fixed; /* スクロールによる移動を防ぐ */
+  position: fixed;
   right: 0.5em;
   top: 0.5em;
 }
 .wrap-openmenu.menuactive {
   display: none;
 }
-/* ハンバーガーメニューのボタンの色指定はここ
-そのままではありきたりなので、ハンバーガーボタンだけじゃなくて、全部のボタンの色を変えてみても良いかも(要確認)
-.menubtn button {
-  background-color: rgba(0,60,136,.5);
-}
-*/
 /* .ol-full-screenと.ol-zoomはol.cssのを上書きされている。!importantを使わず、読み込み順で上書きしている */
 .ol-full-screen {
   right: 0.5em;
@@ -27,7 +21,7 @@
 }
 
 #map .ol-zoomslider {
-  top: calc( 1.375em + 3em + 0.5em );
+  top: calc( 2.75em + 3em );
 }
 
 /* メニューを閉じるボタン */

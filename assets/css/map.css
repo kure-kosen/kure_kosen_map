@@ -29,7 +29,7 @@ html, body, #map {
 
 #map .ol-zoomslider {
   background-color: transparent;
-  top: 2.3em;
+  top: 2.75em;
 }
 
 #map .ol-touch .ol-zoom .ol-zoom-out {
