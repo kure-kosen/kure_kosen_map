@@ -171,6 +171,7 @@ form input[type="text"] {
   border-radius: 5px;
   height: calc( 2.5em - 2px - 8px );
   background-color: #fafafa;
+  outline: none;
 /*  height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
 /*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
 }
@@ -193,3 +194,6 @@ form.search.menuactive {
 /*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
   width: calc( 100vw - 48% - 1.5em );
 }
+
+
+
