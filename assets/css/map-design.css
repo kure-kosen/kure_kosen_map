@@ -102,19 +102,6 @@
   border-left: 2px solid rgba(0, 60, 136, 0.5);
 }
 
-/* 検索ボックスのフォーム */
-form.search {
-  width: calc( 100vw - 4em );
-  max-width: 500px;
-/*
-  position: relative;
-  top: 0;
-  left: 0;
-  検索ボックス整備のため一時的にコメントアウト */
-  position: absolute;
-  top: 100px;
-  left: 50px;
-}
 /*検索ボックス整備のため一時的に使用*/
 .ol-search .search {
   display: block!important;
