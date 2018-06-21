@@ -31,9 +31,11 @@ a {
 .navbar {
   list-style-type: none;
   text-align: left;
+  line-height: 140%;
 }
 
 .main-inner {
+  padding: 1px 7px;
   background: rgba(137, 137, 137, 0.15);
 }
 
@@ -54,6 +56,12 @@ a {
   font-weight: normal;
 }
 
+.main-inner h1 {
+  text-align: center;
+  margin: 0.5em 0;
+  border-bottom: 2px solid #5290cc;
+}
+
 .navbar li {
   display: block;
 }
@@ -63,7 +71,7 @@ a {
 }
 
 .navbar a {
-  color: #eee;
+  color: #fff;
   text-decoration: none;
   border-bottom: dashed 1px #eee;
 }
