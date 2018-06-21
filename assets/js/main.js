@@ -4,7 +4,7 @@ var map = new ol.Map({
     new ol.interaction.DragRotateAndZoom()
   ]),
   controls: ol.control.defaults().extend([
-    new ol.control.FullScreen({source: 'fullscreen'}),new ol.control.ZoomSlider()
+    new ol.control.FullScreen({ source: 'fullscreen' }), new ol.control.ZoomSlider()
   ]),
   layers: [
     new ol.layer.Group({
@@ -18,7 +18,7 @@ var map = new ol.Map({
     new ol.layer.Group({
       title: 'Overlays',
       layers: [aed, kml, geocycle, tile,
-      // vectorSource
+        // vectorSource
       ]
     })
   ],
@@ -30,7 +30,7 @@ var select = new ol.interaction.Select({});
 map.addInteraction(select);
 
 // On selected => show/hide popup
-select.getFeatures().on(['add'], function(e) {
+select.getFeatures().on(['add'], function (e) {
   var feature = e.element;
   var content = "";
   content += "<table border=1>"
@@ -43,7 +43,7 @@ select.getFeatures().on(['add'], function(e) {
   content += "</table>"
   popup.show(feature.getGeometry().getCoordinates(), content);
 })
-select.getFeatures().on(['remove'], function(e) {
+select.getFeatures().on(['remove'], function (e) {
   popup.hide();
 })
 
@@ -87,6 +87,6 @@ search.on('select', function (e) {
 ol.hash(map);
 
 // 北ボタン
-$('#north_button').on('click', function() {
+$('#north_button').on('click', function () {
   map.getView().setRotation(0);
 });
