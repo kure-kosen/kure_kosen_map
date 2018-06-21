@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  /* background-color: #f1fff4; */
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "TakaoPGothic", "ＭＳ Ｐゴシック", sans-serif;
 }
 
 nav {

@@ -18,11 +18,16 @@ form ul {
 
 form ul li {
   list-style: none;
+  margin-bottom: 0.6em;
 }
 
 form ul li input,
 form ul li select {
   margin-left: 1.5em;
+}
+
+form li.submit {
+  text-align: center;
 }
 
 #onlyknct {
