@@ -1,0 +1,18 @@
+{
+  "name": "kure_kosen_map",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kure-kosen/kure_kosen_map.git",
+  "author": "kobakakzu0429 <kobakazu10@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier-eslint --write \"assets/js/**/*.js\""
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "prettier-eslint": "^8.8.1",
+    "prettier-eslint-cli": "^4.7.1"
+  }
+}
