@@ -1,0 +1,32 @@
+{
+  "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+  "editor.renderWhitespace": "all", // 半角スペースを常に表示
+  "editor.tabSize": 2, // タブのサイズ変更
+  "editor.insertSpaces": true,
+  "files.exclude": {
+    // エクスプローラーから非表示にするファイル
+    "**/*.map": true,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true, // ファイルの保存時に末尾を改行
+  "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
+  "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+  },
+  "html.format.contentUnformatted":
+    "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
+  "html.format.extraLiners": "", // head, body, /html タグの前に改行を入れない
+  "html.format.unformatted": null, // フレージング・コンテンツ（旧インライン要素のようなタグ）はフォーマットしない
+  "html.format.wrapLineLength": 0, // 行の文字数制限を無くし自動で改行させない
+  "search.exclude": {
+    // 検索対象外にするファイル設定（ files.exclude のファイルも含む）
+    "**/tmp": true
+  },
+  "files.eol": "\n",
+  "prettier.eslintIntegration": true,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "eslint.validate": ["javascript"],
+  "eslint.autoFixOnSave": true
+}
