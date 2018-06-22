@@ -31,22 +31,24 @@ geolocation.on('change:accuracyGeometry', function() {
 });
 
 var positionFeature = new ol.Feature();
-positionFeature.setStyle(new ol.style.Style({
-  image: new ol.style.Circle({
-    radius: 6,
-    fill: new ol.style.Fill({
-      color: '#3399CC'
-    }),
-    stroke: new ol.style.Stroke({
-      color: '#fff',
-      width: 2
+positionFeature.setStyle(
+  new ol.style.Style({
+    image: new ol.style.Circle({
+      radius: 6,
+      fill: new ol.style.Fill({
+        color: '#3399CC'
+      }),
+      stroke: new ol.style.Stroke({
+        color: '#fff',
+        width: 2
+      })
     })
   })
-}));
+);
 
 geolocation.on('change:position', function() {
   var coordinates = geolocation.getPosition();
-  positionFeature.setGeometry(coordinates ?
-    new ol.geom.Point(coordinates) : null);
+  positionFeature.setGeometry(
+    coordinates ? new ol.geom.Point(coordinates) : null
+  );
 });
-
