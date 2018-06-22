@@ -12,7 +12,8 @@
   "files.trimFinalNewlines": true, // ファイルの保存時に最終行以降をトリミング
   "files.trimTrailingWhitespace": true, // ファイルの保存時に行末の空白をトリミング
   "[markdown]": {
-    "files.trimTrailingWhitespace": false // Markdown のファイルは行末の空白をトリミングしない
+    "files.trimTrailingWhitespace": false, // Markdown のファイルは行末の空白をトリミングしない
+    "editor.formatOnSave": false // ファイル保存時に自動でフォーマット
   },
   "html.format.contentUnformatted":
     "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p", // タグ内の記述はフォーマットしない
