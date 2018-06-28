@@ -5,4 +5,4 @@ var view = new ol.View({
   // maxZoom: 17
   // そもそもいらないかな？
   rotation: -0.36911708366090856
-});
+})
