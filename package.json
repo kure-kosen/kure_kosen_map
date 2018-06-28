@@ -6,7 +6,7 @@
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier-eslint --write \"assets/js/**/*.js\""
+    "format": "prettier-eslint --write \"src/assets/js/**/*.js\""
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
