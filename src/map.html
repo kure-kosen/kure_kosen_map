@@ -7,7 +7,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/map.css">
   <script type="text/javascript" src="assets/libs/ol/ol.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/libs/ol/ol.css">
-
   <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
   <title>呉高専マップ</title>
 </head>
@@ -15,14 +14,14 @@
   <div id="fullscreen" class="fullscreen">
     <div id="map" class="map"></div>
     <div class="fullscreenlayer">
-      <!-- <div class="block">
+      <div class="block">
         <form action="#" method="post" class="search" id="search">
           <div class="search-box">
             <input type="text" name="q">
             <input type="reset" value="&#61453;" class="fa">
           </div>
         </form>
-      </div> -->
+      </div>
 
       <!-- 開くボタン -->
       <div class="wrap-menubtn wrap-openmenu ol-unselectable ol-control" id="wrap-openmenu">
@@ -100,7 +99,6 @@
     </div>
   </div>
 
-
   <div class="track">
     <input type="checkbox" id="track">
     <label for="track">track position</label>
@@ -125,7 +123,8 @@
     <h2>Options:</h2>
     <ul>
       <li>
-        maxInputs: <input type="number" onchange="search.set('maxItems', Number(this.value));" style="width:3em;" value="10" />
+        maxInputs: <input type="number" onchange="search.set('maxItems', Number(this.value));" style="width:3em;" value="10"
+        />
       </li>
       <li>
         search property:
@@ -137,11 +136,13 @@
             <option value="address">address</option>
             <option value="tel">tel</option>
           </select>
+        <input type="button" onclick="hoge()" value="hoge">
       </li>
     </ul>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="assets/js/gps.js"></script>
 
@@ -166,6 +167,5 @@
 
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/map-design.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/map-design.css">
 </body>
 </html>
