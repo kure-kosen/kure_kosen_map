@@ -1,3 +1,8 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 /* ボタン、メニューなどのデザイン aidmiya */
 /* なお、map.cssにも手を加えることがあります */
 
@@ -23,16 +28,16 @@
 /* .ol-full-screenと.ol-zoomはol.cssのを上書きされている。!importantを使わず、読み込み順で上書きしている */
 .ol-full-screen {
   right: 0.5em;
-  top: calc( 0.5em + 3em);
+  top: calc(0.5em + 3em);
 }
 
 .ol-zoom {
   left: 0.5em;
-  top: calc( 3em + 0.5em);
+  top: calc(3em + 0.5em);
 }
 
 .ol-zoomslider {
-  top: calc( 1.375em + 3em + 0.5em);
+  top: calc(1.375em + 3em + 0.5em);
 }
 
 /* メニューを閉じるボタン */
@@ -52,7 +57,7 @@
   height: 100%;
   top: 0;
   right: 0;
-  background-color: rgba(245, 245, 245, .8);
+  background-color: rgba(245, 245, 245, 0.8);
   /* 100vhを超えればスクロールできるのでそれがわかるようにする */
   overflow: auto;
 }
@@ -78,11 +83,11 @@
 
 .menu li {
   list-style-type: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu li:hover {
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .menu .menu-nohover {
@@ -99,12 +104,13 @@
 
 .menu .menu-buildings {
   /* 高さはどう指定? */
-  height: calc( 100vh - 20em);
+  height: calc(100vh - 20em);
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.menu .menu-content, .menu .menu-content a {
+.menu .menu-content,
+.menu .menu-content a {
   color: #c81e00;
 }
 
@@ -116,7 +122,6 @@
 .menu footer {
   text-align: right;
 }
-
 
 /* ポップアップの表 */
 .ol-popup table {
@@ -130,18 +135,14 @@
 }
 
 /* 検索ボックスのフォーム */
-form.search {
-  width: calc( 100vw - 4em);
+.search {
+  width: calc(100vw - 4em);
   max-width: 500px;
-  position: relative;
+  /* [x]のrightの基準 */
+  margin: 0.5em 0.5em 0 0.5em;
+  position: absolute;
   top: 0;
   left: 0;
-}
-
-form .search-box {
-  margin: 0.5em;
-  position: relative;
-  /* [x]のrightの基準 */
   display: flex;
   align-items: center;
   /* [x]を縦で中央に */
@@ -149,27 +150,28 @@ form .search-box {
   /* とりあえず見やすくするために */
   border-bottom: 1px solid rgba(72, 72, 72, 0.7);
   background-color: #fafafa;
-  box-shadow: 0px 0px 4px 1px rgba(184, 184, 184, 0.8);
-  border-radius: 5px;
+  /*box-shadow: 0px 0px 4px 1px rgba(184, 184, 184, 0.8);*/
+  border-radius: 5px 5px 0 0;
 }
 
-form input[type="text"] {
-  width: calc( 100vw - 3em);
+input[type='search'] {
+  width: calc(100vw - 3em);
   border: 0;
   border-radius: 5px;
-  height: calc( 2.5em - 2px - 8px);
+  height: calc(2.5em - 10px);
   background-color: #fafafa;
-  margin: 0 3.5em 0 1em;
+  padding: 0 3.5em 0 1em;
   /*  height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
   /*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
 }
 
-input[type="text"]:focus {
+input[type='search']:focus {
   outline: 0;
 }
 
-form input[type="reset"] {
+input[type='reset'] {
   position: absolute;
+  top: 0;
   right: 0;
   width: 2.5em;
   height: 2.5em;
@@ -177,15 +179,47 @@ form input[type="reset"] {
   border-radius: 5px;
   background-color: #eee;
   padding: 0;
+  z-index: 10;
   /* ボタンクリック時に文字が右下へ下がるのを防ぐため */
 }
 
-form input[type="reset"]:hover {
+input[type='reset']:hover {
   background-color: #ccc;
 }
 
 /* 検索ボックス・メニューが開いている時 */
-form.search.menuactive {
+.search.menuactive {
   /*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
-  width: calc( 100vw - 48% - 1.5em);
+  width: calc(100vw - 48% - 1.5em);
+}
+
+.result {
+  visibility: hidden;
+  margin: 0 0.5em;
+  position: absolute;
+  top: 41px;
+  left: -8px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.7);
+  background-color: #fafafa;
+  box-shadow: 0px 0px 4px 1px rgba(184, 184, 184, 0.8);
+  border-radius: 0 0 5px 5px;
+}
+
+.result ul {
+  list-style: none;
+  display: block;
+}
+
+.result ul li {
+  padding-left: 1em;
+  display: inline-block;
+  width: calc(100% - 1em);
+  line-height: 1.6em;
+}
+
+.result li:hover,
+.select {
+  background-color: rgba(230, 230, 230, 0.8);
 }
