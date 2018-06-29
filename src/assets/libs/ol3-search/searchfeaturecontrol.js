@@ -21,9 +21,9 @@
 ol.control.SearchFeature = function(options) {
   if (!options) options = {};
   ol.control.Search.call(this, options);
-  if (typeof options.getSearchString == "function")
+  if (typeof options.getSearchString == 'function')
     this.getSearchString = options.getSearchString;
-  this.set("property", "name"); //ここで指定
+  this.set('property', 'name'); //ここで指定
   this.source_ = options.source;
 };
 
@@ -35,7 +35,7 @@ ol.inherits(ol.control.SearchFeature, ol.control.Search);
 // @return {string} the text to be displayed in the index
 // @api
 ol.control.SearchFeature.prototype.getTitle = function(f) {
-  return f.get(this.get("property") || "name");
+  return f.get(this.get('property') || 'name');
 };
 
 // ---------------------------------------------------
@@ -56,11 +56,11 @@ ol.control.SearchFeature.prototype.getSearchString = function(f) {
 ol.control.SearchFeature.prototype.autocomplete = function(s, cback) {
   var result = [];
   // regexp
-  s = s.replace(/^\*/, "");
-  var rex = new RegExp(s, "i");
+  s = s.replace(/^\*/, '');
+  var rex = new RegExp(s, 'i');
   // The source
   var features = this.source_.getFeatures();
-  var max = this.get("maxItems");
+  var max = this.get('maxItems');
   for (var i = 0, f; (f = features[i]); i++) {
     if (rex.test(this.getSearchString(f))) {
       result.push(f);
