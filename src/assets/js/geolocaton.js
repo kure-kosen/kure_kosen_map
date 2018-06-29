@@ -1,36 +1,36 @@
 function el(id) {
-  return document.getElementById(id)
+  return document.getElementById(id);
 }
 
 var geolocation = new ol.Geolocation({
   projection: view.getProjection()
-})
+});
 
 el('track').addEventListener('change', function() {
-  geolocation.setTracking(this.checked)
-})
+  geolocation.setTracking(this.checked);
+});
 
 // update the HTML page when the position changes.
 // position data
 geolocation.on('change', function() {
-  el('accuracy').innerText = geolocation.getAccuracy() + ' [m]'
-  el('altitude').innerText = geolocation.getAltitude() + ' [m]'
-  el('altitudeAccuracy').innerText = geolocation.getAltitudeAccuracy() + ' [m]'
-  el('heading').innerText = geolocation.getHeading() + ' [rad]'
-  el('speed').innerText = geolocation.getSpeed() + ' [m/s]'
-})
+  el('accuracy').innerText = geolocation.getAccuracy() + ' [m]';
+  el('altitude').innerText = geolocation.getAltitude() + ' [m]';
+  el('altitudeAccuracy').innerText = geolocation.getAltitudeAccuracy() + ' [m]';
+  el('heading').innerText = geolocation.getHeading() + ' [rad]';
+  el('speed').innerText = geolocation.getSpeed() + ' [m/s]';
+});
 
 // handle geolocation error.
 geolocation.on('error', function(error) {
-  alert(error.message)
-})
+  alert(error.message);
+});
 
-var accuracyFeature = new ol.Feature()
+var accuracyFeature = new ol.Feature();
 geolocation.on('change:accuracyGeometry', function() {
-  accuracyFeature.setGeometry(geolocation.getAccuracyGeometry())
-})
+  accuracyFeature.setGeometry(geolocation.getAccuracyGeometry());
+});
 
-var positionFeature = new ol.Feature()
+var positionFeature = new ol.Feature();
 positionFeature.setStyle(
   new ol.style.Style({
     image: new ol.style.Circle({
@@ -44,11 +44,11 @@ positionFeature.setStyle(
       })
     })
   })
-)
+);
 
 geolocation.on('change:position', function() {
-  var coordinates = geolocation.getPosition()
+  var coordinates = geolocation.getPosition();
   positionFeature.setGeometry(
     coordinates ? new ol.geom.Point(coordinates) : null
-  )
-})
+  );
+});

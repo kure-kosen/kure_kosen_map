@@ -9,4 +9,4 @@ var popup = new ol.Overlay.Popup({
   autoPanAnimation: {
     duration: 250
   }
-})
+});
