@@ -1,16 +1,17 @@
-var kakudo = 0, timerArray = new Array();
+var kakudo = 0,
+  timerArray = new Array();
 
 var get_dir = function() {
   window.addEventListener('deviceorientation', function(e) {
     kakudo = e.webkitCompassHeading;
     view.animate({
-      rotation: kakudo * Math.PI / 180
+      rotation: (kakudo * Math.PI) / 180
     });
   });
-}
+};
 
 $('#direction').on('change', function() {
-  if($('#direction').prop("checked")) {
+  if ($('#direction').prop('checked')) {
     start_interval();
   } else {
     stop_interval();
@@ -28,7 +29,7 @@ function start_interval() {
 function stop_interval() {
   if (timerArray.length > 0) {
     for (var i = 0, j = timerArray.length; i < j; i++) {
-      clearInterval(timerArray .shift());
+      clearInterval(timerArray.shift());
     }
   }
 }
