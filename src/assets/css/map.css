@@ -1,48 +1,53 @@
-html, body, #map {
-  margin: 0;
+html,
+body,
+#map {
   height: 100%;
   width: 100%;
-}
-
-#map {
+  margin: 0;
+  padding: 0;
   position: relative;
   float: left;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .rotate-north {
-  top: calc( 3em + 280px );
-  left: .5em;
+  top: calc(3em + 280px);
+  left: 0.5em;
 }
 
 .ol-touch .rotate-north {
-  top: calc( 3em + 3em + 200px + 3em );
+  top: calc(3em + 3em + 200px + 3em);
 }
 
 .ol-rotate {
   right: 3.5em !important;
-  transition: opacity .25s linear,visibility 0s linear;
+  transition: opacity 0.25s linear, visibility 0s linear;
 }
 
-#map .ol-zoom .ol-zoom-out {
-  margin-top: 204px;
+.ol-zoom {
+  top: 0.5em;
+  left: 0.5em;
 }
 
-#map .ol-zoomslider {
-  background-color: transparent;
-  top: 2.3em;
+.ol-zoomslider {
+  top: calc(1.375em + 0.5em + 10px);
 }
 
-#map .ol-touch .ol-zoom .ol-zoom-out {
-  margin-top: 212px;
+.ol-zoom .ol-zoom-out {
+  margin-top: 210px;
 }
 
-#map .ol-zoom-in.ol-has-tooltip:hover [role=tooltip],
-#map .ol-zoom-in.ol-has-tooltip:focus [role=tooltip] {
+.ol-zoom-in.ol-has-tooltip:hover [role='tooltip'],
+.ol-zoom-in.ol-has-tooltip:focus [role='tooltip'] {
   top: 3px;
 }
 
-#map .ol-zoom-out.ol-has-tooltip:hover [role=tooltip],
-#map .ol-zoom-out.ol-has-tooltip:focus [role=tooltip] {
+.ol-zoom-out.ol-has-tooltip:hover [role='tooltip'],
+.ol-zoom-out.ol-has-tooltip:focus [role='tooltip'] {
   top: 232px;
 }
 
