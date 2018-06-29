@@ -154,7 +154,7 @@ ul {
   border-radius: 5px 5px 0 0;
 }
 
-input[type="search"] {
+input[type='search'] {
   width: calc(100vw - 3em);
   border: 0;
   border-radius: 5px;
@@ -165,11 +165,11 @@ input[type="search"] {
   /*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
 }
 
-input[type="search"]:focus {
+input[type='search']:focus {
   outline: 0;
 }
 
-input[type="reset"] {
+input[type='reset'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -183,7 +183,7 @@ input[type="reset"] {
   /* ボタンクリック時に文字が右下へ下がるのを防ぐため */
 }
 
-input[type="reset"]:hover {
+input[type='reset']:hover {
   background-color: #ccc;
 }
 
