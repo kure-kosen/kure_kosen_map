@@ -7,7 +7,8 @@ var map = new ol.Map({
     .defaults()
     .extend([
       new ol.control.FullScreen({ source: 'fullscreen' }),
-      new ol.control.ZoomSlider()
+      new ol.control.ZoomSlider(),
+      new ol.control.ScaleLine()
     ]),
   layers: [
     new ol.layer.Group({
