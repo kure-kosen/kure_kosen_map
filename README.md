@@ -82,3 +82,10 @@ vscode なら以下の拡張機能を入れる
 ### プルリクエストについて
 
 - `yarn format`を使ってコードを`prettier`で整形しておくこと
+
+### yarn scripts
+
+- `format` : `./src/assets/js/`以下の js ファイルを整形する.
+- `sass` : `map.html`で使う css ファイルをまとめ、autoprefixer でベンダープレフィックスを自動でつける.詳しくは`./src/assets/_scss/import.scss`を参照.
+- `sass-w` : 上記の`watch`オプション付き
+- `cssmin` : css を production 用に圧縮する
