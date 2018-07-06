@@ -6,7 +6,15 @@
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier-eslint --write \"src/assets/js/**/*.js\""
+    "format": "prettier-eslint --write \"src/assets/js/**/*.js\"",
+    "sass": "yarn build-css && yarn autoprefixer",
+    "sass-w": "yarn watch-css & yarn watch-autoprefixer",
+    "cssmin": "yarn release-css && yarn autoprefixer",
+    "build-css": "node-sass --include-path scss src/assets/_scss/import.scss src/assets/css/build.css --output-style expanded --indent-type space --indent-width 2 --source-comments",
+    "release-css": "node-sass --include-path scss _sass/styles.scss common/css/styles.css --output-style compressed",
+    "watch-css": "nodemon -e scss -x \"yarn build-css \"",
+    "autoprefixer": "postcss --use autoprefixer --no-map -o src/assets/css/build.css src/assets/css/build.css",
+    "watch-autoprefixer": "nodemon -e scss -x \"yarn autoprefixer \""
   },
   "devDependencies": {
     "autoprefixer": "^8.6.5",
@@ -22,6 +30,9 @@
     "prettier-eslint-cli": "^4.7.1"
   },
   "browserslist": [
-    "last 3 versions"
+    "last 3 versions",
+    "ie >= 8",
+    "iOS >= 6",
+    "Android >= 3"
   ]
 }
