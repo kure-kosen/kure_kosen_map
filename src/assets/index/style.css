@@ -26,6 +26,14 @@ li {
   height: 60px;
 }
 
+.navbar .navbar-left {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: auto;
+}
+
 .navbar .logo {
   position: absolute;
   top: 0;
@@ -36,14 +44,17 @@ li {
 }
 
 .navbar .logo img {
-  position: absolute;
-  display: block;
-  width: auto;
   height: 70%;
-  top: 50%;
-  left: 0;
   margin-left: 10px;
+  transform: translateY(-60%);
+}
+
+.navbar .logo span {
+  height: 100%;
+  margin-left: 100px;
   transform: translateY(-50%);
+  line-height: 60px;
+  color: white;
 }
 
 .navbar .links {
