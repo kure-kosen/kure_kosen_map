@@ -1,0 +1,82 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+}
+
+html,
+body,
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.hero-area {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+.slider img {
+  animation-name: move;
+  animation-duration: 10.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px);
+  }
+}
+
+.hero-area .overlay {
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-area .message {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-area .searcher {
+  margin: 0 auto;
+  width: 50%;
+  height: 60px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 25px 10px rgba(105, 105, 105, 0.8);
+}
+
+.hero-area .searcher input {
+  width: 85%;
+  height: 60px;
+  margin-left: 30px;
+  /* font-size: 1rem; */
+}
+
+.hero-area .searcher .fas {
+  font-size: 30px;
+  line-height: 60px;
+  vertical-align: middle;
+}
