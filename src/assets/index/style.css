@@ -134,7 +134,7 @@ li {
   height: 60px;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 10px 10px 25px 10px rgba(105, 105, 105, 0.8);
+  box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.4);
 }
 
 .hero-area .searcher input {
