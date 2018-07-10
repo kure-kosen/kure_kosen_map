@@ -7,11 +7,71 @@ body {
 
 html,
 body,
-input {
+input,
+ul,
+li {
   margin: 0;
   padding: 0;
   outline: none;
   border: none;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+.navbar .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+}
+
+.navbar .logo img {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 70%;
+  top: 50%;
+  left: 0;
+  margin-left: 10px;
+  transform: translateY(-50%);
+}
+
+.navbar .links {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 0.8rem;
+}
+
+.navbar .links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover {
+  padding-bottom: 20px;
+  border-bottom: solid 3px;
 }
 
 .hero-area {
@@ -20,6 +80,15 @@ input {
   overflow: hidden;
   position: relative;
   background-color: #000;
+}
+
+.hero-area .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 80px 60px rgba(105, 105, 105, 0.4);
 }
 
 .slider img {
