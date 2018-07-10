@@ -1,25 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-  <title>index</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>もう迷わない！呉高専マップ</title>
+  <link rel="stylesheet" href="./assets/css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="./assets/index/style.css">
 </head>
 <body>
-  <div class="div1">
-    <a href="map.html"><h1 class="button">マップを使う</h1></a>
+  <!-- start navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/index/logo.png" alt="もう迷わない呉高専マップロゴ" class="navbar-left">
+      <span class="navbar-left">呉高専マップ</span>
+    </div>
+    <div class="links">
+      <ul>
+        <li><a href="./map.html">マップへ</a></li>
+        <li><a href="./manual.html">使い方へ</a></li>
+        <li><a href="./about.html">呉高専マップとは</a></li>
+        <li><a href="./history.html">呉高専の歴史へ</a></li>
+        <li><a href="./about_us.html">私たちについて</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- start hero-area -->
+  <div class="hero-area">
+    <div class="slider">
+      <img src="./assets/index/pic01.jpg" alt="">
+      <img src="./assets/index/pic02.jpg" alt="">
+      <img src="./assets/index/pic03.jpg" alt="">
+      <img src="./assets/index/pic04.jpg" alt="">
+      <img src="./assets/index/pic05.jpg" alt="">
+      <img src="./assets/index/pic06.jpg" alt="">
+    </div>
+    <div class="shadow"></div>
+    <div class="overlay">
+      <div class="message">
+        あなたはもう、呉高専で迷えない
+      </div>
+      <div class="searcher">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="さぁ、どこへ行きますか?">
+      </div>
+    </div>
   </div>
-  <div class="div2">
-    <a href="about_us.html" title=""><h1 class="about_us">About Us</h1></a>
+  <!-- end hero-area -->
+
+  <!-- start contents -->
+  <div class="contents">
+    <div class="content class">
+      <h1 class="subject">教室で探す</h1>
+      <div class="card">
+        <p>1年生</p>
+      </div>
+      <div class="card">
+        <p>2年生</p>
+      </div>
+      <div class="card">
+        <p>3年生</p>
+      </div>
+      <div class="card">
+        <p>4年生</p>
+      </div>
+      <div class="card">
+        <p>5年生</p>
+      </div>
+      <div class="card">
+        <p>専攻科</p>
+      </div>
+    </div>
+    <div class="content teacher">
+      <h1 class="subject">教員で探す</h1>
+      <div class="card">
+        <p>影山 優</p>
+      </div>
+      <div class="card">
+        <p>川勝</p>
+      </div>
+      <div class="card">
+        <p>外谷</p>
+      </div>
+      <div class="card">
+        <p>宇根</p>
+      </div>
+    </div>
   </div>
-  <div class="div3">
-    <a href="" title=""><h1 class="history">History<h1>	</a>
-  </div>
-  <div class="div4">
-    <a href="" title=""><h1 class="user_manual">User Manual<h1>	</a>
-  </div>
-  <!-- なんで中を見てるの‼この変態‼ -->
-  <!-- そんなに気になるのなら別にみてもいいけど -->
+  <!-- end contents -->
+
+  <!-- start footer -->
+  <footer>
+    <p>&copy; 2018 -  呉高専マップ</p>
+  </footer>
+  <!-- end footer -->
+
+  <!-- start scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="./assets/index/slider.js"></script>
+  <!-- end scripts -->
 </body>
 </html>
