@@ -1,7 +1,8 @@
 // パスの指定
 // var path = 'https://kure-kosen.github.io/kure_kosen_map/';
 // var path = 'C:/Users/kazu/Documents/GitHub/kure_kosen_map/';
-var path = '/Users/kazu/workspace/kure_kosen_map/src/';
+// var path = '/Users/kazu/workspace/kure_kosen_map/src/';
+var path = './';
 
 // 現在地の円
 var geocycle = new ol.layer.Vector({
@@ -46,15 +47,7 @@ var tile = new ol.layer.Tile({
   })
 });
 
-// var vectorSource = new ol.layer.Vector({
-//             title: 'test1',
-//             source: new ol.source.Vector({
-//               format: new ol.format.GeoJSON(),
-//               url: path + 'assets/geojson/fond_guerre.geojson',
-//               crossOrigin: 'anonymous'
-//             })
-//           });
-
+// 検索テスト用
 var vectorSource = new ol.source.Vector({
   url: 'assets/geojson/searchtest.geojson',
   projection: 'EPSG:3857',
