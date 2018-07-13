@@ -76,7 +76,7 @@ module.exports = {
   },
 
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, 'src'),
     publicPath: '/',
     watchContentBase: true,
     historyApiFallback: true,
