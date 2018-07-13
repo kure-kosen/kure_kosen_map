@@ -18,6 +18,9 @@
     "prettier-eslint-cli": "^4.7.1"
   },
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "cross-env": "^5.2.0",
     "css-loader": "^1.0.0",
     "html-loader": "^0.5.5",
