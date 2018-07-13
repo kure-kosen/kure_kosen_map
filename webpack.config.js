@@ -33,6 +33,18 @@ module.exports = {
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 2000000,
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       }
@@ -52,7 +64,7 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['*', '.js']
+    extensions: ['*', '.js', '.css']
   },
 
   devServer: {
