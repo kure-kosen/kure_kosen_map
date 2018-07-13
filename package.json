@@ -1,12 +1,14 @@
 {
   "name": "kure_kosen_map",
-  "version": "1.0.0",
-  "main": "index.js",
+  "main": "./src/map/main.js",
   "repository": "git@github.com:kure-kosen/kure_kosen_map.git",
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier-eslint --write \"src/assets/js/**/*.js\""
+    "format": "prettier-eslint --write \"src/assets/js/**/*.js\"",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "clean": "rm -rf dist/"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
