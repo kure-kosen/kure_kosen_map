@@ -45,6 +45,14 @@ module.exports = {
         ]
       },
       {
+        test: /\.((geo)?json)$/,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
+      },
+      {
         test: /\.html$/,
         loader: 'html-loader'
       }
