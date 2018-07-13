@@ -12,6 +12,7 @@ import MyView from './view'
 import MyLayers from './layers/index'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
+import changeDirection from './direction'
 import { toNorth } from './utils'
 import './map-design'
 // ------------------------------------------------
@@ -37,4 +38,5 @@ map.addControl(new ScaleLine())
 
 toNorth(map)
 geolocationPlot(map)
+changeDirection(map)
 addHash(map)
