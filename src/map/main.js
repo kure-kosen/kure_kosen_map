@@ -8,10 +8,11 @@ import { DragRotateAndZoom } from 'ol/interaction'
 // ------------------------------------------------
 
 // my file
-import { toNorth } from './utils'
-import addHash from './hash'
 import MyView from './view'
 import MyLayers from './layers/index'
+import addHash from './hash'
+import geolocationPlot from './geolocaton'
+import { toNorth } from './utils'
 import './map-design'
 // ------------------------------------------------
 
@@ -35,4 +36,5 @@ map.addControl(new ZoomSlider())
 map.addControl(new ScaleLine())
 
 toNorth(map)
+geolocationPlot(map)
 addHash(map)
