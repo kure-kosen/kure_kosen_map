@@ -7,11 +7,10 @@ body {
   min-height: 75rem;
   padding-top: 4.5rem;
   background-image: url(../img/pta01.png);
-  /*background-image: url(../img/pta02.png);*/
 }
 
 .jumbotron {
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 h5 {
@@ -26,7 +25,7 @@ h5 {
   overflow: hidden;
   padding: 0;
   border: none;
-  border-radius: .28571429rem;
+  border-radius: 0.28571429rem;
   box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
   max-width: 250px;
   margin: 0 auto;
@@ -38,7 +37,7 @@ h5 {
   margin: 0;
   padding: 1em;
   border: none;
-  border-top: 1px solid rgba(34, 36, 38, .1);
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
   box-shadow: none;
 }
 
@@ -56,15 +55,15 @@ h5 {
 
 .card-text {
   clear: both;
-  margin-top: .5em;
-  color: rgba(0, 0, 0, .68);
+  margin-top: 0.5em;
+  color: rgba(0, 0, 0, 0.68);
 }
 
 .card-footer {
   text-align: left;
   max-width: 100%;
-  padding: .75em 1em;
-  border-top: 1px solid rgba(0, 0, 0, .05) !important;
+  padding: 0.75em 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
   background: #fff;
 }
 
@@ -79,16 +78,16 @@ h5 {
 
 .meta {
   font-size: 1em;
-  color: rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .meta a {
   text-decoration: none;
-  color: rgba(0, 0, 0, .4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .meta a:hover {
-  color: rgba(0, 0, 0, .87);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 .fa-twitter:before {
@@ -120,7 +119,7 @@ h5 {
   margin-top: -85px;
 }
 
-.title div h1{
+.title div h1 {
   font-size: calc(20px + 1.5vw);
 }
 
@@ -129,24 +128,24 @@ h1 {
 }
 
 h1 {
-border-bottom: solid 3px #000000;
-position: relative;
+  border-bottom: solid 3px #000000;
+  position: relative;
 }
 
 .line1 h1:after {
-position: absolute;
-content: " ";
-display: block;
-border-bottom: solid 3px #003FFF;
-bottom: -3px;
-width: 20%;
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-bottom: solid 3px #003fff;
+  bottom: -3px;
+  width: 20%;
 }
 
 .line2 h1:after {
-position: absolute;
-content: " ";
-display: block;
-border-bottom: solid 3px #FF2020;
-bottom: -3px;
-width: 20%;
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-bottom: solid 3px #ff2020;
+  bottom: -3px;
+  width: 20%;
 }

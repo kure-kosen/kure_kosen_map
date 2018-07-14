@@ -62,7 +62,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'map.html',
-      template: './public/map.html'
+      template: './src/map/map.html'
     }),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
@@ -72,11 +72,11 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['*', '.js', '.css']
+    extensions: ['*', '.js']
   },
 
   devServer: {
-    contentBase: path.resolve(__dirname, 'src'),
+    contentBase: path.resolve(__dirname, 'src/map'),
     publicPath: '/',
     watchContentBase: true,
     historyApiFallback: true,
