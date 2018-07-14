@@ -10,6 +10,8 @@ import { DragRotateAndZoom } from 'ol/interaction'
 // my file
 import MyView from './view'
 import MyLayers from './layers/index'
+import MyPopup from './popup'
+import MySelect from './select'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
 import changeDirection from './direction'
@@ -27,10 +29,12 @@ import './css/map-design.css'
 const map = new Map({
   target: 'map',
   view: MyView,
-  layers: MyLayers
+  layers: MyLayers,
+  overlays: [MyPopup]
 })
 
 map.addInteraction(new DragRotateAndZoom())
+map.addInteraction(MySelect)
 
 map.addControl(new FullScreen({ source: 'fullscreen' }))
 map.addControl(new ZoomSlider())
