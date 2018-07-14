@@ -1,5 +1,4 @@
 import ol_control_SearchFeature from 'ol-ext/control/SearchFeature'
-import 'ol-ext/control/Search.css'
 
 import MySelect from './select'
 import { searchLayer } from './layers/overlay'
@@ -7,7 +6,8 @@ import { searchLayer } from './layers/overlay'
 const MySearch = map => {
   const MySearch = new ol_control_SearchFeature({
     source: searchLayer.values_.source,
-    property: 'address'
+    property: 'address',
+    className: 'mysearch'
   })
 
   MySearch.on('select', function(e) {

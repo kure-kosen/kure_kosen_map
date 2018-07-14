@@ -118,7 +118,7 @@
 }
 
 /* 検索ボックスのフォーム */
-.search {
+.mysearch {
   width: calc(100vw - 4em);
   max-width: 500px;
   /* [x]のrightの基準 */
@@ -137,22 +137,24 @@
   border-radius: 5px 5px 0 0;
 }
 
-input[type='search'] {
+.mysearch button[title~='search'] {
+  display: none;
+}
+
+.mysearch input[type='search'] {
   width: calc(100vw - 3em);
   border: 0;
   border-radius: 5px;
   height: calc(2.5em - 10px);
   background-color: #fafafa;
   padding: 0 3.5em 0 1em;
-  /*  height: calc( 2.5em - 2px ); Safariで入力欄が縦に長いのでもう少し低くする */
-  /*  font-size: 1.5em; Safariで入力欄が縦に長くなるのでfont-sizeは使わない */
 }
 
-input[type='search']:focus {
+.mysearch input[type='search']:focus {
   outline: 0;
 }
 
-input[type='reset'] {
+.mysearch input[type='reset'] {
   position: absolute;
   top: 0;
   right: 0;
@@ -163,21 +165,19 @@ input[type='reset'] {
   background-color: #eee;
   padding: 0;
   z-index: 10;
-  /* ボタンクリック時に文字が右下へ下がるのを防ぐため */
 }
 
-input[type='reset']:hover {
+.mysearch input[type='reset']:hover {
   background-color: #ccc;
 }
 
 /* 検索ボックス・メニューが開いている時 */
-.search.menuactive {
-  /*  width: calc( 100% - 270px ); Safariで確認してみると、幅が短かった */
+.mysearch.menuactive {
   width: calc(100vw - 48% - 1.5em);
 }
 
-.result {
-  visibility: hidden;
+.mysearch .autocomplete {
+  display: none;
   margin: 0 0.5em;
   position: absolute;
   top: 41px;
@@ -190,19 +190,23 @@ input[type='reset']:hover {
   border-radius: 0 0 5px 5px;
 }
 
-.result ul {
+.mysearch .autocomplete:not(.history) {
   list-style: none;
   display: block;
 }
 
-.result ul li {
+.mysearch .autocomplete li {
   padding-left: 1em;
   display: inline-block;
   width: calc(100% - 1em);
   line-height: 1.6em;
 }
 
-.result li:hover,
-.select {
+.mysearch > .autocomplete > li:hover,
+.mysearch .select {
   background-color: rgba(230, 230, 230, 0.8);
+}
+
+.mysearch input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }

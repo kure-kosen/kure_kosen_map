@@ -16,7 +16,7 @@ import MySearch from './search'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
 import changeDirection from './direction'
-import { toNorth } from './utils'
+import { toNorth, searchAdjustment } from './utils'
 import './map-design'
 // ------------------------------------------------
 
@@ -46,3 +46,4 @@ geolocationPlot(map)
 changeDirection(map)
 addHash(map)
 MySearch(map)
+searchAdjustment()
