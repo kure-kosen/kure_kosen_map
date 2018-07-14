@@ -12,6 +12,7 @@ import MyView from './view'
 import MyLayers from './layers/index'
 import MyPopup from './popup'
 import MySelect from './select'
+import MySearch from './search'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
 import changeDirection from './direction'
@@ -44,3 +45,4 @@ toNorth(map)
 geolocationPlot(map)
 changeDirection(map)
 addHash(map)
+MySearch(map)

@@ -6,6 +6,9 @@ import { Style, Icon } from 'ol/style/'
 import aed_icon from '../icon/aed.png'
 import aed_data from '../geojson/20171224.geojson'
 
+import camara_icon from '../icon/camera.png'
+import searchtest_data from '../geojson/searchtest.geojson'
+
 const path = './map/'
 
 // 現在地の円
@@ -47,5 +50,20 @@ export const tile = new TileLayer({
   source: new XYZSource({
     url: path + 'tiles2/{z}/{x}/{y}.png',
     crossOrigin: 'anonymous'
+  })
+})
+
+export const searchLayer = new VectorLayer({
+  title: 'searchLayer',
+  source: new VectorSource({
+    format: new GeoJSON(),
+    url: searchtest_data,
+    crossOrigin: 'anonymous'
+  }),
+  style: new Style({
+    image: new Icon({
+      src: camara_icon,
+      scale: 0.8
+    })
   })
 })

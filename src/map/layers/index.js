@@ -4,7 +4,7 @@ import { Group as GroupLayer } from 'ol/layer/'
 
 // my file
 import { kokudo, osm } from './base'
-import { aed, tile } from './overlay'
+import { aed, tile, searchLayer } from './overlay'
 // ------------------------------------------------
 
 const base = new GroupLayer({
@@ -14,7 +14,7 @@ const base = new GroupLayer({
 
 const overlay = new GroupLayer({
   title: 'Overlays',
-  layers: [tile, aed]
+  layers: [tile, aed, searchLayer]
 })
 
 const MyLayers = [base, overlay]
