@@ -5,7 +5,7 @@
   "author": "kobakakzu0429 <kobakazu10@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier-eslint --write \"src/assets/js/**/*.js\"",
+    "format": "prettier-eslint --write \"src/**/*.js\"",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "clean": "rm -rf dist/"
