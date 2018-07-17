@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const environment = process.env.NODE_ENV || 'development'
 
@@ -30,7 +31,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }]
+        use: ExtractTextPlugin.extract({ use: 'css-loader' })
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
@@ -64,6 +65,7 @@ module.exports = {
       filename: 'map.html',
       template: './src/map/map.html'
     }),
+    new ExtractTextPlugin('map-[hash].css'),
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery',
