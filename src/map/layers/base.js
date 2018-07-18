@@ -10,7 +10,8 @@ export const kokudo = new TileLayer({
   source: new XYZSource({
     attributions: [
       new Attribution({
-        html: '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
+        html:
+          '<a href="https://maps.gsi.go.jp/development/ichiran.html" target="_blank">地理院タイル</a>'
       })
     ],
     url: 'https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png',
