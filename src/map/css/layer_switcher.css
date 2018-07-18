@@ -1,0 +1,8 @@
+#layer_switcher_wrapper #layer_switcher {
+  border-collapse: collapse;
+}
+
+#layer_switcher_wrapper #layer_switcher th,
+#layer_switcher_wrapper #layer_switcher td {
+  border: solid 5px pink;
+}
