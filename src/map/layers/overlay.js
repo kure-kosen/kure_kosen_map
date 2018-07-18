@@ -21,6 +21,7 @@ const path = './map/'
 //呉市オープンデータのaed
 export const aed = new VectorLayer({
   title: 'AED',
+  zIndex: 0,
   source: new VectorSource({
     format: new GeoJSON(),
     url: aed_data,
@@ -54,6 +55,7 @@ export const tile = new TileLayer({
 })
 
 export const searchLayer = new VectorLayer({
+  zIndex: 0,
   title: 'searchLayer',
   source: new VectorSource({
     format: new GeoJSON(),
