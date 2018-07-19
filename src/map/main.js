@@ -23,6 +23,7 @@ import './map-design'
 
 // css
 import 'normalize.css/normalize.css'
+import './css/reset.css'
 // import 'ol/ol.css' なぜかwebpackでbuildすると読み込まれないため => ./src/map/map.htmlでcdnで読み込んでいる
 import './css/map.css'
 import './css/map-design.css'
