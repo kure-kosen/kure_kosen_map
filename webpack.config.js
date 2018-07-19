@@ -30,8 +30,25 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: ExtractTextPlugin.extract({ use: 'css-loader' })
+        test: /\.s?css$/,
+        use: ExtractTextPlugin.extract({
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                url: false,
+                sourceMap: true,
+                importLoaders: 2
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
+        })
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/,
