@@ -1,6 +1,6 @@
 import Sortable from 'sortablejs'
 
-import './css/layer_switcher.css'
+import './css/layer_switcher.scss'
 
 // Open Window
 $('#layer_switcher_button_wrapper').click(() => {

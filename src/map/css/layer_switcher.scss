@@ -1,0 +1,39 @@
+#layer_switcher_wrapper {
+  #layer_switcher_button_wrapper {
+    position: absolute;
+    top: 290px;
+    left: 0.5em;
+  }
+
+  #layer_switcher_window {
+    /* display: none; */
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    border: solid 5px #0da3e3;
+    border-radius: 3px;
+  }
+
+  #layer_switcher_header {
+    margin: 0;
+    background-color: #0da3e3;
+    color: #fff;
+    height: 18px;
+    float: left;
+    line-height: 18px;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+  #layer_switcher_table {
+    border-collapse: collapse;
+
+    th,
+    td {
+      border: solid 5px #0da3e3;
+    }
+  }
+}
