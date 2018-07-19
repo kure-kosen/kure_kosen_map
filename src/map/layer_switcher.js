@@ -2,28 +2,13 @@ import Sortable from 'sortablejs'
 
 import './css/layer_switcher.css'
 
-// Creating Elements
-const $layer_switcher_wrapper = $('<div>')
-  .attr('id', 'layer_switcher_wrapper')
-  .addClass('ol-unselectable ol-control')
-  .appendTo($('.fullscreenlayer'))
-
-const $layer_switcher_button = $('<button>')
-  .attr('id', 'layer_switcher_button')
-  .appendTo($layer_switcher_wrapper)
-
-const icon = $('<i>')
-  .addClass('far fa-clone')
-  .appendTo($layer_switcher_button)
-
-const $table = $('<table>')
-  .attr('id', 'layer_switcher_table')
-  .appendTo($layer_switcher_wrapper)
-// ------------------------------------------------
-
 // Open Window
-$layer_switcher_button.click(() => {
-  $table.toggle()
+$('#layer_switcher_button_wrapper').click(() => {
+  $('#layer_switcher_window').toggle()
+})
+
+$('#layer_switcher_close_button').click(() => {
+  $('#layer_switcher_window').hide()
 })
 // ------------------------------------------------
 
@@ -77,7 +62,7 @@ const createTr = (layer_group, layer, i) => {
   $row.append($td3)
   $row.append($td4)
 
-  $table.append($row)
+  $('#layer_switcher_table').append($row)
 
   bindSlider($slider, layer)
   bindCheckbox($visible_checkbox, layer)
@@ -135,8 +120,6 @@ const MyLayerSwitcher = map => {
       createTr(layer_group, layer, i)
     })
   })
-
-  $table.appendTo($layer_switcher_wrapper)
 
   SortInit(layers)
 }

@@ -12,6 +12,23 @@
     <div id="map" class="map"></div>
     <div class="fullscreenlayer">
 
+      <div id="layer_switcher_wrapper">
+        <div id="layer_switcher_button_wrapper" class="ol-unselectable ol-control">
+          <button>
+            <i class="far fa-clone"></i>
+          </button>
+        </div>
+        <div id="layer_switcher_window">
+          <div id="layer_switcher_header">
+            <h1 id="layer_switcher_header_title">背景レイヤー</h1>
+            <button id="layer_switcher_close_button">
+              <i class="far fa-window-close"></i>
+            </button>
+          </div>
+          <table id="layer_switcher_table"></table>
+        </div>
+      </div>
+
       <!-- 開くボタン -->
       <div class="wrap-menubtn wrap-openmenu ol-unselectable ol-control" id="wrap-openmenu">
         <button id="openmenu" class="menubtn" type="button" title="メニューを表示">
