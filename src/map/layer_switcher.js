@@ -5,11 +5,26 @@ import './css/layer_switcher.css'
 // Creating Elements
 const $layer_switcher_wrapper = $('<div>')
   .attr('id', 'layer_switcher_wrapper')
+  .addClass('ol-unselectable ol-control')
   .appendTo($('.fullscreenlayer'))
 
-const $table = $('<table>')
-  .attr('id', 'layer_switcher')
+const $layer_switcher_button = $('<button>')
+  .attr('id', 'layer_switcher_button')
   .appendTo($layer_switcher_wrapper)
+
+const icon = $('<i>')
+  .addClass('far fa-clone')
+  .appendTo($layer_switcher_button)
+
+const $table = $('<table>')
+  .attr('id', 'layer_switcher_table')
+  .appendTo($layer_switcher_wrapper)
+// ------------------------------------------------
+
+// Open Window
+$layer_switcher_button.click(() => {
+  $table.toggle()
+})
 // ------------------------------------------------
 
 // Function
@@ -72,7 +87,7 @@ const createTr = (layer_group, layer, i) => {
 
 // Sort
 const SortInit = layers => {
-  Sortable.create($('#layer_switcher').get(0), {
+  Sortable.create($('#layer_switcher_table').get(0), {
     handle: '.movable',
     animation: 100,
     onUpdate: () => {

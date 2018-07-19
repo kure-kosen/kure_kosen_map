@@ -1,8 +1,18 @@
-#layer_switcher_wrapper #layer_switcher {
+#layer_switcher_wrapper #layer_switcher_button {
+  position: absolute;
+  top: 290px;
+  left: 0.5em;
+}
+
+#layer_switcher_wrapper #layer_switcher_table {
+  position: absolute;
+  top: 80px;
+  left: 60px;
+  display: none;
   border-collapse: collapse;
 }
 
-#layer_switcher_wrapper #layer_switcher th,
-#layer_switcher_wrapper #layer_switcher td {
+#layer_switcher_wrapper #layer_switcher_table th,
+#layer_switcher_wrapper #layer_switcher_table td {
   border: solid 5px pink;
 }
