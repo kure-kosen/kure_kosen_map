@@ -50,12 +50,21 @@ const createTr = (layer_group, layer, i) => {
 
   const $td3 = $('<td>').append($slider)
 
+  const $td4 = $('<td>')
+
   const $visible_checkbox = $('<input>', {
+    id: 'checkbox_layer' + i,
     class: 'visible',
     type: 'checkbox'
   })
 
-  const $td4 = $('<td>').append($visible_checkbox)
+  const $visible_checkbox_label = $('<label>', {
+    class: 'fas',
+    for: 'checkbox_layer' + i
+  })
+
+  $visible_checkbox.appendTo($td4)
+  $visible_checkbox_label.appendTo($td4)
 
   $row.append($td1)
   $row.append($td2)
