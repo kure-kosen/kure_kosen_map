@@ -71,7 +71,7 @@ const createTr = (layer_group, layer, i) => {
   $row.append($td3)
   $row.append($td4)
 
-  $('#layer_switcher_table').append($row)
+  $('#layer_switcher_table tbody').append($row)
 
   bindSlider($slider, layer)
   bindCheckbox($visible_checkbox, layer)
