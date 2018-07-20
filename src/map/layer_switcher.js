@@ -1,6 +1,9 @@
 import Sortable from 'sortablejs'
+import { draggable } from './utils'
 
 import './css/layer_switcher.scss'
+
+draggable('#layer_switcher_header', '#layer_switcher_window', ['80px', '60px'])
 
 // Open Window
 $('#layer_switcher_button_wrapper').click(() => {

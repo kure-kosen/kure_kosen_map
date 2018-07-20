@@ -17,3 +17,33 @@ export const searchAdjustment = () => {
     $('ul.autocomplete').addClass('history')
   })
 }
+
+export const draggable = (mouseTargetId, windowTargetId, initPos) => {
+  let wx = 0
+  let wy = 0
+
+  $(windowTargetId).css({
+    top: initPos[0],
+    left: initPos[1]
+  })
+
+  $(mouseTargetId).mousedown(e => {
+    let mx = e.pageX
+    let my = e.pageY
+    $(document)
+      .on('mousemove.draggableWindow', e => {
+        wx += e.pageX - mx
+        wy += e.pageY - my
+
+        $(windowTargetId).css({ top: wy, left: wx })
+
+        mx = e.pageX
+        my = e.pageY
+        return false
+      })
+      .one('mouseup', () => {
+        $(document).off('mousemove.draggableWindow')
+      })
+    return false
+  })
+}
