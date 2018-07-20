@@ -18,14 +18,9 @@ export const searchAdjustment = () => {
   })
 }
 
-export const draggable = (mouseTargetId, windowTargetId, initPos) => {
+export const draggable = (mouseTargetId, windowTargetId) => {
   let wx = 0
   let wy = 0
-
-  $(windowTargetId).css({
-    top: initPos[0],
-    left: initPos[1]
-  })
 
   $(mouseTargetId).mousedown(e => {
     let mx = e.pageX

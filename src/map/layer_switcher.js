@@ -3,11 +3,12 @@ import { draggable } from './utils'
 
 import './css/layer_switcher.scss'
 
-draggable('#layer_switcher_header', '#layer_switcher_window', ['80px', '60px'])
+draggable('#layer_switcher_header', '#layer_switcher_window')
 
 // Open Window
 $('#layer_switcher_button_wrapper').click(() => {
   $('#layer_switcher_window').toggle()
+  $('#layer_switcher_window').css({ top: '80px', left: '60px' })
 })
 
 $('#layer_switcher_close_button').click(() => {
