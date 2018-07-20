@@ -81,7 +81,7 @@ const createTr = (layer_group, layer, i) => {
 
 // Sort
 const SortInit = layers => {
-  Sortable.create($('#layer_switcher_table').get(0), {
+  Sortable.create($('#layer_switcher_table tbody').get(0), {
     handle: '.movable',
     animation: 100,
     onUpdate: () => {
@@ -93,7 +93,7 @@ const SortInit = layers => {
   const setZIndexOrderByDesc = layers => {
     const layerJoinZIndex = {}
 
-    const arrayDesc = $table
+    const arrayDesc = $('#layer_switcher_table tbody')
       .children()
       .toArray()
       .reverse()
