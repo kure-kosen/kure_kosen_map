@@ -1,4 +1,5 @@
 $base_color: #0da3e3;
+$shadow: #d3d3d3;
 
 #layer_switcher_wrapper {
   #layer_switcher_button_wrapper {
@@ -57,21 +58,6 @@ $base_color: #0da3e3;
     vertical-align: middle;
     font-size: 16px;
     line-height: 24px;
-    input[type='checkbox'] {
-      display: none;
-      + label {
-        &:before {
-          content: '\f070';
-          color: #607d8b;
-        }
-      }
-      &:checked + label {
-        &:before {
-          content: '\f06e';
-          color: darken($base_color, 10%);
-        }
-      }
-    }
     tr {
       height: 24px;
       width: auto;
@@ -80,6 +66,48 @@ $base_color: #0da3e3;
       border: solid 1px $base_color;
       padding-left: 3px;
       width: auto;
+      input[type='checkbox'] {
+        display: none;
+        + label {
+          &:before {
+            content: '\f070';
+            color: $shadow;
+          }
+        }
+        &:checked + label {
+          &:before {
+            content: '\f06e';
+            color: darken($base_color, 10%);
+          }
+        }
+      }
+      input[type='range'] {
+        width: 100%;
+        height: 8px;
+        border-radius: 3px;
+        background: $shadow;
+        outline: none;
+        opacity: 0.5;
+        transition: opacity 0.2s;
+        -webkit-appearance: none;
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background: $base_color;
+          cursor: pointer;
+        }
+
+        &::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #4caf50;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
