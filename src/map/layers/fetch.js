@@ -1,5 +1,6 @@
-import { Tile as TileLayer } from 'ol/layer/'
-import { XYZ as XYZSource } from 'ol/source/'
+import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer/'
+import { XYZ as XYZSource, Vector as VectorSource } from 'ol/source/'
+import { GeoJSON } from 'ol/format'
 import { Attribution } from 'ol/control'
 
 import MyLayerSwitcher from '../layer_switcher'
@@ -9,7 +10,18 @@ import axios from 'axios'
 import 'babel-polyfill'
 
 const createLayer = data => {
-  return new TileLayer({
+  switch (data.format) {
+    case 'xyz':
+      return new TileLayer(createProperties(data))
+    case 'geojson':
+      return new VectorLayer(createProperties(data))
+    default:
+      break
+  }
+}
+
+const createProperties = data => {
+  return {
     id: data.id,
     type: data.type,
     group: data.group,
@@ -17,7 +29,7 @@ const createLayer = data => {
     name: data.name,
     visible: false,
     source: createSource(data.format, data.url, data.attributions)
-  })
+  }
 }
 
 const createSource = (format, url, attributions) => {
@@ -31,7 +43,12 @@ const createSource = (format, url, attributions) => {
           })
         ]
       })
-
+    case 'geojson':
+      return new VectorSource({
+        format: new GeoJSON(),
+        url: url,
+        crossOrigin: 'anonymous'
+      })
     default:
       break
   }
