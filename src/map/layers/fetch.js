@@ -59,7 +59,7 @@ const fetchAddlayer = map => {
     .get('http://localhost:3000/layer')
     .then(response => {
       const result = response.data
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0, j = result.length; i < j; i++) {
         map.addLayer(createLayer(result[i]))
       }
       MyLayerSwitcher(map)
