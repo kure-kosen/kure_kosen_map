@@ -11,20 +11,30 @@ import 'babel-polyfill'
 const createLayer = data => {
   return new TileLayer({
     id: data.id,
-    type: 'base',
+    type: data.type,
     group: data.group,
     category: data.category,
     name: data.name,
     visible: false,
-    source: new XYZSource({
-      url: data.url,
-      attributions: [
-        new Attribution({
-          html: data.attributions
-        })
-      ]
-    })
+    source: createSource(data.format, data.url, data.attributions)
   })
+}
+
+const createSource = (format, url, attributions) => {
+  switch (format) {
+    case 'xyz':
+      return new XYZSource({
+        url: url,
+        attributions: [
+          new Attribution({
+            html: attributions
+          })
+        ]
+      })
+
+    default:
+      break
+  }
 }
 
 const fetchAddlayer = map => {
