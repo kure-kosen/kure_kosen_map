@@ -7,7 +7,7 @@ draggable('#layer_switcher_header', '#layer_switcher_window')
 
 // Open Window
 $('#layer_switcher_button_wrapper').click(() => {
-  $('#layer_switcher_window').toggle()
+  $('#layer_switcher_window').fadeToggle(200)
   $('#layer_switcher_window').css({ top: '80px', left: '60px' })
 })
 
