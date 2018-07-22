@@ -111,13 +111,16 @@ const SortInit = layers => {
     })
 
     layers.forEach(layer_group => {
-      layer_group.values_.layers.getArray().forEach(layer => {
-        Object.keys(layerJoinZIndex).forEach((key, value) => {
-          if (layer.values_.title === key) {
-            layer.setZIndex(value)
-          }
+      layer_group
+        .getLayers()
+        .getArray()
+        .forEach(layer => {
+          Object.keys(layerJoinZIndex).forEach((key, value) => {
+            if (layer.getProperties().title === key) {
+              layer.setZIndex(value)
+            }
+          })
         })
-      })
     })
   }
   // end setZIndexOrderByDesc----------------------
@@ -128,10 +131,13 @@ const SortInit = layers => {
 const MyLayerSwitcher = map => {
   const layers = map.getLayers().getArray()
   layers.forEach(layer_group => {
-    layer_group.values_.layers.getArray().forEach((layer, i) => {
-      if (layer_group.values_.title == 'Base maps') return // とりあえず
-      createTr(layer_group, layer, i)
-    })
+    layer_group
+      .getLayers()
+      .getArray()
+      .forEach((layer, i) => {
+        if (layer_group.getProperties().title === 'Base maps') return // とりあえず
+        createTr(layer_group, layer, i)
+      })
   })
 
   SortInit(layers)
