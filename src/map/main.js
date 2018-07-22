@@ -13,7 +13,7 @@ import MyLayers from './layers/index'
 import MyPopup from './popup'
 import MySelect from './select'
 import MySearch from './search'
-import MyLayerSwitcher from './layer_switcher'
+import fetchAddlayer from './layers/fetch'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
 import changeDirection from './direction'
@@ -48,5 +48,5 @@ geolocationPlot(map)
 changeDirection(map)
 addHash(map)
 MySearch(map)
-MyLayerSwitcher(map)
+fetchAddlayer(map)
 searchAdjustment()
