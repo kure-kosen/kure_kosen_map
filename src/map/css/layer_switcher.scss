@@ -11,7 +11,7 @@ $shadow: #d3d3d3;
   #layer_switcher_window {
     display: none;
     position: absolute;
-    width: 500px;
+    width: 700px;
     height: 500px;
     background-color: #fff;
     border: solid 5px $base_color;
@@ -105,6 +105,9 @@ $shadow: #d3d3d3;
           background: #4caf50;
           cursor: pointer;
         }
+      }
+      &.layer-id {
+        display: none;
       }
     }
   }
