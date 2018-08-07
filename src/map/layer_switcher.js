@@ -126,8 +126,6 @@ const SortInit = layers => {
       .toArray()
       .reverse()
 
-    console.log(arrayDesc)
-
     arrayDesc.forEach((v, i) => {
       let $layer = $(v)
         .children()
@@ -139,8 +137,6 @@ const SortInit = layers => {
 
     layers.forEach(layer => {
       for (let k in layerJoinZIndex) {
-        console.log(layer.getProperties().id == k)
-
         if (layer.getProperties().id == k) layer.setZIndex(layerJoinZIndex[k])
       }
     })
