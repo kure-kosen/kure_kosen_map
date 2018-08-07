@@ -1,7 +1,6 @@
 import { Tile as TileLayer, Vector as VectorLayer } from 'ol/layer/'
 import { XYZ as XYZSource, Vector as VectorSource } from 'ol/source/'
 import { GeoJSON } from 'ol/format'
-import { Attribution } from 'ol/control'
 
 import MyLayerSwitcher from '../layer_switcher'
 
@@ -28,26 +27,23 @@ const createProperties = data => {
     category: data.category,
     name: data.name,
     visible: false,
-    source: createSource(data.format, data.url, data.attributions)
+    source: createSource(data.format, data.url, data.attribute_title, data.attribute_url)
   }
 }
 
-const createSource = (format, url, attributions) => {
+const createSource = (format, url, attri_title, attri_url) => {
   switch (format) {
     case 'xyz':
       return new XYZSource({
         url: url,
-        attributions: [
-          new Attribution({
-            html: attributions
-          })
-        ]
+        attributions: [`<a href="${attri_url}">${attri_title}</a>`]
       })
     case 'geojson':
       return new VectorSource({
         format: new GeoJSON(),
         url: url,
-        crossOrigin: 'anonymous'
+        crossOrigin: 'anonymous',
+        attributions: [`<a href="${attri_url}">${attri_title}</a>`]
       })
     default:
       break
@@ -56,7 +52,7 @@ const createSource = (format, url, attributions) => {
 
 const fetchAddlayer = map => {
   axios
-    .get('http://localhost:3000/layer')
+    .get('/api/layers/')
     .then(response => {
       const result = response.data
       for (let i = 0, j = result.length; i < j; i++) {
