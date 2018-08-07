@@ -1,0 +1,151 @@
+html {
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  background-image: url(../img/pta01.png);
+}
+
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+h5 {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+  margin: 0;
+}
+
+.card {
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  border-radius: 0.28571429rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.card-block {
+  font-size: 1em;
+  position: relative;
+  margin: 0;
+  padding: 1em;
+  border: none;
+  border-top: 1px solid rgba(34, 36, 38, 0.1);
+  box-shadow: none;
+}
+
+.card-img-top {
+  display: block;
+  width: 100%;
+  height: 140.625%;
+}
+
+.card-title {
+  font-size: 1.28571429em;
+  font-weight: 700;
+  line-height: 1.2857em;
+}
+
+.card-text {
+  clear: both;
+  margin-top: 0.5em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.card-footer {
+  text-align: left;
+  max-width: 100%;
+  padding: 0.75em 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0.05) !important;
+  background: #fff;
+}
+
+.footerright {
+  text-align: right;
+  float: right;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.meta {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.meta a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.meta a:hover {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.fa-twitter:before {
+  color: #00aced;
+}
+
+.fa-facebook:before {
+  color: #305097;
+}
+
+.fa-github:before {
+  color: #333333;
+}
+
+.fa-steam-square:before {
+  color: gray;
+}
+
+.fa-circle:before {
+  display: none;
+}
+
+.avator {
+  border-radius: 50%;
+  width: 130px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -85px;
+}
+
+.title div h1 {
+  font-size: calc(20px + 1.5vw);
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 {
+  border-bottom: solid 3px #000000;
+  position: relative;
+}
+
+.line1 h1:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-bottom: solid 3px #003fff;
+  bottom: -3px;
+  width: 20%;
+}
+
+.line2 h1:after {
+  position: absolute;
+  content: ' ';
+  display: block;
+  border-bottom: solid 3px #ff2020;
+  bottom: -3px;
+  width: 20%;
+}
