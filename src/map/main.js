@@ -9,14 +9,7 @@ import { DragRotateAndZoom } from 'ol/interaction'
 
 // Others
 import axios from 'axios'
-switch (process.env.NODE_ENV) {
-  case 'development':
-    axios.defaults.baseURL = process.env.API_URL
-    break
-  case 'production':
-    axios.defaults.baseURL = ''
-    break
-}
+axios.defaults.baseURL = process.env.API_URL
 // ------------------------------------------------
 
 // my file
