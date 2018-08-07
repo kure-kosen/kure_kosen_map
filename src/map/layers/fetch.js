@@ -50,20 +50,21 @@ const createSource = (format, url, attri_title, attri_url) => {
   }
 }
 
-const fetchAddlayer = map => {
-  axios
+const fetchAddlayer = async map => {
+  await axios
     .get('/api/layers/')
     .then(response => {
       const result = response.data
-      for (let i = 0, j = result.length; i < j; i++) {
+      for (let i in result) {
         map.addLayer(createLayer(result[i]))
       }
-      MyLayerSwitcher(map)
     })
-    .catch(function(error) {
+    .catch(error => {
       console.log('error...')
       console.log(error)
     })
+
+  await MyLayerSwitcher(map)
 }
 
 export default fetchAddlayer
