@@ -26,6 +26,7 @@ const createProperties = data => {
     group: data.group,
     category: data.category,
     name: data.name,
+    description: data.description,
     visible: false,
     source: createSource(data.format, data.url, data.attribute_title, data.attribute_url)
   }
@@ -55,8 +56,8 @@ const fetchAddlayer = async map => {
     .get('/api/layers/')
     .then(response => {
       const result = response.data
-      for (let i in result) {
-        map.addLayer(createLayer(result[i]))
+      for (let data of result) {
+        map.addLayer(createLayer(data))
       }
     })
     .catch(error => {
