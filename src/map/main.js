@@ -13,6 +13,7 @@ import MyLayers from './layers/index'
 import MyPopup from './popup'
 import MySelect from './select'
 import MySearch from './search'
+import MyLayerSwitcher from './layer_switcher'
 import addHash from './hash'
 import geolocationPlot from './geolocaton'
 import changeDirection from './direction'
@@ -22,6 +23,7 @@ import './map-design'
 
 // css
 import 'normalize.css/normalize.css'
+import './css/reset.css'
 // import 'ol/ol.css' なぜかwebpackでbuildすると読み込まれないため => ./src/map/map.htmlでcdnで読み込んでいる
 import './css/map.css'
 import './css/map-design.css'
@@ -46,4 +48,5 @@ geolocationPlot(map)
 changeDirection(map)
 addHash(map)
 MySearch(map)
+MyLayerSwitcher(map)
 searchAdjustment()

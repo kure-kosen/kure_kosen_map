@@ -9,11 +9,6 @@ body,
   float: left;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .rotate-north {
   top: calc(3em + 280px);
   left: 0.5em;
@@ -74,7 +69,7 @@ ul {
 
 .fullscreenlayer {
   position: absolute;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .block {

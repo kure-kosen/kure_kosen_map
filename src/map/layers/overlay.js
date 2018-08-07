@@ -9,8 +9,6 @@ import aed_data from '../geojson/20171224.geojson'
 import camara_icon from '../icon/camera.png'
 import searchtest_data from '../geojson/searchtest.geojson'
 
-const path = './map/'
-
 // 現在地の円
 // export const geocycle = new VectorLayer({
 //   source: new VectorSource({
@@ -21,6 +19,7 @@ const path = './map/'
 //呉市オープンデータのaed
 export const aed = new VectorLayer({
   title: 'AED',
+  zIndex: 0,
   source: new VectorSource({
     format: new GeoJSON(),
     url: aed_data,
@@ -48,12 +47,13 @@ export const aed = new VectorLayer({
 export const tile = new TileLayer({
   title: 'tile',
   source: new XYZSource({
-    url: path + 'tiles2/{z}/{x}/{y}.png',
+    url: '../tiles2/{z}/{x}/{y}.png',
     crossOrigin: 'anonymous'
   })
 })
 
 export const searchLayer = new VectorLayer({
+  zIndex: 0,
   title: 'searchLayer',
   source: new VectorSource({
     format: new GeoJSON(),
