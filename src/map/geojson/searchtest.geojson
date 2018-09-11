@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 132.600815, 34.234551]
+      },
+      "properties": {
+        "number": "search_1",
+        "name": "あいうえお",
+        "address": "abcde",
+        "tel": "test1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 132.599032, 34.233212]
+      },
+      "properties": {
+        "number": "search_2",
+        "name": "かきくけこ",
+        "address": "fghij",
+        "tel": "test2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [ 132.60294, 34.233623 ]
+      },
+      "properties": {
+        "number": "search_3",
+        "name": "さしすせそ",
+        "address": "klmno",
+        "tel": "test3"
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+/* ボタン、メニューなどのデザイン aidmiya */
+
+/* 各種ボタン */
+.wrap-menubtn {
+  position: fixed;
+  /* スクロールによる移動を防ぐ */
+  right: 0.5em;
+  top: 0.5em;
+}
+
+.wrap-openmenu.menuactive {
+  display: none;
+}
+
+/* ハンバーガーメニューのボタンの色指定
+.menubtn button {
+  background-color: rgba(0,60,136,.5);
+}
+*/
+
+.ol-full-screen {
+  position: absolute;
+  top: 3em;
+  right: 0.5em;
+}
+
+/* メニューを閉じるボタン */
+.menu .wrap-closemenubtn {
+  z-index: 1;
+}
+
+/* .closemenubtnもあります */
+
+/* メニュー */
+.menu {
+  font-family: sans-serif;
+  display: none;
+  position: fixed;
+  width: 48%;
+  max-width: 270px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgba(245, 245, 245, 0.8);
+  /* 100vhを超えればスクロールできるのでそれがわかるようにする */
+  overflow: auto;
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu-box {
+  padding: 0.7em;
+}
+
+.menu hr {
+  border: 1px solid #ddd;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  font-size: 1.2em;
+}
+
+.menu li {
+  list-style-type: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu .menu-nohover {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu .menu-nohover:hover {
+  background-color: transparent;
+}
+
+.menu .menu-list {
+  margin-top: 0.8em;
+}
+
+.menu .menu-buildings {
+  height: calc(100vh - 20em);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu .menu-content,
+.menu .menu-content a {
+  color: #c81e00;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu .footer {
+  text-align: right;
+}
+
+/* ポップアップの表 */
+.ol-popup table {
+  border: 0;
+}
+
+.ol-popup td {
+  border: 0;
+  padding: 2px;
+  border-left: 2px solid rgba(0, 60, 136, 0.5);
+}
+
+/* 検索ボックスのフォーム */
+.mysearch {
+  width: calc(100vw - 4em);
+  max-width: 500px;
+  /* [x]のrightの基準 */
+  margin: 0.5em 0.5em 0 0.5em;
+  position: absolute;
+  top: 0;
+  left: 2.375em;
+  display: flex;
+  align-items: center;
+  /* [x]を縦で中央に */
+  height: 2.5em;
+  /* とりあえず見やすくするために */
+  border-bottom: 1px solid rgba(72, 72, 72, 0.7);
+  background-color: #fafafa;
+  box-shadow: 0px 0px 4px 1px rgba(184, 184, 184, 0.8);
+  border-radius: 5px 5px 0 0;
+}
+
+.mysearch button[title~='search'] {
+  display: none;
+}
+
+.mysearch input[type='search'] {
+  width: calc(100vw - 3em);
+  border: 0;
+  border-radius: 5px;
+  height: calc(2.5em - 10px);
+  background-color: #fafafa;
+  padding: 0 3.5em 0 1em;
+}
+
+.mysearch input[type='search']:focus {
+  outline: 0;
+}
+
+.mysearch input[type='reset'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0;
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 0;
+  z-index: 10;
+}
+
+.mysearch input[type='reset']:hover {
+  background-color: #ccc;
+}
+
+/* 検索ボックス・メニューが開いている時 */
+.mysearch.menuactive {
+  width: calc(100vw - 48% - 1.5em);
+}
+
+.mysearch .autocomplete {
+  display: none;
+  margin: 0 0.5em;
+  position: absolute;
+  top: 41px;
+  left: -8px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.7);
+  background-color: #fafafa;
+  box-shadow: 0px 0px 4px 1px rgba(184, 184, 184, 0.8);
+  border-radius: 0 0 5px 5px;
+}
+
+.mysearch .autocomplete:not(.history) {
+  list-style: none;
+  display: block;
+}
+
+.mysearch .autocomplete li {
+  padding-left: 1em;
+  display: inline-block;
+  width: calc(100% - 1em);
+  line-height: 1.6em;
+}
+
+.mysearch > .autocomplete > li:hover,
+.mysearch .select {
+  background-color: rgba(230, 230, 230, 0.8);
+}
+
+.mysearch input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+
+
