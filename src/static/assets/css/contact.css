@@ -1,3 +1,5 @@
+/* --- 背景画像 ---  */
+
 .back-image {
     position: absolute;
     z-index: -100;
@@ -9,6 +11,7 @@
     background-size: cover;
 }
 
+/* --- フォーム全体 --- */
 .contact {
     background: rgb(238, 238, 238);
     position: absolute;
@@ -18,10 +21,11 @@
     height: 80vh;
     box-shadow: 0px 0px 17px 1px #4a4a4a;
     border-radius: 3px;
+    overflow-y: auto;
 }
 
 .contact-inner {
-    padding: 8px;
+    padding: 22px;
 }
 
 .contact-inner h1 {
@@ -32,24 +36,57 @@
 
 .contact-inner ul.form-components {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-inner ul.form-components .icon {
-    margin-right: 5px;
+    margin-right: 2px;
+}
+
+.contact-inner ul.form-components li {
+    margin: 14px 0;
+}
+
+/* --- フォーム各部品 --- */
+.contact-inner form .input-area {
+    /* --- 基本スタイル --- */
+    background:#fff;
+    border: 0;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+
+.contact-inner form input[type="text"].input-area {
+    width: calc( 100% - 50px );
+}
+
+.contact-inner form select.input-area {
+    width: calc( 100% - 30px );
+}
+
+.contact-inner form textarea.input-area {
+    width: calc( 100% - 25px );
+    padding: 10px;
+    height: 5em;
+    font-size: 16px;
 }
 
 .contact-inner form input[type="submit"] {
     background: rgba(29, 180, 97, 0.781);
     color: #fff;
+    display: block;
     border: 0;
     width: 200px;
     height: 35px;
-    margin: 0 7px;
+    margin: 0 auto;
     box-shadow:0px 2px 10px -3px #474747;
     border-radius: 2px;
     border: 1px solid #525252;
 }
 
+/* --- フッター --- */
 footer {
     position: absolute;
     bottom: 10px;
