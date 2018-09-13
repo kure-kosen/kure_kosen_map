@@ -10,6 +10,13 @@
 }
 
 /* ---
+ ページ全体
+   --- */
+body {
+    font-family: sans-serif;
+}
+
+/* ---
  背景画像
    ---  */
 .back-image {
