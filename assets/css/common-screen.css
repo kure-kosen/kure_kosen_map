@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* common screen用 : 想定 screen and (min-width: 768px) */
+
+.container {
+  padding: 0 30px;
+}
+
+.header-inner {
+  background: rgba(0, 36, 233, 0.68);
+  padding: 5%;
+  color: #eee;
+}
+
+.nav-inner {
+  background: rgba(112, 153, 206, 0.68);
+}
+
+.navbar {
+  padding: 0;
+  text-align: center;
+}
+
+.site-title {
+  text-align: center;
+}
+
+header .container,
+nav .container,
+footer .container {
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar li:not(:last-child)::after {
+  content: " |";
+}
+

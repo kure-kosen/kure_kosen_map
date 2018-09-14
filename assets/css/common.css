@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+/* お問い合わせ(Contact Us)、使い方(User Manual) : モバイル含む */
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro", "TakaoPGothic", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+nav {
+  margin-bottom: 6px;
+}
+
+footer {
+  margin-top: 6px;
+}
+
+a {
+  color: #000;
+}
+
+.header-inner {
+  padding: 5px;
+}
+
+.nav-inner {
+  padding: 0.2em;
+  background: rgba(46, 110, 194, 0.7);
+}
+
+.navbar {
+  list-style-type: none;
+  text-align: left;
+  line-height: 140%;
+}
+
+.main-inner {
+  padding: 1px 7px;
+  background: rgba(137, 137, 137, 0.15);
+}
+
+.footer-inner {
+  background: #adadad;
+  color: #eee;
+}
+
+.navbar {
+  margin: 0;
+  padding-left: 2.5em;
+  color: #eee;
+}
+
+.header-inner h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.main-inner h1 {
+  text-align: center;
+  margin: 0.5em 0;
+  border-bottom: 2px solid #5290cc;
+}
+
+.navbar li {
+  display: block;
+}
+
+.footer-inner small {
+  text-align: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: dashed 1px #eee;
+}
+

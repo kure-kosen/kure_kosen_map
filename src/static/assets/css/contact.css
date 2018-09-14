@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* ---
+ リセット
+   --- */
+* {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* ---
+ ページ全体
+   --- */
+body {
+    font-family: sans-serif;
+}
+
+/* ---
+ 背景画像
+   ---  */
+.back-image {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/monument-knct.jpg");
+    background-size: cover;
+}
+
+/* ---
+ フォーム全体
+   --- */
+.contact {
+    background: rgb(250, 250, 250);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48vw;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow:6px 6px 0px 0px rgba(0,0,0,0.32);
+    /* --- PC向け上下揃え設定 --- */
+    display: flex;
+    align-items: center;
+    
+}
+
+.contact-inner {
+    /* --- フォームの中身の左右揃え --- */
+    width: 80%;
+    padding: 14px 10%;
+}
+
+.contact-inner h1 {
+    display: inline-block;
+    font-size: 22px;
+    padding: 7px 0;
+    border-bottom: 3px solid rgba(0, 202, 91, 0.781);
+}
+
+.contact-inner ul.form-components {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-inner ul.form-components .icon {
+    margin-right: 2px;
+}
+
+.contact-inner ul.form-components li {
+    margin: 14px 0;
+}
+
+/* ---
+ フォーム各部品
+   --- */
+.contact-inner form .input-area {
+    /* --- 基本スタイル --- */
+    background:#fff;
+    border: 0;
+    height: 35px;
+    padding: 0 10px;
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    outline: 0;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+}
+
+.contact-inner form .input-area:focus {
+    border-bottom: 2px solid rgb(174, 223, 194);
+}
+
+.contact-inner form input[type="text"].input-area {
+    width: calc( 100% - 50px );
+}
+
+.contact-inner form select.input-area {
+    width: calc( 100% - 30px );
+}
+
+.contact-inner form textarea.input-area {
+    width: calc( 100% - 25px );
+    padding: 10px;
+    height: 5em;
+}
+
+.contact-inner form input[type="submit"] {
+    background: rgba(0, 202, 91, 0.781);
+    color: #fff;
+    display: block;
+    border: 0;
+    width: 100px;
+    height: 35px;
+    margin: 0 auto;
+    box-shadow:0px 2px 7px -3px #474747;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+/* ---
+ フッター
+   --- */
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+}
