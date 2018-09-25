@@ -16,6 +16,8 @@ body {
     font-family: sans-serif;
     z-index: -500;
     background-color: #ccc;
+    margin: 0;
+    padding: 0;
 }
 
 /* ---
@@ -128,6 +130,32 @@ body {
     border-radius: 2px;
     font-size: 16px;
     font-weight: bold;
+}
+
+/* ---
+ ナビゲーション
+   --- */
+/* --- PC向けflexboxによるメニュー --- */
+.navbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #f9f9fc;
+  border-bottom: 1px solid #474747;
+}
+.navbar li {
+  z-index: 10;
+}
+.navbar li a {
+  display: block;
+  font-size: 16px;
+  padding: 18px 10px;
+  color: #45575d;
+  text-decoration: none;
+}
+.navbar li:first-child {
+  margin-right: auto;
 }
 
 /* ---
