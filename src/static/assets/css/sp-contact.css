@@ -3,6 +3,13 @@
 @media screen and (max-width: 740px) {
 
 /* ---
+ 背景画像
+   --- */
+.back-image {
+    width: 100%;
+}
+
+/* ---
  フォーム全体
    --- */
 .contact {
@@ -13,7 +20,7 @@
     height: auto;
     overflow-y: visible;
 }
-    
+
 /* ---
  フッター
    --- */

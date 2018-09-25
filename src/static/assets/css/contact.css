@@ -24,10 +24,12 @@ body {
     z-index: -100;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 52%;
     height: 100%;
-    background-image: url("../img/bg1.jpg");
+    background-image: url("../img/contact/bg1.png");
     background-size: cover;
+    background-position: 25% 75%;
+    background-attachment: fixed;
 }
 
 /* ---
@@ -45,7 +47,7 @@ body {
     /* --- PC向け上下揃え設定 --- */
     display: flex;
     align-items: center;
-    
+
 }
 
 .contact-inner {
