@@ -6,7 +6,8 @@
  背景画像
    --- */
 .back-image {
-    width: 100%;
+    width: 100vw;
+    background-position: 40%;
     background-attachment: fixed;
 }
 
@@ -14,6 +15,7 @@
  フォーム全体
    --- */
 .contact {
+    background: #f9f9fcf5; /* 透過は背景画像が見えるようにするため */
     position: static;
     width: 90vw;
     display: block;
