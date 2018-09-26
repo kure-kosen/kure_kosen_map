@@ -8,7 +8,7 @@
 .back-image {
     width: 100vw;
     background-position: 40%;
-    background-attachment: fixed;
+    position: fixed;
 }
 
 /* ---
@@ -20,9 +20,41 @@
     width: 90vw;
     height: auto;
     display: block;
-    margin:100px auto 20px;
+    margin:200px auto 20px;
     height: auto;
     overflow-y: visible;
+}
+
+.contact-inner {
+  padding: 20px 10%;
+}
+
+/* ---
+ ナビゲーション
+   --- */
+.navbar {
+  display: block;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #f9f9fc;
+}
+.navbar li {
+  z-index: 10;
+}
+.navbar li a {
+  display: block;
+  width: 100vw;
+  font-size: 16px;
+  padding: 10px 25px;
+  color: #45575d;
+  text-decoration: none;
+  border-bottom: 1px solid #474747;
+}
+.navbar li:first-child {
+  margin-right: auto;
 }
 
 /* ---
