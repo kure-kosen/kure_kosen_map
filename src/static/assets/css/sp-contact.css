@@ -41,9 +41,11 @@
   list-style-type: none;
   background: #f9f9fcf1;
 }
+/*
 .navbar li {
   z-index: 10;
 }
+*/
 .navbar li a {
   display: block;
   width: 100vw;

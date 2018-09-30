@@ -40,17 +40,12 @@ body {
    --- */
 .contact {
     background: #f9f9fc;
-    position: absolute;
-    top: 0;
     right: 0;
     width: 48vw;
-    height: 100vh;
+    height: 100%;
     overflow-y: auto;
     box-shadow:6px 6px 0px 0px rgba(0,0,0,0.32);
-    /* --- PC向け上下揃え設定 --- */
-    display: flex;
-    align-items: center;
-
+    display: block;
 }
 
 .contact-inner {
