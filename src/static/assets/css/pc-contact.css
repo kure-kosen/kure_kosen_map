@@ -5,6 +5,7 @@
 /* ---
  ナビゲーション
    --- */
+
 /* --- PC向けflexboxによるメニュー --- */
 .navbar {
   display: flex;
@@ -12,11 +13,13 @@
   padding: 0;
   list-style-type: none;
   background: #f9f9fc;
-  margin-bottom: 1px solid #474747;
+  border-bottom: 1px solid #d9d9d9;
 }
+
 .navbar li {
   z-index: 10;
 }
+
 .navbar li a {
   display: block;
   height: 55px;
@@ -27,12 +30,15 @@
   color: #45575d;
   text-decoration: none;
 }
+
 .navbar li:first-child {
   margin-right: auto;
 }
+
 .navbar li:first-child a {
   font-size: 110%;
 }
+
 
 /* ---
  フォーム全体
@@ -45,6 +51,7 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
   position: relative;
   height: calc( 100vh - 55px );
 }
+
 .contact,
 .contact-inner {
   position: absolute;
