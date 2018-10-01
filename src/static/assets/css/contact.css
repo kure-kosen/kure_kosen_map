@@ -22,7 +22,7 @@ body {
 /* ---
  背景画像
    ---  */
-.back-image {
+.img-bg {
     position: absolute;
     z-index: -100;
     top: 0;
