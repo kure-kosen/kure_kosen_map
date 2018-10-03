@@ -49,7 +49,7 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
    --- */
 .contact-parent {
   position: relative;
-  height: calc( 100vh - 55px );
+  height: calc( 100vh - 56px );
 }
 
 .contact,
