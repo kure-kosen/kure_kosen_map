@@ -39,11 +39,7 @@
   list-style-type: none;
   background: #f9f9fcf1;
 }
-/*
-.navbar li {
-  z-index: 10;
-}
-*/
+
 .navbar li a {
   display: block; /* ここをnoneにするとメニューが閉じる */
   width: 100vw;
@@ -57,12 +53,10 @@
   padding-left: 2.5em;
   box-sizing: border-box;
 }
+
 .navbar li:first-child a {
   padding-left: 0;
   display: block;
-}
-.navbar li:first-child a {
-  font-size: 110%;
   text-align: center;
 }
 

@@ -35,6 +35,13 @@ body {
 }
 
 /* ---
+ ナビゲーション
+   --- */
+.navbar li:first-child a {
+  font-size: 110%;
+}
+
+/* ---
  フォーム全体
    --- */
 .contact {
