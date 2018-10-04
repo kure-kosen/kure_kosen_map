@@ -6,23 +6,23 @@
  背景画像
    --- */
 .img-bg {
-    width: 100vw;
-    background-position: 40%;
-    position: fixed;
+  width: 100vw;
+  background-position: 40%;
+  position: fixed;
 }
 
 /* ---
  フォーム全体
    --- */
 .contact {
-    background: #f9f9fcf5; /* 透過は背景画像が見えるようにするため */
-    position: static;
-    width: 85vw;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    height: auto;
-    overflow-y: visible;
+  background: #f9f9fcf5; /* 透過は背景画像が見えるようにするため */
+  position: static;
+  width: 85vw;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  height: auto;
+  overflow-y: visible;
 }
 
 .contact-inner {
@@ -64,7 +64,7 @@
  フッター
    --- */
 footer {
-    position: static;
+  position: static;
 }
 
 }
