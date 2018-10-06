@@ -7,12 +7,11 @@
    --- */
 .slideout-panel {
   width: 100vw;
-  position: absolute;
   top: 0;
   left: 0;
   background-image: url("../img/contact/bg1.png");
   background-size: cover;
-  background-position: 40%;
+  background-position: 40% 15%;
   background-attachment: fixed;
 }
 
