@@ -35,6 +35,9 @@
   margin-right: auto;
 }
 
+#slideout-toggle {
+  display: none;
+}
 
 
 /* ---

@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>お問い合わせ - 呉高専マップ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/slideout.css" media="screen and (max-width: 740px)">
   <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
   <link rel="stylesheet" type="text/css" href="assets/css/sp-contact.css">
   <link rel="stylesheet" type="text/css" href="assets/css/pc-contact.css">
@@ -11,7 +12,7 @@
 <body>
   <header>
   </header>
-  <nav>
+  <nav id="menu">
     <div class="container">
       <ul class="navbar">
         <li><a href="#">呉高専マップ</a></li>
@@ -21,7 +22,10 @@
       </ul>
     </div>
   </nav>
-  <main>
+  <main id="panel">
+    <header>
+      <button id="slideout-toggle">toggle</button>
+    </header>
     <!-- contact お問い合わせフォーム -->
     <div class="container contact-parent">
       <div class="contact">
@@ -78,5 +82,21 @@
     Copyright &#169; 2018 Kuremap Team
   </footer>
   <div class="img-bg"></div>
+
+  <script type="text/javascript" src="assets/js/slideout.min.js"></script>
+  <script>
+    var slideout = new Slideout({
+      'panel': document.getElementById('panel'),
+      'menu': document.getElementById('menu'),
+      'padding': 256,
+      'tolerance': 70
+    });
+
+    function slideout_toggle() {
+      slideout.toggle();
+    }
+    var element_slideout_toggle = document.getElementById('slideout-toggle');
+    element_slideout_toggle.addEventListener('click', slideout_toggle, false);
+  </script>
 </body>
 </html>
