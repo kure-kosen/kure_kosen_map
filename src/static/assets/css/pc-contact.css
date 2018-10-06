@@ -20,6 +20,10 @@
 /* ---
  ナビゲーション
    --- */
+/* --- モバイル向けメニュートグルボタンは非表示 --- */
+.slideout-toggle {
+  display: none;
+}
 
 /* --- PC向けflexboxによるメニュー --- */
 .navbar {
@@ -50,15 +54,9 @@
   margin-right: auto;
 }
 
-#slideout-toggle {
-  display: none;
-}
-
-
 /* ---
  フォーム全体
    --- */
-
 /* --- PC向け中央揃え
 contact-parentをrelativeにした上で、contactとcontact-innerの両方を揃えている
    --- */
