@@ -20,19 +20,8 @@ body {
 }
 
 /* ---
- 背景画像
+ 背景画像…PC向けには.img-bg、モバイル向けには.slideout-panelに直接指定
    ---  */
-.img-bg {
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  width: 52vw;
-  height: 100vh;
-  background-image: url("../img/contact/bg1.png");
-  background-size: cover;
-  background-position: 25% 75%;
-}
 
 /* ---
  ナビゲーション

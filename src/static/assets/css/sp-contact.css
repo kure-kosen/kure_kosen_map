@@ -3,12 +3,17 @@
 @media screen and (max-width: 740px) {
 
 /* ---
- 背景画像
+ 背景画像…PC向けには.img-bg、モバイル向けには.slideout-panelに直接指定
    --- */
-.img-bg {
+.slideout-panel {
   width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/contact/bg1.png");
+  background-size: cover;
   background-position: 40%;
-  position: fixed;
+  background-attachment: fixed;
 }
 
 /* ---
