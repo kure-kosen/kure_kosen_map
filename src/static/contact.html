@@ -33,41 +33,42 @@
             <p>下のフォームにご記入ください。</p>
           </div>
           <!-- nameなどはまだつけていません -->
-          <form>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfdYqapphLrLdLBbDD6E8jfGE9DZT-WGtIq-Q4-x4X66XuPvQ/formResponse"
+            method="POST">
             <ul class="form-components">
               <li>
                 <label>
-                  <input type="text" placeholder="名前・ニックネーム" class="input-area">
+                  <input type="text" placeholder="名前・ニックネーム" class="input-area" name="entry.1768869632" required>
                 </label>
               </li>
               <li>
                 <label>
-                  <select class="input-area">
-                    <option class="default" selected disabled>《所属》</option>
-                    <option>呉高専生</option>
-                    <option>中学生</option>
-                    <option>保護者</option>
-                    <option>その他</option>
+                  <select class="input-area" name="entry.287582427">
+                    <option class="default" selected disabled required>《所属》</option>
+                    <option value="呉高専生" required>呉高専生</option>
+                    <option value="中学生" required>中学生</option>
+                    <option value="保護者" required>保護者</option>
+                    <option value="その他" required>その他</option>
                   </select>
                 </label>
               </li>
               <li>
                 <label>
-                  <input type="text" placeholder="電子メールアドレス" class="input-area">
+                  <input type="text" placeholder="電子メールアドレス" class="input-area" name="entry.1774156880" required>
                 </label>
               </li>
               <li>
                 <label>
-                  <select class="input-area">
-                    <option class="default" selected disabled>《お問い合わせの種類》</option>
-                    <option>感想</option>
-                    <option>バグ報告</option>
-                    <option>その他</option>
+                  <select class="input-area" name="entry.1357279738">
+                    <option class="default" selected disabled required>《お問い合わせの種類》</option>
+                    <option value="感想" required>感想</option>
+                    <option value="バグ報告" required>バグ報告</option>
+                    <option value="その他" required>その他</option>
                   </select>
                 </label>
               </li>
               <li>
-                <textarea placeholder="メッセージをどうぞ" class="input-area"></textarea>
+                <textarea placeholder="メッセージをどうぞ" class="input-area" name="entry.497026875" required></textarea>
               </li>
             </ul>
             <input type="submit" value="送 信">
