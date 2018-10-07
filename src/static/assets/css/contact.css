@@ -61,7 +61,7 @@ body {
   width: 80%;
   padding: 0 10%;
 
-  max-width: calc( 500px - 25px );}
+  max-width: calc( 500px - 25px );
 }
 
 .contact-inner h1 {
@@ -79,10 +79,6 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.contact-inner ul.form-components .icon {
-  margin-right: 2px;
 }
 
 .contact-inner ul.form-components li {
