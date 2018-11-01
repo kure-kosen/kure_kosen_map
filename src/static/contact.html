@@ -4,22 +4,28 @@
   <meta charset="utf-8">
   <title>お問い合わせ - 呉高専マップ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="assets/css/slideout.css" media="screen and (max-width: 740px)">
+  <link rel="stylesheet" href="assets/css/drawer.css">
   <link rel="stylesheet" type="text/css" href="assets/css/contact.css">
   <link rel="stylesheet" type="text/css" href="assets/css/sp-contact.css">
   <link rel="stylesheet" type="text/css" href="assets/css/pc-contact.css">
 </head>
-<body>
-  <nav id="menu">
-    <div class="container">
-      <ul class="navbar">
-        <li><a href="#">呉高専マップ</a></li>
-        <li><a href="#">マップを使う</a></li>
-        <li><a href="#">私たちについて</a></li>
-        <li><a href="#">お問い合わせ</a></li>
-      </ul>
-    </div>
-  </nav>
+<body class="drawer drawer--top">
+  <header role="banner">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav id="menu" class="drawer-nav" role="navigation">
+      <div class="container">
+        <ul class="navbar drawer-menu">
+          <li><a class="drawer-brand" href="#">呉高専マップ</a></li>
+          <li><a class="drawer-menu-item" href="#">マップを使う</a></li>
+          <li><a class="drawer-menu-item" href="#">私たちについて</a></li>
+          <li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <main id="panel">
     <header>
       <button class="slideout-toggle" id="slideout-toggle">≡</button>
@@ -82,20 +88,13 @@
   </main>
   <div class="img-bg"></div>
 
-  <script type="text/javascript" src="assets/js/slideout.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
   <script>
-    var slideout = new Slideout({
-      'panel': document.getElementById('panel'),
-      'menu': document.getElementById('menu'),
-      'padding': 256,
-      'tolerance': 70
+    $(document).ready(function () {
+      $('.drawer').drawer();
     });
-
-    function slideout_toggle() {
-      slideout.toggle();
-    }
-    var element_slideout_toggle = document.getElementById('slideout-toggle');
-    element_slideout_toggle.addEventListener('click', slideout_toggle, false);
   </script>
 </body>
 </html>
