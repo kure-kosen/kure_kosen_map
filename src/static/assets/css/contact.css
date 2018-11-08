@@ -20,27 +20,25 @@ body {
 }
 
 /* ---
- 背景画像…PC向けには.img-bg、モバイル向けには.slideout-panelに直接指定
+ 背景画像
    ---  */
+.img-bg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 52vw;
+  height: 100vh;
+  background-image: url("../img/contact/bg1.png");
+  background-size: cover;
+background-position: 25% 75%;
+}
 
 /* ---
  ナビゲーション
    --- */
 .navbar li:first-child a {
   font-size: 110%;
-}
-
-.slideout-toggle {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  width: 45px;
-  height: 45px;
-  font-size: 45px;
-  text-align: center;
-  line-height: 0;
-  color: #f9f9fc;
 }
 
 /* ---

@@ -3,16 +3,12 @@
 @media screen and (max-width: 740px) {
 
 /* ---
- 背景画像…PC向けには.img-bg、モバイル向けには.slideout-panelに直接指定
+ 背景画像
    --- */
-.slideout-panel {
+.img-bg {
   width: 100vw;
-  top: 0;
-  left: 0;
-  background-image: url("../img/contact/bg1.png");
-  background-size: cover;
-  background-position: 40% 15%;
-  background-attachment: fixed;
+  background-position: 40%;
+  position: fixed;
 }
 
 /* ---
@@ -36,10 +32,6 @@
 /* ---
  ナビゲーション
    --- */
-
-.slideout-toggle {
-  display: block;
-}
 
 .navbar {
   display: block;
@@ -68,10 +60,6 @@
   display: block;
 }
 
-.slideout-menu {
-  height: 100vh;
-  background-color: #45575d;
-}
 
 /* ---
  フッター

@@ -3,7 +3,7 @@
 @media screen and (min-width: 741px) {
 
 /* ---
- 背景画像…PC向けには.img-bg、モバイル向けには.slideout-panelに直接指定
+ 背景画像
    ---  */
 .img-bg {
   position: absolute;
