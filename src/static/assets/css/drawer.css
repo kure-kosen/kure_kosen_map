@@ -244,7 +244,7 @@
   background-color: #fff;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 741px) {
   .drawer--sidebar .drawer-hamburger {
     display: none;
     visibility: hidden;
@@ -357,7 +357,7 @@
   padding-bottom: 7.5rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 741px) {
   .drawer-navbar {
     height: 3.75rem;
     border-bottom: 1px solid #ddd;
@@ -488,7 +488,8 @@
   margin-left: auto;
 }
 
-@media (min-width: 64em) {
+/* PC表示でのmax-width
+@media (min-width: 741px) {
   .drawer-container {
     max-width: 60rem;
   }
@@ -499,3 +500,4 @@
     max-width: 70rem;
   }
 }
+*/
