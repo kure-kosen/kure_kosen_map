@@ -17,7 +17,7 @@
   width: 16.25rem;
   height: 100%;
   color: #222;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .drawer-brand {
@@ -312,8 +312,8 @@
 }
 
 .drawer-navbar .drawer-navbar-header {
-  border-bottom: 1px solid #ddd;
-  background-color: #fff;
+  /* border-bottom: 1px solid #ddd; */
+  background-color: transparent;
 }
 
 .drawer-navbar {
@@ -349,12 +349,14 @@
   background-color: transparent;
 }
 
+/*
 .drawer-navbar .drawer-nav {
   padding-top: 3.75rem;
 }
+*/
 
 .drawer-navbar .drawer-menu {
-  padding-bottom: 7.5rem;
+  padding-bottom: 0;
 }
 
 @media (min-width: 741px) {
