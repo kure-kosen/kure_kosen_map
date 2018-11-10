@@ -61,19 +61,6 @@
 
 * `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">` についてはローカル
 
-## aidmiya
-
-### ここでの編集方針
-
-1.  基本的に自分がいじるのは自分で作ったファイルの中(map-design.css など)
-1.  いじりたいところが他の人の作ったファイルにあったら、そのファイルをいじくる(map.css など)
-
-### 動作テストについて
-
-- aidmiya の PC 上での動作確認: Firefox(57 32bit Ubuntu)、Chromium(63 32bit Ubuntu)
-- aidmiya のモバイルでの動作確認: Safari running on iPhone 6S Plus
-- Safari のシークレットモードで動作確認する時、CSS が読み込まれないことがある。その時は、シークレットを解除してリロードしてみよう
-
 ## 新開発環境について（執筆中）
 
 ### エディタ周り
