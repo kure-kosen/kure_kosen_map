@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* ---
+ リセット
+   --- */
+* {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* ---
+ ページ全体
+   --- */
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---
+ 背景画像
+   ---  */
+.img-bg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 52vw;
+  height: 100vh;
+  background-image: url("../img/contact/bg1.png");
+  background-size: cover;
+background-position: 25% 75%;
+}
+
+/* ---
+ ナビゲーション
+   --- */
+.navbar li:first-child a {
+  font-size: 110%;
+}
+
+/* ---
+ フォーム全体
+   --- */
+.contact {
+  background: #f9f9fc;
+  right: 0;
+  width: 48vw;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow:6px 6px 0px 0px rgba(0,0,0,0.32);
+  display: block;
+}
+
+.contact-inner {
+  /* --- フォームの中身の左右揃え --- */
+  width: 80%;
+  padding: 0 10%;
+
+  max-width: calc( 500px - 25px );
+}
+
+.contact-inner h1 {
+  display: inline-block;
+  font-size: 29px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-inner .introduction {
+  padding: 5px 0;
+}
+
+.contact-inner ul.form-components {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-inner ul.form-components li {
+  margin: 25px 0;
+}
+
+.contact-inner .introduction p,
+.contact-inner form .input-area::placeholder {
+  color: #45575d;
+}
+
+
+/* ---
+フォーム各部品
+   --- */
+.contact-inner form .input-area {
+  /* --- 基本スタイル --- */
+  background:#fff;
+  border: 0;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: 0;
+  font-size: 17px;
+  box-shadow: 0px 1px 0px 0px #f1f1f1;
+}
+
+.contact-inner form input[type="text"].input-area,
+.contact-inner form input[type="email"].input-area {
+  width: calc( 100% - 25px );
+  max-width: calc( 500px - 25px );
+}
+
+.contact-inner form select.input-area {
+  width: calc( 100% - 5px );
+  max-width: calc( 500px - 5px );
+}
+
+.contact-inner form textarea.input-area {
+  width: calc( 100% - 25px );
+  padding: 10px;
+  height: 6rem;
+  resize: none;
+}
+
+.contact-inner form input[type="submit"] {
+  background: #fe4c6b;
+  color: #fff;
+  border: 0;
+  width: 100px;
+  height: 35px;
+  box-shadow:0px 1px 9px -3px #474747;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+}
+
+/* ---
+フッター
+   --- */
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+}

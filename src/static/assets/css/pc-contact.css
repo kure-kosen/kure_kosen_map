@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+@media screen and (min-width: 741px) {
+
+/* ---
+ 背景画像
+   ---  */
+.img-bg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 52vw;
+  height: 100vh;
+  background-image: url("../img/contact/bg1.png");
+  background-size: cover;
+  background-position: 25% 75%;
+}
+
+/* ---
+ ナビゲーション: drawer関連
+   --- */
+.drawer-navbar,
+.drawer-navbar .drawer-nav {
+  height: auto;
+}
+
+.drawer-navbar {
+  border: 0;
+}
+
+
+/* --- PC向けflexboxによるメニュー --- */
+.navbar {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #f9f9fc;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.navbar li {
+  z-index: 10;
+}
+
+.navbar li a {
+  display: block;
+  height: 55px;
+  font-size: 16px;
+  vertical-align: middle;
+  line-height: 55px;
+  padding: 0 25px;
+  color: #45575d;
+  text-decoration: none;
+}
+
+.navbar li:first-child {
+  margin-right: auto;
+}
+
+/* ---
+ フォーム全体
+   --- */
+/* --- PC向け中央揃え
+contact-parentをrelativeにした上で、contactとcontact-innerの両方を揃えている
+   --- */
+.contact-parent {
+  position: relative;
+  height: calc( 100vh - 56px );
+}
+
+.contact,
+.contact-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+}
