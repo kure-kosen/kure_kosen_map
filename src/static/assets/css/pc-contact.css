@@ -18,12 +18,17 @@
 }
 
 /* ---
- ナビゲーション
+ ナビゲーション: drawer関連
    --- */
-/* --- モバイル向けメニュートグルボタンは非表示 --- */
-.slideout-toggle {
-  display: none;
+.drawer-navbar,
+.drawer-navbar .drawer-nav {
+  height: auto;
 }
+
+.drawer-navbar {
+  border: 0;
+}
+
 
 /* --- PC向けflexboxによるメニュー --- */
 .navbar {
