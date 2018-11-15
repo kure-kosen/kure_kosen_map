@@ -7,7 +7,7 @@ draggable('#layer_switcher_header', '#layer_switcher_window')
 
 // Open Window
 $('#layer_switcher_button_wrapper').click(() => {
-  $('#layer_switcher_window').toggle()
+  $('#layer_switcher_window').fadeToggle(200)
   $('#layer_switcher_window').css({ top: '80px', left: '60px' })
 })
 
@@ -33,16 +33,37 @@ const bindCheckbox = (checkbox, layer) => {
 }
 // end bindCheckbox -------------------------------
 
-const createTr = (layer_group, layer, i) => {
+const createTr = (layer, i) => {
+  // <tr>
+  //   <td class="layer-id">id</td> ===== $td1
+  //   <td>type</td> ==================== $td2
+  //   <td>group</td> =================== $td3
+  //   <td>category</td> ================ $td4
+  //   <td>レイヤー名</td> ============== $td5
+  //   <td>透明度</td> ================== $td6
+  //   <td>表示/非表示</td> ============= $td7
+  // </tr>
   const $row = $('<tr>').attr('id', 'layer' + i)
 
   const $td1 = $('<td>')
-    .attr('class', 'movable')
-    .text(layer_group.values_.title)
+    .attr('class', 'layer-id')
+    .text(layer.getProperties().id)
 
   const $td2 = $('<td>')
     .attr('class', 'movable')
-    .text(layer.values_.title)
+    .text(layer.getProperties().type)
+
+  const $td3 = $('<td>')
+    .attr('class', 'movable')
+    .text(layer.getProperties().group)
+
+  const $td4 = $('<td>')
+    .attr('class', 'movable')
+    .text(layer.getProperties().category)
+
+  const $td5 = $('<td>')
+    .attr('class', 'movable')
+    .text(layer.getProperties().name)
 
   const $slider = $('<input>', {
     class: 'opacity',
@@ -52,9 +73,9 @@ const createTr = (layer_group, layer, i) => {
     step: '0.01'
   })
 
-  const $td3 = $('<td>').append($slider)
+  const $td6 = $('<td>').append($slider)
 
-  const $td4 = $('<td>')
+  const $td7 = $('<td>')
 
   const $visible_checkbox = $('<input>', {
     id: 'checkbox_layer' + i,
@@ -67,13 +88,16 @@ const createTr = (layer_group, layer, i) => {
     for: 'checkbox_layer' + i
   })
 
-  $visible_checkbox.appendTo($td4)
-  $visible_checkbox_label.appendTo($td4)
+  $visible_checkbox.appendTo($td7)
+  $visible_checkbox_label.appendTo($td7)
 
   $row.append($td1)
   $row.append($td2)
   $row.append($td3)
   $row.append($td4)
+  $row.append($td5)
+  $row.append($td6)
+  $row.append($td7)
 
   $('#layer_switcher_table tbody').append($row)
 
@@ -105,19 +129,16 @@ const SortInit = layers => {
     arrayDesc.forEach((v, i) => {
       let $layer = $(v)
         .children()
-        .eq(1)
+        .eq(0)
         .html()
+
       layerJoinZIndex[$layer] = i
     })
 
-    layers.forEach(layer_group => {
-      layer_group.values_.layers.getArray().forEach(layer => {
-        Object.keys(layerJoinZIndex).forEach((key, value) => {
-          if (layer.values_.title === key) {
-            layer.setZIndex(value)
-          }
-        })
-      })
+    layers.forEach(layer => {
+      for (let k in layerJoinZIndex) {
+        if (layer.getProperties().id == k) layer.setZIndex(layerJoinZIndex[k])
+      }
     })
   }
   // end setZIndexOrderByDesc----------------------
@@ -127,11 +148,9 @@ const SortInit = layers => {
 // Main
 const MyLayerSwitcher = map => {
   const layers = map.getLayers().getArray()
-  layers.forEach(layer_group => {
-    layer_group.values_.layers.getArray().forEach((layer, i) => {
-      if (layer_group.values_.title == 'Base maps') return // とりあえず
-      createTr(layer_group, layer, i)
-    })
+
+  layers.forEach((layer, i) => {
+    createTr(layer, i)
   })
 
   SortInit(layers)

@@ -9,16 +9,13 @@ import aed_data from '../geojson/20171224.geojson'
 import camara_icon from '../icon/camera.png'
 import searchtest_data from '../geojson/searchtest.geojson'
 
-// 現在地の円
-// export const geocycle = new VectorLayer({
-//   source: new VectorSource({
-//     features: [accuracyFeature, positionFeature]
-//   })
-// })
-
 //呉市オープンデータのaed
 export const aed = new VectorLayer({
-  title: 'AED',
+  id: 3,
+  type: 'overlay',
+  group: '呉市オープンデータ',
+  category: '医療',
+  name: 'AED',
   zIndex: 0,
   source: new VectorSource({
     format: new GeoJSON(),
@@ -45,7 +42,12 @@ export const aed = new VectorLayer({
 
 //xyzタイルのサンプル
 export const tile = new TileLayer({
-  title: 'tile',
+  id: 4,
+  type: 'overlay',
+  group: 'mierune',
+  category: '',
+  name: 'normal',
+  zIndex: 0,
   source: new XYZSource({
     url: '../tiles2/{z}/{x}/{y}.png',
     crossOrigin: 'anonymous'
@@ -53,8 +55,12 @@ export const tile = new TileLayer({
 })
 
 export const searchLayer = new VectorLayer({
+  id: 5,
+  type: 'overlay',
+  group: 'searchLayer',
+  category: '',
+  name: 'searchLayer',
   zIndex: 0,
-  title: 'searchLayer',
   source: new VectorSource({
     format: new GeoJSON(),
     url: searchtest_data,
