@@ -6,9 +6,9 @@
       </a>
     </div>
     <div class="div2">
-      <a href="about_us.html">
+      <nuxt-link to="/about_us">
         <h1 class="about_us">About Us</h1>
-      </a>
+      </nuxt-link>
     </div>
     <div class="div3">
       <a href="#">
@@ -28,7 +28,8 @@ export default {};
 </script>
 
 <style scoped>
-@import url(https://fonts.googleapis.com/css?family=Lato:400, 700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @media only screen and (max-width: 500px) {
   .div1 {
@@ -97,11 +98,11 @@ export default {};
       )
       fixed,
     url("~assets/index/images/bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: black;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic,
     "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
@@ -111,24 +112,24 @@ a {
 }
 
 .div1 {
-  text-align: center;
   color: white;
+  text-align: center;
 }
 
 .button {
   display: inline-block;
+  margin: 0;
   width: 350px;
   height: 75px;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  background-color: transparent;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  line-height: 75px;
-  outline: none;
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 15px;
   font-size: 50px;
-  margin: 0;
+  line-height: 75px;
 }
 
 .button::before,
@@ -160,32 +161,32 @@ a {
 
 .about_us {
   position: relative;
-  padding-left: 25px;
   display: inline-block;
+  padding-left: 25px;
   width: 80%;
-  font-size: 40px;
   text-align: center;
+  font-size: 40px;
 }
 
 .about_us:before {
   position: absolute;
-  content: "";
   bottom: -3px;
   left: 0;
   width: 0;
   height: 0;
   border: none;
-  border-left: solid 15px transparent;
   border-bottom: solid 15px;
+  border-left: solid 15px transparent;
+  content: "";
 }
 
 .about_us:after {
   position: absolute;
-  content: "";
   bottom: -3px;
   left: 10px;
   width: 100%;
   border-bottom: solid 3px;
+  content: "";
 }
 
 .div3 {
@@ -195,31 +196,31 @@ a {
 
 .history {
   position: relative;
-  padding-left: 25px;
   display: inline-block;
+  padding-left: 25px;
   width: 80%;
   font-size: 40px;
 }
 
 .history:before {
   position: absolute;
-  content: "";
-  bottom: -3px;
   right: -20px;
+  bottom: -3px;
   width: 0;
   height: 0;
   border: none;
   border-right: solid 15px transparent;
   border-bottom: solid 15px;
+  content: "";
 }
 
 .history:after {
   position: absolute;
-  content: "";
   bottom: -3px;
   left: 10px;
   width: 100%;
   border-bottom: solid 3px;
+  content: "";
 }
 
 .div4 {
@@ -229,30 +230,30 @@ a {
 
 .user_manual {
   position: relative;
-  padding-left: 25px;
   display: inline-block;
+  padding-left: 25px;
   width: 80%;
   font-size: 40px;
 }
 
 .user_manual:before {
   position: absolute;
-  content: "";
   bottom: -3px;
   left: 0;
   width: 0;
   height: 0;
   border: none;
-  border-left: solid 15px transparent;
   border-bottom: solid 15px;
+  border-left: solid 15px transparent;
+  content: "";
 }
 
 .user_manual:after {
   position: absolute;
-  content: "";
   bottom: -3px;
   left: 10px;
   width: 100%;
   border-bottom: solid 3px;
+  content: "";
 }
 </style>
