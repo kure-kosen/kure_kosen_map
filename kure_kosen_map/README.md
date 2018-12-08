@@ -79,3 +79,22 @@ vscode なら以下の拡張機能を入れる
 ### プルリクエストについて
 
 - `yarn format`を使ってコードを`prettier`で整形しておくこと
+
+## Nuxt
+
+### Build Setup
+
+``` bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn run dev
+
+# build for production and launch server
+$ yarn run build
+$ yarn start
+
+# generate static project
+$ yarn run generate
+```
