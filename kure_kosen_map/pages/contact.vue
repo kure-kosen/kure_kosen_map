@@ -1,0 +1,421 @@
+<template>
+  <div class="___container drawer drawer--top">
+    <header
+      class="drawer-navbar"
+      role="banner">
+      <div class="drawer-container">
+        <div class="drawer-navbar-header">
+          <!-- <a class="drawer-brand" href="#">呉高専マップ</a> -->
+          <button
+            type="button"
+            class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span>
+            <span class="drawer-hamburger-icon"/>
+          </button>
+        </div>
+        <nav
+          class="drawer-nav"
+          role="navigation">
+          <div class="container">
+            <ul class="navbar drawer-menu">
+              <li><a
+                class="drawer-brand"
+                href="#">呉高専マップ</a></li>
+              <li><a
+                class="drawer-menu-item"
+                href="#">マップを使う</a></li>
+              <li><a
+                class="drawer-menu-item"
+                href="#">私たちについて</a></li>
+              <li><a
+                class="drawer-menu-item"
+                href="#">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="panel">
+      <div class="container contact-parent">
+        <div class="contact">
+          <div class="contact-inner">
+            <div class="introduction">
+              <h1>お問い合わせ</h1>
+              <p>下のフォームにご記入ください。</p>
+            </div>
+            <form
+              action="https://docs.google.com/forms/d/e/1FAIpQLSfdYqapphLrLdLBbDD6E8jfGE9DZT-WGtIq-Q4-x4X66XuPvQ/formResponse"
+              method="POST">
+              <ul class="form-components">
+                <li>
+                  <label>
+                    <input
+                      type="text"
+                      placeholder="名前・ニックネーム"
+                      class="input-area"
+                      name="entry.1768869632"
+                      required>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <select
+                      class="input-area"
+                      name="entry.287582427"
+                      required>
+                      <option
+                        class="default"
+                        value=""
+                        selected
+                        disabled>《所属》</option>
+                      <option value="呉高専生">呉高専生</option>
+                      <option value="中学生">中学生</option>
+                      <option value="保護者">保護者</option>
+                      <option value="その他">その他</option>
+                    </select>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input
+                      type="email"
+                      placeholder="電子メールアドレス"
+                      class="input-area"
+                      name="entry.1774156880"
+                      required>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <select
+                      class="input-area"
+                      name="entry.1357279738"
+                      required>
+                      <option
+                        class="default"
+                        value=""
+                        selected
+                        disabled>《お問い合わせの種類》</option>
+                      <option value="感想">感想</option>
+                      <option value="バグ報告">バグ報告</option>
+                      <option value="その他">その他</option>
+                    </select>
+                  </label>
+                </li>
+                <li>
+                  <textarea
+                    placeholder="メッセージをどうぞ"
+                    class="input-area"
+                    name="entry.497026875"
+                    required/>
+                </li>
+              </ul>
+              <input
+                type="submit"
+                value="送 信">
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        Copyright &#169; 2018 Kuremap Team
+      </footer>
+    </main>
+    <div class="img-bg"/>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style scoped>
+@import url("~assets/contact/css/drawer.css");
+
+/* ---
+ リセット
+   --- */
+* {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* ---
+ ページ全体
+   --- */
+.___container {
+  font-family: sans-serif;
+  background-color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+/* ---
+ 背景画像
+   ---  */
+.img-bg {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  width: 52vw;
+  height: 100vh;
+  background-image: url("~assets/contact/images/bg1.png");
+  background-size: cover;
+  background-position: 25% 75%;
+}
+
+/* ---
+ ナビゲーション
+   --- */
+.navbar li:first-child a {
+  font-size: 110%;
+}
+
+/* ---
+ フォーム全体
+   --- */
+.contact {
+  background: #f9f9fc;
+  right: 0;
+  width: 48vw;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.32);
+  display: block;
+}
+
+.contact-inner {
+  /* --- フォームの中身の左右揃え --- */
+  width: 80%;
+  padding: 0 10%;
+
+  max-width: calc(500px - 25px);
+}
+
+.contact-inner h1 {
+  display: inline-block;
+  font-size: 29px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-inner .introduction {
+  padding: 5px 0;
+}
+
+.contact-inner ul.form-components {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-inner ul.form-components li {
+  margin: 25px 0;
+}
+
+.contact-inner .introduction p,
+.contact-inner form .input-area::placeholder {
+  color: #45575d;
+}
+
+/* ---
+フォーム各部品
+   --- */
+.contact-inner form .input-area {
+  /* --- 基本スタイル --- */
+  background: #fff;
+  border: 0;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 2px;
+  outline: 0;
+  font-size: 17px;
+  box-shadow: 0px 1px 0px 0px #f1f1f1;
+}
+
+.contact-inner form input[type="text"].input-area,
+.contact-inner form input[type="email"].input-area {
+  width: calc(100% - 25px);
+  max-width: calc(500px - 25px);
+}
+
+.contact-inner form select.input-area {
+  width: calc(100% - 5px);
+  max-width: calc(500px - 5px);
+}
+
+.contact-inner form textarea.input-area {
+  width: calc(100% - 25px);
+  padding: 10px;
+  height: 6rem;
+  resize: none;
+}
+
+.contact-inner form input[type="submit"] {
+  background: #fe4c6b;
+  color: #fff;
+  border: 0;
+  width: 100px;
+  height: 35px;
+  box-shadow: 0px 1px 9px -3px #474747;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+}
+
+/* ---
+フッター
+   --- */
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 741px) {
+  /* ---
+ 背景画像
+   ---  */
+  .img-bg {
+    position: absolute;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    width: 52vw;
+    height: 100vh;
+    background-image: url("~assets/contact/images/bg1.png");
+    background-size: cover;
+    background-position: 25% 75%;
+  }
+
+  /* ---
+ ナビゲーション: drawer関連
+   --- */
+  .drawer-navbar,
+  .drawer-navbar .drawer-nav {
+    height: auto;
+  }
+
+  .drawer-navbar {
+    border: 0;
+  }
+
+  /* --- PC向けflexboxによるメニュー --- */
+  .navbar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #f9f9fc;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .navbar li {
+    z-index: 10;
+  }
+
+  .navbar li a {
+    display: block;
+    height: 55px;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 55px;
+    padding: 0 25px;
+    color: #45575d;
+    text-decoration: none;
+  }
+
+  .navbar li:first-child {
+    margin-right: auto;
+  }
+
+  /* ---
+ フォーム全体
+   --- */
+  /* --- PC向け中央揃え
+contact-parentをrelativeにした上で、contactとcontact-innerの両方を揃えている
+   --- */
+  .contact-parent {
+    position: relative;
+    height: calc(100vh - 56px);
+  }
+
+  .contact,
+  .contact-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 740px) {
+  /* ---
+ 背景画像
+   --- */
+  .img-bg {
+    width: 100vw;
+    background-position: 40%;
+    position: fixed;
+  }
+
+  /* ---
+ フォーム全体
+   --- */
+  .contact {
+    background: #f9f9fcf5; /* 透過は背景画像が見えるようにするため */
+    position: static;
+    width: 85vw;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  .contact-inner {
+    padding: 20px 10%;
+  }
+
+  /* ---
+ ナビゲーション
+   --- */
+
+  .navbar {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #45575d61;
+  }
+
+  .navbar li a {
+    display: block;
+    width: 100%;
+    font-size: 1.4rem;
+    height: 3.75rem;
+    vertical-align: middle;
+    line-height: 3.75rem;
+    color: #f9f9fc;
+    text-decoration: none;
+    border-bottom: 1px solid #d9d9d9;
+    box-sizing: border-box;
+  }
+
+  .navbar li:first-child a {
+    padding-left: 10px;
+    display: block;
+  }
+
+  /* ---
+ フッター
+   --- */
+  footer {
+    position: static;
+  }
+}
+</style>
