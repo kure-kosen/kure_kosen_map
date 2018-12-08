@@ -13,7 +13,7 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'linebreak-style': ['error', 'unix'],
     indent: ['error', 2],
-    quotes: ['error', 'single'],
+    quotes: ['error', 'double'],
     semi: ['error', 'always'],
     'semi-spacing': ['error', { after: true, before: false }],
     'semi-style': ['error', 'last'],
