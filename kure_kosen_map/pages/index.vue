@@ -1,65 +1,258 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        kure_kosen_map
-      </h1>
-      <h2 class="subtitle">
-        Kure Kosen Map Projects
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+  <div class="container">
+    <div class="div1">
+      <a href="map.html">
+        <h1 class="button">マップを使う</h1>
+      </a>
     </div>
-  </section>
+    <div class="div2">
+      <a href="about_us.html">
+        <h1 class="about_us">About Us</h1>
+      </a>
+    </div>
+    <div class="div3">
+      <a href="#">
+        <h1 class="history">History</h1>
+      </a>
+    </div>
+    <div class="div4">
+      <a href="#">
+        <h1 class="user_manual">User Manual</h1>
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
+export default {};
 </script>
 
-<style>
+<style scoped>
+@import url(https://fonts.googleapis.com/css?family=Lato:400, 700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@media only screen and (max-width: 500px) {
+  .div1 {
+    position: relative;
+    top: 250vh;
+  }
+
+  .div2 {
+    position: relative;
+    top: 250vh;
+  }
+
+  .div3 {
+    position: relative;
+    top: 230vh;
+  }
+
+  .div4 {
+    position: relative;
+    top: 210vh;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .div1 {
+    position: relative;
+  }
+  .div2 {
+    position: relative;
+  }
+  .div3 {
+    position: relative;
+  }
+  .div4 {
+    position: relative;
+  }
+}
+
 .container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.25) 3%,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 90%,
+    rgba(0, 0, 0, 0.8) 95%,
+    black
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.25) 3%,
+    rgba(0, 0, 0, 0.5) 30%,
+    rgba(0, 0, 0, 0.6) 60%,
+    rgba(0, 0, 0, 0.8) 90%,
+    rgba(0, 0, 0, 0.8) 95%,
+    black
+  );
+  background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.25) 3%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 0.6) 60%,
+        rgba(0, 0, 0, 0.8) 90%,
+        rgba(0, 0, 0, 0.8) 95%,
+        black
+      )
+      fixed,
+    url("~assets/index/images/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic,
+    "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+a {
+  color: white;
+}
+
+.div1 {
+  text-align: center;
+  color: white;
+}
+
+.button {
+  display: inline-block;
+  width: 350px;
+  height: 75px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 75px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 15px;
+  font-size: 50px;
+  margin: 0;
+}
+
+.button::before,
+.button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: "";
+}
+
+.button,
+.button::before,
+.button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.div2 {
+  color: white;
   text-align: center;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.about_us {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  width: 80%;
+  font-size: 40px;
+  text-align: center;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.about_us:before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px;
 }
 
-.links {
-  padding-top: 15px;
+.about_us:after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px;
+}
+
+.div3 {
+  color: white;
+  text-align: center;
+}
+
+.history {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  width: 80%;
+  font-size: 40px;
+}
+
+.history:before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  right: -20px;
+  width: 0;
+  height: 0;
+  border: none;
+  border-right: solid 15px transparent;
+  border-bottom: solid 15px;
+}
+
+.history:after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px;
+}
+
+.div4 {
+  color: white;
+  text-align: center;
+}
+
+.user_manual {
+  position: relative;
+  padding-left: 25px;
+  display: inline-block;
+  width: 80%;
+  font-size: 40px;
+}
+
+.user_manual:before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: none;
+  border-left: solid 15px transparent;
+  border-bottom: solid 15px;
+}
+
+.user_manual:after {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  left: 10px;
+  width: 100%;
+  border-bottom: solid 3px;
 }
 </style>
