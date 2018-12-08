@@ -1,133 +1,170 @@
 <template>
-  <div class="___container drawer drawer--top">
-    <header
-      class="drawer-navbar"
-      role="banner">
-      <div class="drawer-container">
-        <div class="drawer-navbar-header">
-          <!-- <a class="drawer-brand" href="#">呉高専マップ</a> -->
-          <button
-            type="button"
-            class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">toggle navigation</span>
-            <span class="drawer-hamburger-icon"/>
-          </button>
-        </div>
-        <nav
-          class="drawer-nav"
-          role="navigation">
-          <div class="container">
-            <ul class="navbar drawer-menu">
-              <li><a
-                class="drawer-brand"
-                href="#">呉高専マップ</a></li>
-              <li><a
-                class="drawer-menu-item"
-                href="#">マップを使う</a></li>
-              <li><a
-                class="drawer-menu-item"
-                href="#">私たちについて</a></li>
-              <li><a
-                class="drawer-menu-item"
-                href="#">お問い合わせ</a></li>
-            </ul>
+  <div class="___container">
+    <div class="drawer drawer--top">
+      <header
+        class="drawer-navbar"
+        role="banner">
+        <div class="drawer-container">
+          <div class="drawer-navbar-header">
+            <!-- <a class="drawer-brand" href="#">呉高専マップ</a> -->
+            <button
+              type="button"
+              class="drawer-toggle drawer-hamburger">
+              <span class="sr-only">toggle navigation</span>
+              <span class="drawer-hamburger-icon"/>
+            </button>
           </div>
-        </nav>
-      </div>
-    </header>
-
-    <main id="panel">
-      <div class="container contact-parent">
-        <div class="contact">
-          <div class="contact-inner">
-            <div class="introduction">
-              <h1>お問い合わせ</h1>
-              <p>下のフォームにご記入ください。</p>
-            </div>
-            <form
-              action="https://docs.google.com/forms/d/e/1FAIpQLSfdYqapphLrLdLBbDD6E8jfGE9DZT-WGtIq-Q4-x4X66XuPvQ/formResponse"
-              method="POST">
-              <ul class="form-components">
+          <nav
+            class="drawer-nav"
+            role="navigation">
+            <div class="container">
+              <ul class="navbar drawer-menu">
                 <li>
-                  <label>
-                    <input
-                      type="text"
-                      placeholder="名前・ニックネーム"
-                      class="input-area"
-                      name="entry.1768869632"
-                      required>
-                  </label>
+                  <a
+                    class="drawer-brand"
+                    href="#">呉高専マップ</a>
                 </li>
                 <li>
-                  <label>
-                    <select
-                      class="input-area"
-                      name="entry.287582427"
-                      required>
-                      <option
-                        class="default"
-                        value=""
-                        selected
-                        disabled>《所属》</option>
-                      <option value="呉高専生">呉高専生</option>
-                      <option value="中学生">中学生</option>
-                      <option value="保護者">保護者</option>
-                      <option value="その他">その他</option>
-                    </select>
-                  </label>
+                  <a
+                    class="drawer-menu-item"
+                    href="#">マップを使う</a>
                 </li>
                 <li>
-                  <label>
-                    <input
-                      type="email"
-                      placeholder="電子メールアドレス"
-                      class="input-area"
-                      name="entry.1774156880"
-                      required>
-                  </label>
+                  <a
+                    class="drawer-menu-item"
+                    href="#">私たちについて</a>
                 </li>
                 <li>
-                  <label>
-                    <select
-                      class="input-area"
-                      name="entry.1357279738"
-                      required>
-                      <option
-                        class="default"
-                        value=""
-                        selected
-                        disabled>《お問い合わせの種類》</option>
-                      <option value="感想">感想</option>
-                      <option value="バグ報告">バグ報告</option>
-                      <option value="その他">その他</option>
-                    </select>
-                  </label>
-                </li>
-                <li>
-                  <textarea
-                    placeholder="メッセージをどうぞ"
-                    class="input-area"
-                    name="entry.497026875"
-                    required/>
+                  <a
+                    class="drawer-menu-item"
+                    href="#">お問い合わせ</a>
                 </li>
               </ul>
-              <input
-                type="submit"
-                value="送 信">
-            </form>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main id="panel">
+        <div class="container contact-parent">
+          <div class="contact">
+            <div class="contact-inner">
+              <div class="introduction">
+                <h1>お問い合わせ</h1>
+                <p>下のフォームにご記入ください。</p>
+              </div>
+              <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfdYqapphLrLdLBbDD6E8jfGE9DZT-WGtIq-Q4-x4X66XuPvQ/formResponse"
+                method="POST"
+              >
+                <ul class="form-components">
+                  <li>
+                    <label>
+                      <input
+                        type="text"
+                        placeholder="名前・ニックネーム"
+                        class="input-area"
+                        name="entry.1768869632"
+                        required
+                      >
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <select
+                        class="input-area"
+                        name="entry.287582427"
+                        required>
+                        <option
+                          class="default"
+                          value
+                          selected
+                          disabled>《所属》</option>
+                        <option value="呉高専生">呉高専生</option>
+                        <option value="中学生">中学生</option>
+                        <option value="保護者">保護者</option>
+                        <option value="その他">その他</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <input
+                        type="email"
+                        placeholder="電子メールアドレス"
+                        class="input-area"
+                        name="entry.1774156880"
+                        required
+                      >
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <select
+                        class="input-area"
+                        name="entry.1357279738"
+                        required>
+                        <option
+                          class="default"
+                          value
+                          selected
+                          disabled>《お問い合わせの種類》</option>
+                        <option value="感想">感想</option>
+                        <option value="バグ報告">バグ報告</option>
+                        <option value="その他">その他</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li>
+                    <textarea
+                      placeholder="メッセージをどうぞ"
+                      class="input-area"
+                      name="entry.497026875"
+                      required
+                    />
+                  </li>
+                </ul>
+                <input
+                  type="submit"
+                  value="送 信">
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-      <footer>
-        Copyright &#169; 2018 Kuremap Team
-      </footer>
-    </main>
-    <div class="img-bg"/>
+        <footer>Copyright &#169; 2018 Kuremap Team</footer>
+      </main>
+      <div class="img-bg"/>
+    </div>
+    <!--
+    <script>
+    $(document).ready(function () {
+      $('.drawer').drawer();
+    });
+    </script>
+    -->
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      //__dangerouslyDisableSanitizers: ["script"],
+      script: [
+        { src: "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" },
+        { src: "https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js" },
+        { src: "https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js" },
+        {
+          innerHTML: `
+          $(document).ready(function () {
+            $('.drawer').drawer();
+          });
+        `
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped>
