@@ -131,7 +131,7 @@ export default {};
 </script>
 
 <style scoped>
-@import url("~assets/contact/css/drawer.css");
+@import url("../assets/contact/css/drawer.css");
 
 /* ---
  リセット
@@ -140,6 +140,11 @@ export default {};
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
+  /*  layout/default.vue に対処 */
+  box-sizing: unset;
+  margin: 0;
+  padding: 0;
 }
 
 /* ---
@@ -147,9 +152,6 @@ export default {};
    --- */
 .___container {
   font-family: sans-serif;
-  background-color: #eee;
-  margin: 0;
-  padding: 0;
 }
 
 /* ---
@@ -162,7 +164,7 @@ export default {};
   left: 0;
   width: 52vw;
   height: 100vh;
-  background-image: url("~assets/contact/images/bg1.png");
+  background-image: url("../assets/contact/images/bg1.png");
   background-size: cover;
   background-position: 25% 75%;
 }
@@ -216,7 +218,11 @@ export default {};
   margin: 25px 0;
 }
 
-.contact-inner .introduction p,
+.contact-inner .introduction p {
+  color: #45575d;
+  margin: 1em 0;
+}
+
 .contact-inner form .input-area::placeholder {
   color: #45575d;
 }
@@ -279,21 +285,6 @@ footer {
 
 @media screen and (min-width: 741px) {
   /* ---
- 背景画像
-   ---  */
-  .img-bg {
-    position: absolute;
-    z-index: -100;
-    top: 0;
-    left: 0;
-    width: 52vw;
-    height: 100vh;
-    background-image: url("~assets/contact/images/bg1.png");
-    background-size: cover;
-    background-position: 25% 75%;
-  }
-
-  /* ---
  ナビゲーション: drawer関連
    --- */
   .drawer-navbar,
@@ -323,7 +314,7 @@ footer {
     display: block;
     height: 55px;
     font-size: 16px;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     line-height: 55px;
     padding: 0 25px;
     color: #45575d;
@@ -398,7 +389,7 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
     width: 100%;
     font-size: 1.4rem;
     height: 3.75rem;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     line-height: 3.75rem;
     color: #f9f9fc;
     text-decoration: none;
