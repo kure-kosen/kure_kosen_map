@@ -4,26 +4,18 @@
       :is="currentMenu"
       :top="side === 'top'">
       <ul class="navbar drawer-menu">
-        <li>
-          <a
-            class="drawer-brand"
-            href="#">呉高専マップ</a>
-        </li>
-        <li>
-          <a
-            class="drawer-menu-item"
-            href="#">マップを使う</a>
-        </li>
-        <li>
-          <a
-            class="drawer-menu-item"
-            href="#">私たちについて</a>
-        </li>
-        <li>
-          <a
-            class="drawer-menu-item"
-            href="#">お問い合わせ</a>
-        </li>
+        <li><nuxt-link 
+          class="drawer-brand" 
+          to="index">呉高専マップ</nuxt-link></li>
+        <li><a 
+          class="drawer-menu-item" 
+          href="map.html">マップを使う</a></li>
+        <li><nuxt-link 
+          class="drawer-menu-item" 
+          to="about_us">私たちについて</nuxt-link></li>
+        <li><nuxt-link 
+          class="drawer-menu-item" 
+          to="contact">お問い合わせ</nuxt-link></li>
       </ul>
     </component>
     <!--

@@ -190,6 +190,7 @@ export default {
     top: 36px;
     cursor: pointer;
     z-index: 100; /* added */
+    position: fixed; /* added */
   }
   .bm-burger-button.hidden {
     display: none;
