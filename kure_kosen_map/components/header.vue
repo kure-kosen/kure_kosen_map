@@ -1,5 +1,5 @@
 <template>
-  <slide>
+  <slideMenu>
     <ul class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
@@ -14,15 +14,15 @@
         class="drawer-menu-item"
         to="contact">お問い合わせ</nuxt-link></li>
     </ul>
-  </slide>
+  </slideMenu>
 </template>
 
 <script>
-import slide from "./slideMenu/slide";
+import slideMenu from "./slideMenuFromTop";
 
 export default {
   components: {
-    slide
+    slideMenu
   }
 };
 </script>
