@@ -1,7 +1,5 @@
 <template>
-  <component
-    :is="currentMenu"
-    :top="side === 'top'">
+  <slide>
     <ul class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
@@ -16,35 +14,15 @@
         class="drawer-menu-item"
         to="contact">お問い合わせ</nuxt-link></li>
     </ul>
-  </component>
+  </slide>
 </template>
 
 <script>
 import slide from "./slideMenu/slide";
-import Menu from "./slideMenu/menu";
 
 export default {
   components: {
-    slide,
-    Menu
-  },
-  data() {
-    return {
-      menus: {
-        slide: { buttonText: "Slide" }
-      },
-      side: "top",
-      currentMenu: "slide"
-    };
-  },
-  methods: {
-    changeMenu(menu) {
-      this.currentMenu = menu.replace(/ +/g, "").toLowerCase();
-      return this.currentMenu;
-    },
-    changeSide(side) {
-      this.side = side;
-    }
+    slide
   }
 };
 </script>
