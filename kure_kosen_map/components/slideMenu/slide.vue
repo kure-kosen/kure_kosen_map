@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Menu 
-      v-bind="this.$attrs" 
-      @openMenu="openMenu" 
+    <Menu
+      v-bind="this.$attrs"
+      @openMenu="openMenu"
       @closeMenu="closeMenu">
       <slot/>
     </Menu>
@@ -10,7 +10,8 @@
 </template>
 
 <script>
-import Menu from "../Menu";
+import Menu from "./menu";
+
 export default {
   name: "Slide",
   components: {

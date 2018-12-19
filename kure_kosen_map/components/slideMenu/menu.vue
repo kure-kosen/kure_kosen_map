@@ -40,17 +40,17 @@ export default {
     isOpen: {
       type: Boolean,
       required: false,
-      default: false //
+      default: false
     },
     right: {
       type: Boolean,
       required: false,
-      default: true //
+      default: true
     },
     left: {
       type: Boolean,
       required: false,
-      default: false //
+      default: false
     },
     width: {
       type: [String],
@@ -60,12 +60,12 @@ export default {
     disableEsc: {
       type: Boolean,
       required: false,
-      default: false //
+      default: false
     },
     noOverlay: {
       type: Boolean,
       required: false,
-      default: false //
+      default: false
     },
     /*
     onStateChange: {
