@@ -105,7 +105,6 @@
           </div>
         </div>
       </div>
-      <footer>Copyright &#169; 2018 Kuremap Team</footer>
     </main>
     <div class="img-bg"/>
   </div>
@@ -144,30 +143,14 @@ export default {
 <style scoped>
 @import url("../assets/contact/css/drawer.css");
 
-/* ---
- リセット
-   --- */
+/* --- リセット --- */
 * {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-
-  /*  layout/default.vue に対処 */
-  box-sizing: unset;
-  margin: 0;
-  padding: 0;
 }
 
-/* ---
- ページ全体
-   --- */
-.___container {
-  font-family: sans-serif;
-}
-
-/* ---
- 背景画像
-   ---  */
+/* --- 背景画像 ---  */
 .img-bg {
   position: absolute;
   z-index: -100;
@@ -180,16 +163,12 @@ export default {
   background-position: 25% 75%;
 }
 
-/* ---
- ナビゲーション
-   --- */
+/* --- ナビゲーション --- */
 .navbar li:first-child a {
   font-size: 110%;
 }
 
-/* ---
- フォーム全体
-   --- */
+/* --- フォーム全体 --- */
 .contact {
   background: #f9f9fc;
   right: 0;
@@ -201,11 +180,9 @@ export default {
 }
 
 .contact-inner {
-  /* --- フォームの中身の左右揃え --- */
   width: 80%;
   padding: 0 10%;
-
-  max-width: calc(500px - 25px);
+  margin: 0 auto;
 }
 
 .contact-inner h1 {
@@ -238,9 +215,7 @@ export default {
   color: #45575d;
 }
 
-/* ---
-フォーム各部品
-   --- */
+/* --- フォーム各部品 --- */
 .contact-inner form .input-area {
   /* --- 基本スタイル --- */
   background: #fff;
@@ -255,17 +230,15 @@ export default {
 
 .contact-inner form input[type="text"].input-area,
 .contact-inner form input[type="email"].input-area {
-  width: calc(100% - 25px);
-  max-width: calc(500px - 25px);
+  width: 100%;
 }
 
 .contact-inner form select.input-area {
-  width: calc(100% - 5px);
-  max-width: calc(500px - 5px);
+  width: 100%;
 }
 
 .contact-inner form textarea.input-area {
-  width: calc(100% - 25px);
+  width: 100%;
   padding: 10px;
   height: 6rem;
   resize: none;
@@ -285,19 +258,8 @@ export default {
   margin-left: auto;
 }
 
-/* ---
-フッター
-   --- */
-footer {
-  position: absolute;
-  bottom: 10px;
-  font-size: 12px;
-}
-
 @media screen and (min-width: 741px) {
-  /* ---
- ナビゲーション: drawer関連
-   --- */
+  /* --- ナビゲーション: drawer関連 --- */
   .drawer-navbar,
   .drawer-navbar .drawer-nav {
     height: auto;
@@ -325,7 +287,6 @@ footer {
     display: block;
     height: 55px;
     font-size: 16px;
-    /* vertical-align: middle; */
     line-height: 55px;
     padding: 0 25px;
     color: #45575d;
@@ -336,12 +297,9 @@ footer {
     margin-right: auto;
   }
 
-  /* ---
- フォーム全体
-   --- */
-  /* --- PC向け中央揃え
-contact-parentをrelativeにした上で、contactとcontact-innerの両方を揃えている
-   --- */
+  /* --- フォーム全体 --- */
+  /* --- PC向け中央揃え --- */
+  /* --- contact-parentをrelativeにした上で、contactとcontact-innerの両方を揃えている --- */
   .contact-parent {
     position: relative;
     height: calc(100vh - 56px);
@@ -356,18 +314,14 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
 }
 
 @media screen and (max-width: 740px) {
-  /* ---
- 背景画像
-   --- */
+  /* --- 背景画像 --- */
   .img-bg {
     width: 100vw;
     background-position: 40%;
     position: fixed;
   }
 
-  /* ---
- フォーム全体
-   --- */
+  /* --- フォーム全体 --- */
   .contact {
     background: #f9f9fcf5; /* 透過は背景画像が見えるようにするため */
     position: static;
@@ -383,10 +337,7 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
     padding: 20px 10%;
   }
 
-  /* ---
- ナビゲーション
-   --- */
-
+  /* --- ナビゲーション --- */
   .navbar {
     display: block;
     margin: 0;
@@ -400,7 +351,6 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
     width: 100%;
     font-size: 1.4rem;
     height: 3.75rem;
-    /* vertical-align: middle; */
     line-height: 3.75rem;
     color: #f9f9fc;
     text-decoration: none;
@@ -411,13 +361,6 @@ contact-parentをrelativeにした上で、contactとcontact-innerの両方を�
   .navbar li:first-child a {
     padding-left: 10px;
     display: block;
-  }
-
-  /* ---
- フッター
-   --- */
-  footer {
-    position: static;
   }
 }
 </style>
