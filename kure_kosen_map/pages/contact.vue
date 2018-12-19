@@ -18,50 +18,6 @@
           to="contact">お問い合わせ</nuxt-link></li>
       </ul>
     </component>
-    <!--
-    <header
-      class="drawer-navbar"
-      role="banner">
-      <div class="drawer-container">
-        <div class="drawer-navbar-header">
-          <button
-            type="button"
-            class="drawer-toggle drawer-hamburger">
-            <span class="sr-only">toggle navigation</span>
-            <span class="drawer-hamburger-icon"/>
-          </button>
-        </div>
-        <nav
-          class="drawer-nav"
-          role="navigation">
-          <div class="container">
-            <ul class="navbar drawer-menu">
-              <li>
-                <a
-                  class="drawer-brand"
-                  href="#">呉高専マップ</a>
-              </li>
-              <li>
-                <a
-                  class="drawer-menu-item"
-                  href="#">マップを使う</a>
-              </li>
-              <li>
-                <a
-                  class="drawer-menu-item"
-                  href="#">私たちについて</a>
-              </li>
-              <li>
-                <a
-                  class="drawer-menu-item"
-                  href="#">お問い合わせ</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    -->
 
     <main id="page-wrap">
       <div class="container contact-parent">
