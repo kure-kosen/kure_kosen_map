@@ -5,7 +5,7 @@
     <ul class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
-        href="#">呉高専マップ</a></li>
+        href="/">呉高専マップ</a></li>
       <li><a
         class="drawer-menu-item"
         href="map.html">マップを使う</a></li>
@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style scoped>
-@import url("../assets/contact/css/drawer.css");
-
 /* --- ナビゲーション --- */
 .navbar li:first-child a {
   font-size: 110%;
@@ -73,9 +71,9 @@ export default {
     display: flex;
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    background: #f9f9fc;
     border-bottom: 1px solid #d9d9d9;
+    background: #f9f9fc;
+    list-style-type: none;
   }
 
   .navbar li {
@@ -84,12 +82,12 @@ export default {
 
   .navbar li a {
     display: block;
-    height: 55px;
-    font-size: 16px;
-    line-height: 55px;
     padding: 0 25px;
+    height: 55px;
     color: #45575d;
     text-decoration: none;
+    font-size: 16px;
+    line-height: 55px;
   }
 
   .navbar li:first-child {
@@ -103,25 +101,26 @@ export default {
     display: block;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     background: transparent;
+    list-style-type: none;
   }
 
   .navbar li a {
     display: block;
+    box-sizing: border-box;
+    padding-left: 10px;
     width: 100%;
-    font-size: 1.4rem;
     height: 3.75rem;
-    line-height: 3.75rem;
+    border-bottom: 1px solid #d9d9d9;
     color: #f9f9fc;
     text-decoration: none;
-    border-bottom: 1px solid #d9d9d9;
-    box-sizing: border-box;
+    font-size: 1.4rem;
+    line-height: 3.75rem;
   }
 
   .navbar li:first-child a {
-    padding-left: 10px;
     display: block;
+    padding-left: 10px;
   }
 }
 </style>
