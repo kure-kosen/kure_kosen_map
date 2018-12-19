@@ -50,8 +50,6 @@
                       name="entry.287582427"
                       required>
                       <option
-                        class="default"
-                        value
                         selected
                         disabled>《所属》</option>
                       <option value="呉高専生">呉高専生</option>
@@ -79,8 +77,6 @@
                       name="entry.1357279738"
                       required>
                       <option
-                        class="default"
-                        value
                         selected
                         disabled>《お問い合わせの種類》</option>
                       <option value="感想">感想</option>
@@ -100,7 +96,7 @@
               </ul>
               <input
                 type="submit"
-                value="送 信">
+                value="送信">
             </form>
           </div>
         </div>
