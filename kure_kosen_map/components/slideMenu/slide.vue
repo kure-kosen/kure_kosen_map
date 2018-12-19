@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Menu v-bind="this.$attrs">
+    <Menu>
       <slot/>
     </Menu>
   </div>
