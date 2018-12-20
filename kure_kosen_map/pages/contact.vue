@@ -235,6 +235,7 @@ export default {
     position: static;
     width: 85vw;
     height: auto;
+    margin: 40px auto;
     box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.32);
   }
 
