@@ -1,8 +1,7 @@
 <template>
-  <div class="___container">
-    <Header />
-    <main id="page-wrap">
-      <div class="container contact-parent">
+  <div>
+    <main>
+      <div class="contact-parent">
         <div class="contact">
           <div class="contact-inner">
             <div class="introduction">
@@ -116,8 +115,8 @@
   width: 48vw;
   height: 100%;
   overflow-y: auto;
-  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.32);
   display: block;
+  position: absolute;
 }
 
 .contact-inner {
@@ -230,10 +229,8 @@
     position: static;
     width: 85vw;
     height: auto;
-    display: block;
-    margin: 20px auto;
     height: auto;
-    overflow-y: visible;
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 0.32);
   }
 
   .contact-inner {
