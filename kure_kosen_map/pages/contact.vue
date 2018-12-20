@@ -87,6 +87,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  layout: "contact"
+};
+</script>
+
 <style scoped>
 /* --- リセット --- */
 * {

@@ -11,7 +11,7 @@
         v-show="isSideBarOpen && (vw < 740)"
         class="bm-cross-button cross-style"
         @click="closeMenu">
-        ×
+        <i class="fa fa-lg fa-times"/>
       </span>
     </div>
     <span
@@ -19,7 +19,7 @@
       class="bm-burger-button"
       @click="openMenu"
     >
-      ≡
+      <i class="fa fa-lg fa-bars"/>
     </span>
   </div>
 </template>
@@ -75,12 +75,12 @@ export default {
 @media screen and (max-width: 740px) {
   .bm-burger-button {
     position: fixed;
-    top: 36px;
-    right: 36px;
+    top: 12px;
+    right: 2px;
     left: auto;
     z-index: 100;
-    width: 36px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
   }
 
