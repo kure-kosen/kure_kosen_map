@@ -1,6 +1,8 @@
 <template>
   <slideMenu>
-    <ul class="navbar drawer-menu">
+    <ul
+      :style="{ background: custombgcolor }"
+      class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
         href="/">呉高専マップ</a></li>
@@ -23,6 +25,12 @@ import slideMenu from "./slideMenuFromTop";
 export default {
   components: {
     slideMenu
+  },
+  props: {
+    custombgcolor: {
+      type: String,
+      default: "#f9f9fc"
+    }
   }
 };
 </script>
@@ -50,7 +58,6 @@ export default {
     margin: 0;
     padding: 0;
     border-bottom: 1px solid #d9d9d9;
-    background: #f9f9fc;
     list-style-type: none;
   }
 
