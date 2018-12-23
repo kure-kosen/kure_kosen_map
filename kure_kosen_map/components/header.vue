@@ -29,7 +29,7 @@ export default {
   props: {
     custombgcolor: {
       type: String,
-      default: "#f9f9fc"
+      default: "transparent"
     }
   }
 };
@@ -59,6 +59,7 @@ export default {
     padding: 0;
     border-bottom: 1px solid #d9d9d9;
     list-style-type: none;
+    background: #f9f9fc;
   }
 
   .navbar li {
