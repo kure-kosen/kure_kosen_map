@@ -1,7 +1,7 @@
 <template>
   <slideMenu>
     <ul
-      :style="{ background: custombgcolor }"
+      :style="{ background: backgroundColor }"
       class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
@@ -27,7 +27,7 @@ export default {
     slideMenu
   },
   props: {
-    custombgcolor: {
+    backgroundColor: {
       type: String,
       default: "transparent"
     }

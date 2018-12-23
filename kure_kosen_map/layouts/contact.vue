@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header custombgcolor="#f99"/>
+    <Header background-color="#f99"/>
     <nuxt/>
   </div>
 </template>
