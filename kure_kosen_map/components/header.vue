@@ -90,7 +90,7 @@ export default {
     border-bottom: 1px solid #d9d9d9;
     list-style-type: none;
 
-    --background: transparent;
+    --background: #fff;
     background: var(--pc-background);
   }
 
@@ -106,7 +106,7 @@ export default {
     font-size: 16px;
     line-height: 55px;
 
-    --color: #45575d;
+    --color: #000;
     color: var(--pc-color);
   }
 
@@ -123,7 +123,7 @@ export default {
     padding: 0;
     list-style-type: none;
 
-    --background: transparent;
+    --background: #fff;
     background: var(--sp-background);
   }
 
@@ -138,7 +138,7 @@ export default {
     font-size: 1.4rem;
     line-height: 3.75rem;
 
-    --color: #f9f9fc;
+    --color: #000;
     color: var(--sp-color);
   }
 
