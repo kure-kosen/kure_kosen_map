@@ -1,10 +1,10 @@
 <template>
   <div>
     <Header
-      pc-background-color="#ff0"
-      sp-background-color="#f0f"
-      pc-color="#00f"
-      sp-color="#0f0"/>
+      pc-background-color="#f9f9fc"
+      sp-background-color="transparent"
+      pc-color="#45575d"
+      sp-color="#f9f9fc"/>
     <nuxt/>
   </div>
 </template>
