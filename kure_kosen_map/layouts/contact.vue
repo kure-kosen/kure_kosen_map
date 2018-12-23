@@ -2,7 +2,9 @@
   <div>
     <Header
       pc-background-color="#ff0"
-      sp-background-color="#f0f"/>
+      sp-background-color="#f0f"
+      pc-color="#00f"
+      sp-color="#0f0"/>
     <nuxt/>
   </div>
 </template>

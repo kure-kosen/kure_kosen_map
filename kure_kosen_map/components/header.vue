@@ -4,15 +4,19 @@
       :style="backGroundColor"
       class="navbar drawer-menu">
       <li><a
+        :style="textColor"
         class="drawer-brand"
         href="/">呉高専マップ</a></li>
       <li><a
+        :style="textColor"
         class="drawer-menu-item"
         href="map.html">マップを使う</a></li>
       <li><nuxt-link
+        :style="textColor"
         class="drawer-menu-item"
         to="about_us">私たちについて</nuxt-link></li>
       <li><nuxt-link
+        :style="textColor"
         class="drawer-menu-item"
         to="contact">お問い合わせ</nuxt-link></li>
     </ul>
@@ -34,6 +38,14 @@ export default {
     spBackgroundColor: {
       type: String,
       default: "transparent"
+    },
+    pcColor: {
+      type: String,
+      default: "transparent"
+    },
+    spColor: {
+      type: String,
+      default: "transparent"
     }
   },
   computed: {
@@ -41,6 +53,12 @@ export default {
       return {
         "--pc-background": this.pcBackgroundColor,
         "--sp-background": this.spBackgroundColor
+      };
+    },
+    textColor() {
+      return {
+        "--pc-color": this.pcColor,
+        "--sp-color": this.spColor
       };
     }
   }
@@ -84,10 +102,12 @@ export default {
     display: block;
     padding: 0 25px;
     height: 55px;
-    color: #45575d;
     text-decoration: none;
     font-size: 16px;
     line-height: 55px;
+
+    --color: #45575d;
+    color: var(--pc-color);
   }
 
   .navbar li:first-child {
@@ -114,10 +134,12 @@ export default {
     width: 100%;
     height: 3.75rem;
     border-bottom: 1px solid #d9d9d9;
-    color: #f9f9fc;
     text-decoration: none;
     font-size: 1.4rem;
     line-height: 3.75rem;
+
+    --color: #f9f9fc;
+    color: var(--sp-color);
   }
 
   .navbar li:first-child a {
