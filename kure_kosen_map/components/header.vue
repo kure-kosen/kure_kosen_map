@@ -1,7 +1,7 @@
 <template>
   <slideMenu>
     <ul
-      :style="{ background: backgroundColor }"
+      :style="styles"
       class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
@@ -31,6 +31,13 @@ export default {
       type: String,
       default: "transparent"
     }
+  },
+  computed: {
+    styles() {
+      return {
+        "--background": this.backgroundColor
+      };
+    }
   }
 };
 </script>
@@ -59,7 +66,9 @@ export default {
     padding: 0;
     border-bottom: 1px solid #d9d9d9;
     list-style-type: none;
-    background: #f9f9fc;
+
+    --background: transparent;
+    background: var(--background);
   }
 
   .navbar li {
