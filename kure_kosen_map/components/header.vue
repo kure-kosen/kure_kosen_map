@@ -1,7 +1,7 @@
 <template>
   <slideMenu>
     <ul
-      :style="styles"
+      :style="backGroundColor"
       class="navbar drawer-menu">
       <li><a
         class="drawer-brand"
@@ -27,15 +27,20 @@ export default {
     slideMenu
   },
   props: {
-    backgroundColor: {
+    pcBackgroundColor: {
+      type: String,
+      default: "transparent"
+    },
+    spBackgroundColor: {
       type: String,
       default: "transparent"
     }
   },
   computed: {
-    styles() {
+    backGroundColor() {
       return {
-        "--background": this.backgroundColor
+        "--pc-background": this.pcBackgroundColor,
+        "--sp-background": this.spBackgroundColor
       };
     }
   }
@@ -68,7 +73,7 @@ export default {
     list-style-type: none;
 
     --background: transparent;
-    background: var(--background);
+    background: var(--pc-background);
   }
 
   .navbar li {
@@ -96,8 +101,10 @@ export default {
     display: block;
     margin: 0;
     padding: 0;
-    background: transparent;
     list-style-type: none;
+
+    --background: transparent;
+    background: var(--sp-background);
   }
 
   .navbar li a {

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Header background-color="#f99"/>
+    <Header
+      pc-background-color="#ff0"
+      sp-background-color="#f0f"/>
     <nuxt/>
   </div>
 </template>
