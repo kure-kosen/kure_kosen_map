@@ -116,7 +116,7 @@ export default {
 
 /* --- フォーム全体 --- */
 .contact {
-  background: var(bg_color);
+  background: #f9f9fcf5;
   right: 0;
   width: 48vw;
   height: 100%;
