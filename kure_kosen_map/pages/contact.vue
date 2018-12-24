@@ -128,7 +128,6 @@ export default {
 .contact-inner {
   width: 80%;
   padding: 0 10%;
-  margin: 0 auto;
 }
 
 .contact-inner h1 {
@@ -219,6 +218,10 @@ export default {
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .contact-inner {
+    right: 10%;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -241,6 +244,7 @@ export default {
 
   .contact-inner {
     padding: 20px 10%;
+    margin: 0 auto;
   }
 }
 </style>
