@@ -31,34 +31,31 @@ export default {
     slideMenu
   },
   props: {
-    pcBackgroundColor: {
-      type: String,
-      default: "transparent"
-    },
-    spBackgroundColor: {
-      type: String,
-      default: "transparent"
-    },
-    pcColor: {
-      type: String,
-      default: "transparent"
-    },
-    spColor: {
-      type: String,
-      default: "transparent"
+    colors: {
+      type: Object,
+      default: () => ({
+        pc: {
+          backGroundColor: "transparent",
+          text: "transparent"
+        },
+        sp: {
+          backGroundColor: "transparent",
+          text: "transparent"
+        }
+      })
     }
   },
   computed: {
     backGroundColor() {
       return {
-        "--pc-background": this.pcBackgroundColor,
-        "--sp-background": this.spBackgroundColor
+        "--pc-background": this.colors.pc.backGroundColor,
+        "--sp-background": this.colors.sp.backGroundColor
       };
     },
     textColor() {
       return {
-        "--pc-color": this.pcColor,
-        "--sp-color": this.spColor
+        "--pc-color": this.colors.pc.text,
+        "--sp-color": this.colors.sp.text
       };
     }
   }
