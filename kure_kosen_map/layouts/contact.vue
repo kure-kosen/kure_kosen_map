@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Header :colors="colors"/>
+    <Header
+      :colors="colors"
+      :borders="borders"/>
     <nuxt/>
   </div>
 </template>
@@ -17,6 +19,11 @@ export default {
         sp: {
           backGroundColor: "transparent",
           text: "#f9f9fc"
+        }
+      },
+      borders: {
+        pc: {
+          navBarBorder: "1px solid #d9d9d9"
         }
       }
     };

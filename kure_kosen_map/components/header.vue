@@ -1,7 +1,7 @@
 <template>
   <slideMenu>
     <ul
-      :style="backGroundColor"
+      :style="[backGroundColor, navBarBorder]"
       class="navbar drawer-menu">
       <li><a
         :style="textColor"
@@ -43,6 +43,14 @@ export default {
           text: "transparent"
         }
       })
+    },
+    borders: {
+      type: Object,
+      default: () => ({
+        pc: {
+          navBarBorder: "none"
+        }
+      })
     }
   },
   computed: {
@@ -56,6 +64,11 @@ export default {
       return {
         "--pc-color": this.colors.pc.text,
         "--sp-color": this.colors.sp.text
+      };
+    },
+    navBarBorder() {
+      return {
+        "--border-bottom": this.borders.pc.navBarBorder
       };
     }
   }
@@ -84,8 +97,10 @@ export default {
     display: flex;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid #d9d9d9;
     list-style-type: none;
+
+    --border-bottom: 1px solid #d9d9d9;
+    border-bottom: var(--border-bottom);
 
     --background: #fff;
     background: var(--pc-background);
