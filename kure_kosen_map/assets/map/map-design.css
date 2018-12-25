@@ -1,34 +1,9 @@
-.wrap-menubtn {
-  position: fixed;
-  top: 0.5em;
-  right: 0.5em;
-}
-
-.wrap-openmenu.menuactive {
-  display: none;
-}
-
-.ol-full-screen {
-  position: absolute;
-  top: 3em;
-  right: 0.5em;
-}
-
-.menu .wrap-closemenubtn {
-  z-index: 1;
-}
-
 .menu {
-  color: #222;
   margin: 0;
   padding: 0;
   font-size: 1.2em;
   line-height: 170%;
   font-family: sans-serif;
-}
-
-.menu.active {
-  display: block;
 }
 
 .menu-box {
@@ -37,6 +12,11 @@
 
 .menu .menu-buildings {
   border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu .menu-buildings li {
+  border-bottom: 1px solid #ccc;
 }
 
 .menu li,
@@ -52,7 +32,7 @@
 .menu .menu-buildings {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: calc(100vh - 20em);
+  height: 30vh;
 }
 
 .menu .menu-title,
@@ -61,7 +41,6 @@
 }
 
 .menu a {
-  color: #222;
   text-decoration: none;
 }
 
@@ -173,15 +152,31 @@ li {
 /* --- pc --- */
 @media screen and (min-width: 741px) {
   .menu {
+    color: #222;
     position: fixed;
     top: 0;
     right: 0;
     overflow: auto;
     max-width: 270px;
     width: 48%;
-    height: 100%;
-    background-color: rgba(245, 245, 245, 0.8);
+    height: 100vh;
+    background-color: #f9f9fcf5;
+  }
+
+  .menu a {
+    color: #222;
   }
 }
 
 /* --- sp --- */
+@media screen and (max-width: 740px) {
+  .menu {
+    color: #f9f9fc;
+    height: 80vh;
+    overflow: auto;
+  }
+
+  .menu a {
+    color: #f9f9fc;
+  }
+}
