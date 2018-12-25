@@ -2,7 +2,7 @@
   <div>
     <MyMap />
     <div class="fullscreenlayer">
-      <slideMenu>
+      <component :is="slideMenu">
         <nav
           id="menu"
           class="menu">
@@ -44,19 +44,40 @@
             </div>
           </div>
         </nav>
-      </slideMenu>
+      </component>
     </div>
   </div>
 </template>
 
 <script>
 import MyMap from "../components/mymap";
-import slideMenu from "../components/slideMenuFromTop";
+import slideMenuFromTop from "../components/slideMenuFromTop";
+import slideMenuFromRight from "../components/slideMenuFromRight";
 
 export default {
   components: {
     MyMap,
-    slideMenu
+    slideMenuFromTop,
+    slideMenuFromRight
+  },
+  data() {
+    return {
+      vw: window.innerWidth
+    };
+  },
+  computed: {
+    slideMenu: function() {
+      if (this.vw < 740) {
+        return "slideMenuFromTop";
+      } else {
+        return "slideMenuFromRight";
+      }
+    }
+  },
+  methods: {
+    handleResize: function() {
+      this.vw = window.innerWidth;
+    }
   }
 };
 </script>

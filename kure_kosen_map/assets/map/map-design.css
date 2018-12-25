@@ -153,12 +153,8 @@ li {
 @media screen and (min-width: 741px) {
   .menu {
     color: #222;
-    position: fixed;
-    top: 0;
-    right: 0;
     overflow: auto;
-    max-width: 270px;
-    width: 48%;
+    width: 270px;
     height: 100vh;
     background-color: #f9f9fcf5;
   }
