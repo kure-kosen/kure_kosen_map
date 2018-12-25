@@ -3,14 +3,12 @@
     <MyMap />
     <div class="fullscreenlayer">
       <slideMenu>
-
         <nav
           id="menu"
           class="menu">
           <div class="menu-box">
             <div class="menu-title">呉高専マップ</div>
             <div>建物ジャンプ</div>
-
             <div class="menu-buildings">
               <ul>
                 <li>図書館棟<br>(教育センター)</li>
@@ -46,8 +44,6 @@
                 title="コンテンツ準備中">
                 <div>準備中</div>
               </a>
-            </div>
-            <div>
               <a
                 href="#terms"
                 title="コンテンツ準備中">
@@ -69,9 +65,7 @@
             </div>
           </div>
         </nav>
-
       </slideMenu>
-
     </div>
   </div>
 </template>
