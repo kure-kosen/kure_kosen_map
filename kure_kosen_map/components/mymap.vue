@@ -17,4 +17,5 @@ export default {
 
 <style scoped>
 @import url("../assets/map/map.css");
+@import url("../assets/map/map-design.css");
 </style>
