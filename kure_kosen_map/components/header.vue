@@ -99,10 +99,7 @@ export default {
     padding: 0;
     list-style-type: none;
 
-    --border-bottom: 1px solid #d9d9d9;
     border-bottom: var(--border-bottom);
-
-    --background: #fff;
     background: var(--pc-background);
   }
 
@@ -118,7 +115,6 @@ export default {
     font-size: 16px;
     line-height: 55px;
 
-    --color: #000;
     color: var(--pc-color);
   }
 
@@ -135,7 +131,6 @@ export default {
     padding: 0;
     list-style-type: none;
 
-    --background: #fff;
     background: var(--sp-background);
   }
 
@@ -150,7 +145,6 @@ export default {
     font-size: 1.4rem;
     line-height: 3.75rem;
 
-    --color: #000;
     color: var(--sp-color);
   }
 
