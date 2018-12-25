@@ -19,13 +19,12 @@
 }
 
 .menu {
-  font-family: sans-serif;
-
   color: #222;
   margin: 0;
   padding: 0;
   font-size: 1.2em;
   line-height: 170%;
+  font-family: sans-serif;
 }
 
 .menu.active {
@@ -42,8 +41,6 @@
 
 .menu li,
 .menu a {
-  list-style-type: none;
-
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -58,14 +55,18 @@
   height: calc(100vh - 20em);
 }
 
+.menu .menu-title,
+.menu .copyright {
+  font-size: 0.7em;
+}
+
 .menu a {
   color: #222;
   text-decoration: none;
 }
 
-.menu .menu-title,
-.menu .copyright {
-  font-size: 0.7em;
+li {
+  list-style-type: none;
 }
 
 /* --- */
