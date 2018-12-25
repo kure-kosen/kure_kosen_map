@@ -23,4 +23,20 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+button,
+input {
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  appearance: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 </style>
