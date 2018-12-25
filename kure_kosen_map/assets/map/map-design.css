@@ -29,6 +29,12 @@
   height: 100%;
   background-color: rgba(245, 245, 245, 0.8);
   font-family: sans-serif;
+
+  color: #222;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+  line-height: 170%;
 }
 
 .menu.active {
@@ -39,37 +45,20 @@
   padding: 0.7em;
 }
 
-.menu hr {
-  border: 1px solid #ddd;
+.menu .menu-buildings {
+  border-top: 1px solid #ddd;
 }
 
-.menu ul {
-  margin: 0;
-  padding: 0;
-  font-size: 1.2em;
-  line-height: 150%;
-}
-
-.menu li {
+.menu li,
+.menu a {
   list-style-type: none;
 
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu li:hover {
+.menu li:hover,
+.menu a:hover {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.menu .menu-nohover {
-  -webkit-tap-highlight-color: transparent;
-}
-
-.menu .menu-nohover:hover {
-  background-color: transparent;
-}
-
-.menu .menu-list {
-  margin-top: 0.8em;
 }
 
 .menu .menu-buildings {
@@ -78,19 +67,17 @@
   height: calc(100vh - 20em);
 }
 
-.menu .menu-content,
-.menu .menu-content a {
-  color: #c81e00;
-}
-
 .menu a {
-  color: #333;
+  color: #222;
   text-decoration: none;
 }
 
-.menu .footer {
-  text-align: right;
+.menu .menu-title,
+.menu .copyright {
+  font-size: 0.7em;
 }
+
+/* --- */
 
 .ol-popup table {
   border: 0;
