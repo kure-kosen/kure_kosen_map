@@ -8,7 +8,7 @@ import { fromLonLat } from "ol/proj";
 import { ScaleLine } from "ol/control";
 import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
 
-export const initMap = vm => {
+const initMap = vm => {
   const view = new View({
     center: fromLonLat([140.097, 37.856]),
     zoom: 8
@@ -33,3 +33,5 @@ export const initMap = vm => {
 
   vm.$store.commit("setMap", map);
 };
+
+export default initMap;
