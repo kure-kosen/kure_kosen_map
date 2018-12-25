@@ -2,23 +2,18 @@ import "ol/ol.css";
 
 import Map from "ol/Map";
 import View from "ol/View";
-import TileLayer from "ol/layer/Tile";
-import OSM from "ol/source/OSM";
 import { fromLonLat } from "ol/proj";
 import { ScaleLine } from "ol/control";
 import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
 
+import layers from "./layers/index";
+
 const initMap = vm => {
   const view = new View({
-    center: fromLonLat([140.097, 37.856]),
-    zoom: 8
+    center: fromLonLat([132.601271, 34.232102]),
+    zoom: 17.5,
+    rotation: -0.36911708366090856
   });
-
-  const layers = [
-    new TileLayer({
-      source: new OSM()
-    })
-  ];
 
   const interactions = defaultInteractions().extend([new DragRotateAndZoom()]);
 
