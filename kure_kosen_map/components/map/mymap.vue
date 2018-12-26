@@ -13,7 +13,6 @@ import popup from "./popup";
 export default {
   name: "MyMap",
   components: {
-    layerSwitcher,
     popup
   },
   mounted: function() {
