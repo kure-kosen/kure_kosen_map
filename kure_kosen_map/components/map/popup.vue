@@ -3,8 +3,15 @@
     v-show="flag"
     id="popup"
     class="ol-popup"
-    v-html="content"
-  />
+  >
+    <table>
+      <tr
+        v-for="content in contents"
+        :key="content">
+        <td>{{ content.key }}</td><td>{{ content.property }}</td>
+      </tr>
+    </table>
+  </div>
 </template>
 
 <script>
@@ -14,9 +21,9 @@ import { Select } from "ol/interaction";
 export default {
   data() {
     return {
+      flag: false,
       popup: null,
-      content: "",
-      flag: false
+      contents: []
     };
   },
   watch: {
@@ -50,17 +57,15 @@ export default {
       MySelect.getFeatures().on(["add"], e => {
         const feature = e.element;
         const coordinate = feature.getGeometry().getCoordinates();
-        let content = "";
-        content += "<table border=1>";
-        content += "<tr><td>number</td><td>" + feature.get("number") + "</td></tr>";
-        content += "<tr><td>name</td><td>" + feature.get("name") + "</td></tr>";
-        content += "<tr><td>address</td><td>" + feature.get("address") + "</td></tr>";
-        content += "<tr><td>region</td><td>" + feature.get("region") + "</td></tr>";
-        content += "<tr><td>commune</td><td>" + feature.get("commune") + "</td></tr>";
-        content += "<tr><td>text</td><td>" + feature.get("text") + "</td></tr>";
-        content += "</table>";
+        const keys = feature.getKeys().filter(v => v !== "geometry");
 
-        this.content = content;
+        this.contents = keys.map(v => {
+          return {
+            key: v,
+            property: feature.get(v)
+          };
+        });
+
         this.flag = true;
       });
 
