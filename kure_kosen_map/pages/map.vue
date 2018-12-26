@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MyMap from "../components/mymap";
+import MyMap from "../components/map/mymap";
 
 export default {
   components: {
