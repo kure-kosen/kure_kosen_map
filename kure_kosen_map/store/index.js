@@ -11,12 +11,3 @@ export const mutations = {
     state.mapCreatedFlag = true;
   }
 };
-
-export const getters = {
-  getMap(state) {
-    return state.map;
-  },
-  getCreatedFlag(state) {
-    return state.mapCreatedFlag;
-  }
-};
