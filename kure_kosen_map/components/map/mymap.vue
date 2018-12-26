@@ -1,7 +1,6 @@
 <template>
   <div>
     <div id="mymap" />
-    <layerSwitcher />
     <popup />
   </div>
 </template>
@@ -9,7 +8,6 @@
 <script>
 import initMap from "../../assets/map/initMap";
 
-import layerSwitcher from "./layerSwitcher";
 import popup from "./popup";
 
 export default {
