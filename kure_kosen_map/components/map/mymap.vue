@@ -1,6 +1,7 @@
 <template>
   <div>
     <div id="mymap" />
+    <layerSwitcherWrapper />
     <popup />
   </div>
 </template>
@@ -8,11 +9,13 @@
 <script>
 import initMap from "../../assets/map/initMap";
 
+import layerSwitcherWrapper from "./layerSwitcherWrapper";
 import popup from "./popup";
 
 export default {
   name: "MyMap",
   components: {
+    layerSwitcherWrapper,
     popup
   },
   mounted: function() {
