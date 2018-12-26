@@ -7,7 +7,7 @@
     <table>
       <tr
         v-for="content in contents"
-        :key="content">
+        :key="content.id">
         <td>{{ content.key }}</td><td>{{ content.property }}</td>
       </tr>
     </table>
@@ -59,8 +59,9 @@ export default {
         const coordinate = feature.getGeometry().getCoordinates();
         const keys = feature.getKeys().filter(v => v !== "geometry");
 
-        this.contents = keys.map(v => {
+        this.contents = keys.map((v, i) => {
           return {
+            id: i,
             key: v,
             property: feature.get(v)
           };
