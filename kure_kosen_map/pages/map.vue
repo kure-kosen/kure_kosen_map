@@ -2,7 +2,9 @@
   <div>
     <MyMap />
     <div class="fullscreenlayer">
-      <component :is="slideMenu">
+      <component
+        :is="slideMenu"
+        menu-width="270px">
         <mapMenu />
       </component>
     </div>

@@ -26,6 +26,13 @@
 
 <script>
 export default {
+  props: {
+    menuWidth: {
+      type: String,
+      default: "270px"
+    }
+  },
+
   data() {
     return {
       isSideBarOpen: false,
@@ -50,7 +57,7 @@ export default {
 
     openMenu() {
       this.isSideBarOpen = true;
-      document.getElementById("sideNav").style.width = "270px";
+      document.getElementById("sideNav").style.width = this.menuWidth;
       document.getElementById("sideNav").style.top = "0";
     },
 
