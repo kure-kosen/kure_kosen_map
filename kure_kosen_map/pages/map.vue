@@ -22,11 +22,13 @@ export default {
     slideMenuFromTop,
     slideMenuFromRight
   },
+
   data() {
     return {
       vw: window.innerWidth
     };
   },
+
   computed: {
     slideMenu: function() {
       if (this.vw < 740) {
@@ -36,14 +38,17 @@ export default {
       }
     }
   },
+
   created: function() {
     document.addEventListener("click", this.documentClick);
     window.addEventListener("resize", this.handleResize);
   },
+
   destroyed: function() {
     document.removeEventListener("click", this.documentClick);
     window.removeEventListener("resize", this.handleResize);
   },
+
   methods: {
     handleResize: function() {
       this.vw = window.innerWidth;
