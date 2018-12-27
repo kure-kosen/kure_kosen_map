@@ -48,18 +48,6 @@ li {
   list-style-type: none;
 }
 
-/* --- */
-
-.ol-popup table {
-  border: 0;
-}
-
-.ol-popup td {
-  padding: 2px;
-  border: 0;
-  border-left: 2px solid rgba(0, 60, 136, 0.5);
-}
-
 .mysearch {
   position: absolute;
   top: 0;
