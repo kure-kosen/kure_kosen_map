@@ -12,23 +12,52 @@
       </div>
     </div>
 
-    <table id="layer_switcher_table">
-      <thead>
-        <tr>
-          <td>フォルダ名</td>
-          <td>レイヤー名</td>
-          <td>透明度</td>
-          <td>表示/非表示</td>
-        </tr>
-      </thead>
-      <tbody/>
-    </table>
+    <LiquorTree
+      ref="tree"
+      :options="options"
+      :data="items"
+      @node:checked="onNodeChecked"
+    />
   </div>
 </template>
 
 <script>
+import LiquorTree from "liquor-tree";
+
 export default {
+  components: {
+    LiquorTree
+  },
+  data() {
+    return {
+      items: [
+        {
+          text: "Node 1"
+        },
+        {
+          text: "Node 2",
+          children: [
+            {
+              text: "Node 2.1"
+            },
+            {
+              text: "Node 2.2"
+            }
+          ]
+        }
+      ],
+      options: {
+        checkbox: true
+      }
+    };
+  },
   methods: {
+    onNodeChecked: function(node) {
+      if (node.children.length === 0) {
+        console.log(node);
+      }
+      node.unselect();
+    },
     closeLayerSwitcher: function() {
       this.$emit("close");
     }
