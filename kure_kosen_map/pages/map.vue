@@ -3,60 +3,22 @@
     <MyMap />
     <div class="fullscreenlayer">
       <component :is="slideMenu">
-        <nav
-          id="menu"
-          class="menu">
-          <div class="menu-box">
-            <div class="menu-title">呉高専マップ</div>
-            <div>建物ジャンプ</div>
-            <div class="menu-buildings">
-              <ul>
-                <li>図書館棟 (教育センター)</li>
-                <li>管理棟</li>
-                <li>普通教室棟</li>
-                <li>機械工学科棟</li>
-                <li>電気情報工学科棟</li>
-                <li>建築学科棟</li>
-                <li>環境都市工学科棟</li>
-                <li>専攻科棟 (協働研究センター棟)</li>
-                <li>第2普通教室棟</li>
-                <li>静心館</li>
-                <li>第1体育館</li>
-                <li>第2体育館</li>
-                <li>学生食堂</li>
-                <li>技術センター</li>
-              </ul>
-            </div>
-            <div>
-              <a
-                href="about_us.html"
-                title="About Us">
-                <div>About Us</div>
-              </a>
-              <a
-                href="https://www.kure-nct.ac.jp/"
-                title="呉高専HPへ">
-                <div>呉高専HPへ</div>
-              </a>
-            </div>
-            <div class="copyright">
-              &copy;2018 - Kuremap Team
-            </div>
-          </div>
-        </nav>
+        <mapMenu />
       </component>
     </div>
   </div>
 </template>
 
 <script>
-import MyMap from "../components/mymap";
+import MyMap from "../components/map/mymap";
+import mapMenu from "../components/map/mapMenu";
 import slideMenuFromTop from "../components/slideMenuFromTop";
 import slideMenuFromRight from "../components/slideMenuFromRight";
 
 export default {
   components: {
     MyMap,
+    mapMenu,
     slideMenuFromTop,
     slideMenuFromRight
   },
@@ -73,6 +35,14 @@ export default {
         return "slideMenuFromRight";
       }
     }
+  },
+  created: function() {
+    document.addEventListener("click", this.documentClick);
+    window.addEventListener("resize", this.handleResize);
+  },
+  destroyed: function() {
+    document.removeEventListener("click", this.documentClick);
+    window.removeEventListener("resize", this.handleResize);
   },
   methods: {
     handleResize: function() {
