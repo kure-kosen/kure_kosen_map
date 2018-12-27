@@ -6,7 +6,7 @@ export const state = () => ({
 });
 
 export const mutations = {
-  setMap(state, payload) {
+  setMap: (state, payload) => {
     state.map = payload;
     state.mapCreatedFlag = true;
   }
