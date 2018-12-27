@@ -79,7 +79,6 @@
 .menu .menu-buildings {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  height: 30vh;
 }
 
 .menu .menu-title,
@@ -105,6 +104,10 @@ li {
     background-color: #f9f9fcf5;
   }
 
+  .menu .menu-buildings {
+    height: calc(100vh - 10em);
+  }
+
   .menu a {
     color: #222;
   }
@@ -116,6 +119,10 @@ li {
     color: #f9f9fc;
     height: 80vh;
     overflow: auto;
+  }
+
+  .menu .menu-buildings {
+    height: calc(80vh - 10em);
   }
 
   .menu a {
