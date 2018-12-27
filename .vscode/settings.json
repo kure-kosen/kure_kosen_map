@@ -1,54 +1,5 @@
 {
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
-  "diffEditor.renderSideBySide": false,
-  "editor.colorDecorators": false,
-  "editor.detectIndentation": false,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnType": true,
-  "editor.insertSpaces": true,
-  "editor.minimap.renderCharacters": false,
-  "editor.minimap.showSlider": "always",
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.renderControlCharacters": true,
-  "editor.renderLineHighlight": "all",
-  "editor.renderWhitespace": "all",
-  "editor.snippetSuggestions": "top",
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.variables": {
-    "lang": "ja"
-  },
-  "eslint.validate": ["javascript"],
-  "explorer.confirmDelete": false,
-  "files.associations": {
-    ".*lintrc": "json"
-  },
-  "files.exclude": {
-    "**/*.map": true,
-    "**/node_modules": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true,
-  "html.format.contentUnformatted": "pre, code, textarea, title, h1, h2, h3, h4, h5, h6, p",
-  "html.format.extraLiners": "",
-  "html.format.unformatted": null,
-  "html.format.wrapLineLength": 120,
-  "prettier.bracketSpacing": true,
-  "prettier.jsxBracketSameLine": false,
-  "prettier.printWidth": 120,
-  "prettier.semi": false,
-  "prettier.singleQuote": true,
-  "prettier.useTabs": false,
-  "search.exclude": {
-    "**/tmp": true
-  },
-  "workbench.editor.labelFormat": "short",
-  "workbench.editor.tabSizing": "shrink",
-  "workbench.startupEditor": "newUntitledFile"
+  "editor.formatOnSave": false,
+  "sslint.autoFixOnSave": true,
+  "prettier.tslintIntegration": true
 }
