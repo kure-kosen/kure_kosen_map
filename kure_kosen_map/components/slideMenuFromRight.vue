@@ -8,14 +8,14 @@
         <slot/>
       </nav>
       <span
-        v-show="isSideBarOpen/* && (vw < 740)*/"
+        v-show="isSideBarOpen/* && (vw < 740) */"
         class="bm-cross-button cross-style"
         @click="closeMenu">
         <i class="fa fa-lg fa-times"/>
       </span>
     </div>
     <span
-      v-show="!isSideBarOpen/* && (vw < 740)*/"
+      v-show="!isSideBarOpen/* && (vw < 740) */"
       class="bm-burger-button"
       @click="openMenu"
     >
@@ -71,7 +71,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .bm-burger-button {
   position: fixed;
   top: 12px;
@@ -97,12 +97,12 @@ export default {
 
 .bm-menu {
   position: fixed; /* Stay in place */
-  top: -100%; /* -100% top - change this with JavaScript */
+  top: 0; /* -100% top - change this with JavaScript */
   right: 0;
   left: auto;
   z-index: 1000; /* Stay on top */
   overflow-x: hidden; /* Disable horizontal scroll */
-  width: 100%;
+  width: 0;
   height: auto;
   background-color: #45575d61; /* Black*/
   transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/

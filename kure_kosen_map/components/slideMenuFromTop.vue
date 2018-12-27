@@ -71,7 +71,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 @media screen and (max-width: 740px) {
   .bm-burger-button {
     position: fixed;
