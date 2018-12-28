@@ -2,11 +2,13 @@ import "ol/ol.css";
 
 import Map from "ol/Map";
 import View from "ol/View";
-import { fromLonLat } from "ol/proj";
-import { ScaleLine } from "ol/control";
-import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
 
-import layers from "./layers/index";
+import { OSM } from "ol/source/";
+import { Tile as TileLayer } from "ol/layer/";
+
+import { ScaleLine } from "ol/control";
+import { fromLonLat } from "ol/proj";
+import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
 
 const initMap = vm => {
   const view = new View({
@@ -20,7 +22,12 @@ const initMap = vm => {
   const map = new Map({
     target: "mymap",
     interactions,
-    layers,
+    layers: [
+      new TileLayer({
+        title: "OSM",
+        source: new OSM()
+      })
+    ],
     view
   });
 
