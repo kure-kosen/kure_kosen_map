@@ -1,14 +1,6 @@
 import { Attribution } from "ol/control";
 import { Tile as TileLayer } from "ol/layer/";
-import { OSM, XYZ as XYZSource } from "ol/source/";
-
-// OpenStreetMap
-export const osm = new TileLayer({
-  title: "OSM",
-  type: "base",
-  visible: true,
-  source: new OSM()
-});
+import { XYZ as XYZSource } from "ol/source/";
 
 //地理院タイル
 export const kokudo_std = new TileLayer({

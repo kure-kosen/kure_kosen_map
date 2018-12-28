@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div id="mymap" />
+    <div 
+      id="map" 
+      class="map" />
     <layerSwitcherWrapper />
     <popup />
   </div>
@@ -25,6 +27,12 @@ export default {
 </script>
 
 <style scoped>
-@import url("../../assets/map/map.css");
-@import url("../../assets/map/map-design.css");
+.map {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>

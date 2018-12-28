@@ -8,12 +8,6 @@
   display: none;
 }
 
-.ol-full-screen {
-  position: absolute;
-  top: 3em;
-  right: 0.5em;
-}
-
 .menu .wrap-closemenubtn {
   z-index: 1;
 }
