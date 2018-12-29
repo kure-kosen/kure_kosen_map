@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div 
-      id="map" 
+    <div
+      id="map"
       class="map" />
     <layerSwitcherWrapper />
     <popup />

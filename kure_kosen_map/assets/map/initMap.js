@@ -1,11 +1,9 @@
 import "ol/ol.css";
 
-import { FullScreen, ScaleLine, ZoomSlider, defaults as defaultControls } from "ol/control";
+import { defaults as defaultControls, FullScreen, ScaleLine, ZoomSlider } from "ol/control";
 import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
-import { Tile as TileLayer } from "ol/layer/";
 import Map from "ol/Map";
 import { fromLonLat } from "ol/proj";
-import { OSM } from "ol/source/";
 import View from "ol/View";
 
 const initMap = vm => {
@@ -22,18 +20,10 @@ const initMap = vm => {
     })
   ]);
 
-  const layers = [
-    new TileLayer({
-      title: "OSM",
-      source: new OSM()
-    })
-  ];
-
   const map = new Map({
     target: "map",
     controls,
     interactions,
-    layers,
     view
   });
 

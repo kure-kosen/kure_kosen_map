@@ -11,18 +11,20 @@
         </button>
       </div>
     </div>
-
     <LiquorTree
       ref="tree"
-      :options="options"
       :data="items"
+      :options="options"
       @node:checked="onNodeChecked"
+      @tree:mounted="addDefaultLayer"
     />
   </div>
 </template>
 
 <script>
+import Vue from "vue";
 import LiquorTree from "liquor-tree";
+import layers from "../../assets/map/layers/base.js";
 
 export default {
   components: {
@@ -30,22 +32,7 @@ export default {
   },
   data() {
     return {
-      items: [
-        {
-          text: "Node 1"
-        },
-        {
-          text: "Node 2",
-          children: [
-            {
-              text: "Node 2.1"
-            },
-            {
-              text: "Node 2.2"
-            }
-          ]
-        }
-      ],
+      items: Vue.util.extend([], layers),
       options: {
         checkbox: true
       }
@@ -54,9 +41,15 @@ export default {
   methods: {
     onNodeChecked: function(node) {
       if (node.children.length === 0) {
-        console.log(node);
+        this.$store.commit("addLayer", node.data);
       }
       node.unselect();
+    },
+    addDefaultLayer: function() {
+      const defaultLayer = this.$refs.tree.findAll({ state: { checked: true } });
+      defaultLayer.forEach(layer => {
+        this.$store.commit("addLayer", layer.data);
+      });
     },
     closeLayerSwitcher: function() {
       this.$emit("close");
