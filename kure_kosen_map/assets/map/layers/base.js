@@ -28,8 +28,9 @@ const kokudo_pale = new TileLayer({
 
 const layers = [
   {
+    layerId: 1,
     text: "OpenStreetMap",
-    data: Vue.util.extend({}, osm),
+    data: Vue.util.extend({ layerId: 1 }, osm),
     state: { checked: true }
   },
   {
@@ -38,8 +39,16 @@ const layers = [
       {
         text: "ベースマップ",
         children: [
-          { text: "標準地図", data: Vue.util.extend({}, kokudo_std) },
-          { text: "淡色地図", data: Vue.util.extend({}, kokudo_pale) }
+          {
+            layerId: 2,
+            text: "標準地図",
+            data: Vue.util.extend({ layerId: 2 }, kokudo_std)
+          },
+          {
+            layerId: 3,
+            text: "淡色地図",
+            data: Vue.util.extend({ layerId: 3 }, kokudo_pale)
+          }
         ]
       }
     ]
