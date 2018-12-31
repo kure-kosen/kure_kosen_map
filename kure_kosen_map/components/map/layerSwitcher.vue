@@ -16,6 +16,7 @@
       :data="items"
       :options="options"
       @node:checked="onNodeChecked"
+      @node:unchecked="onNodeUnhecked"
       @tree:mounted="addDefaultLayer"
     />
   </div>
@@ -41,7 +42,14 @@ export default {
   methods: {
     onNodeChecked: function(node) {
       if (node.children.length === 0) {
+        console.log(node);
         this.$store.commit("addLayer", node.data);
+      }
+      node.unselect();
+    },
+    onNodeUnhecked: function(node) {
+      if (node.children.length === 0) {
+        this.$store.commit("removeLayer", node.data);
       }
       node.unselect();
     },
