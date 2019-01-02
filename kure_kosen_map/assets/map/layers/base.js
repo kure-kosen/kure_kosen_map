@@ -1,4 +1,3 @@
-import Vue from "vue";
 import { OSM } from "ol/source/";
 import { Tile as TileLayer } from "ol/layer/";
 import { XYZ as XYZSource } from "ol/source/";
@@ -27,28 +26,15 @@ const kokudo_pale = new TileLayer({
 });
 
 const layers = [
-  {
-    layerId: 1,
-    text: "OpenStreetMap",
-    data: Vue.util.extend({ layerId: 1 }, osm),
-    state: { checked: true }
-  },
+  { text: "OpenStreetMap", data: { id: 1, layer: osm }, state: { checked: true } },
   {
     text: "国土地理院",
     children: [
       {
         text: "ベースマップ",
         children: [
-          {
-            layerId: 2,
-            text: "標準地図",
-            data: Vue.util.extend({ layerId: 2 }, kokudo_std)
-          },
-          {
-            layerId: 3,
-            text: "淡色地図",
-            data: Vue.util.extend({ layerId: 3 }, kokudo_pale)
-          }
+          { text: "標準地図", data: { id: 2, layer: kokudo_std } },
+          { text: "淡色地図", data: { id: 3, layer: kokudo_pale } }
         ]
       }
     ]
