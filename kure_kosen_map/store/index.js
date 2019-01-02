@@ -14,18 +14,13 @@ export const mutations = {
   addLayer: (state, payload) => {
     if (!state.mapCreatedFlag) return;
 
-    const { id, layer } = payload;
-
-    state.map
-      .getLayers()
-      .getArray()
-      .push(layer);
-
-    state.mapLayerIds.push(id);
-    state.map.render();
+    const { layer } = payload;
+    state.map.addLayer(layer);
   },
-  resetLayer: state => {
-    state.map.getLayers().getArray().length = 0;
-    state.map.render();
+  removeLayer: (state, payload) => {
+    if (!state.mapCreatedFlag) return;
+
+    const { layer } = payload;
+    state.map.removeLayer(layer);
   }
 };
