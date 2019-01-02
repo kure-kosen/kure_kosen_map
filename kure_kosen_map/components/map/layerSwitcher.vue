@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      items: Vue.util.extend([], layers),
+      items: layers,
       options: {
         checkbox: true
       }
@@ -42,7 +42,6 @@ export default {
   methods: {
     onNodeChecked: function(node) {
       if (node.children.length === 0) {
-        console.log(node);
         this.$store.commit("addLayer", node.data);
       }
       node.unselect();
