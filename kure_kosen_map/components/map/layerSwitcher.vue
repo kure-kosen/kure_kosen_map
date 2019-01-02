@@ -14,11 +14,24 @@
     <LiquorTree
       ref="tree"
       :data="items"
-      :options="options"
-      @node:checked="onNodeChecked"
-      @node:unchecked="onNodeUnhecked"
+      @node:selected="onNodeSelected"
+      @node:unnselected="onNodeUnselected"
       @tree:mounted="addDefaultLayer"
-    />
+    >
+      <span
+        slot-scope="{ node }"
+        class="tree-text">
+        <template v-if="!node.hasChildren()">
+          <i class="node fas fa-file" />
+          {{ node.text }}
+        </template>
+
+        <template v-else>
+          <i :class="[node.expanded() ? 'node fas fa-folder-open' : 'node fas fa-folder']"/>
+          {{ node.text }}
+        </template>
+      </span>
+    </LiquorTree>
   </div>
 </template>
 
@@ -33,20 +46,17 @@ export default {
   },
   data() {
     return {
-      items: layers,
-      options: {
-        checkbox: true
-      }
+      items: layers
     };
   },
   methods: {
-    onNodeChecked: function(node) {
+    onNodeSelected: function(node) {
       if (node.children.length === 0) {
         this.$store.commit("addLayer", node.data);
       }
       node.unselect();
     },
-    onNodeUnhecked: function(node) {
+    onNodeUnselected: function(node) {
       if (node.children.length === 0) {
         this.$store.commit("removeLayer", node.data);
       }
@@ -173,5 +183,10 @@ table td input[type="range"]::-moz-range-thumb {
   border-radius: 50%;
   background: #4caf50;
   cursor: pointer;
+}
+
+.node {
+  color: #f7e391;
+  font-size: 25px;
 }
 </style>
