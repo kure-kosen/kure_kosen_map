@@ -12,15 +12,24 @@ export const mutations = {
     state.mapCreatedFlag = true;
   },
   addLayer: (state, payload) => {
-    if (!state.mapCreatedFlag) return;
+    const { id, layer } = payload;
 
-    const { layer } = payload;
+    if (!state.mapCreatedFlag) return;
+    if (isExistLayerId(state.mapLayerIds, id)) return;
+
     state.map.addLayer(layer);
+    state.mapLayerIds.push(id);
   },
   removeLayer: (state, payload) => {
-    if (!state.mapCreatedFlag) return;
+    const { id, layer } = payload;
 
-    const { layer } = payload;
+    if (!state.mapCreatedFlag) return;
+    if (isExistLayerId(state.mapLayerIds, id)) return;
+
     state.map.removeLayer(layer);
+    const index = state.mapLayerIds.findIndex(id);
+    state.mapLayerIds.slice(index, 1);
   }
 };
+
+const isExistLayerId = (list, id) => list.includes(id);
