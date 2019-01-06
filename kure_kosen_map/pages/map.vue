@@ -1,60 +1,18 @@
 <template>
   <div>
     <MyMap />
-    <div class="fullscreenlayer">
-      <component
-        :is="slideMenu"
-        menu-width="270px">
-        <mapMenu />
-      </component>
-    </div>
+    <mapMenuWrapper />
   </div>
 </template>
 
 <script>
 import MyMap from "../components/map/mymap";
-import mapMenu from "../components/map/mapMenu";
-import slideMenuFromTop from "../components/slideMenuFromTop";
-import slideMenuFromRight from "../components/slideMenuFromRight";
+import mapMenuWrapper from "../components/map/mapMenuWrapper";
 
 export default {
   components: {
     MyMap,
-    mapMenu,
-    slideMenuFromTop,
-    slideMenuFromRight
-  },
-
-  data() {
-    return {
-      vw: window.innerWidth
-    };
-  },
-
-  computed: {
-    slideMenu: function() {
-      if (this.vw < 740) {
-        return "slideMenuFromTop";
-      } else {
-        return "slideMenuFromRight";
-      }
-    }
-  },
-
-  created: function() {
-    document.addEventListener("click", this.documentClick);
-    window.addEventListener("resize", this.handleResize);
-  },
-
-  destroyed: function() {
-    document.removeEventListener("click", this.documentClick);
-    window.removeEventListener("resize", this.handleResize);
-  },
-
-  methods: {
-    handleResize: function() {
-      this.vw = window.innerWidth;
-    }
+    mapMenuWrapper
   }
 };
 </script>
