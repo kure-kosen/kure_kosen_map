@@ -2,21 +2,21 @@
   <div>
     <div
       id="sideNav"
-      class="bm-menu"
+      class="menu"
     >
-      <nav class="bm-item-list">
+      <nav class="item-list">
         <slot/>
       </nav>
       <span
         v-show="isSideBarOpen/* && (vw < 740) */"
-        class="bm-cross-button cross-style"
+        class="cross-button cross-style"
         @click="closeMenu">
         <i class="fa fa-lg fa-times"/>
       </span>
     </div>
     <span
       v-show="!isSideBarOpen/* && (vw < 740) */"
-      class="bm-burger-button"
+      class="burger-button"
       @click="openMenu"
     >
       <i class="fa fa-lg fa-bars"/>
@@ -68,9 +68,9 @@ export default {
     },
 
     documentClick(e) {
-      const element = document.querySelector(".bm-burger-button");
+      const element = document.querySelector(".burger-button");
       const target = e.target;
-      if (element !== target && !element.contains(target) && e.target.className !== "bm-menu" && this.isSideBarOpen) {
+      if (element !== target && !element.contains(target) && e.target.className !== "menu" && this.isSideBarOpen) {
         this.closeMenu();
       }
     }
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped>
-.bm-burger-button {
+.burger-button {
   position: fixed;
   top: 12px;
   right: 2px;
@@ -97,12 +97,12 @@ export default {
   cursor: pointer;
 }
 
-.bm-cross-button {
+.cross-button {
   width: 24px;
   height: 24px;
 }
 
-.bm-menu {
+.menu {
   position: fixed; /* Stay in place */
   top: 0; /* -100% top - change this with JavaScript */
   right: 0;

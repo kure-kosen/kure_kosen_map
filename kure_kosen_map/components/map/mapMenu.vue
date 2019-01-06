@@ -1,11 +1,11 @@
 <template>
   <nav
-    id="menu"
-    class="menu">
-    <div class="menu-box">
-      <div class="menu-title">呉高専マップ</div>
+    id="map-menu"
+    class="map-menu">
+    <div class="map-menu-box">
+      <div class="map-menu-title">呉高専マップ</div>
       <div>建物ジャンプ</div>
-      <div class="menu-buildings">
+      <div class="map-menu-buildings">
         <ul>
           <li>図書館棟 (教育センター)</li>
           <li>管理棟</li>
@@ -43,7 +43,7 @@
 </template>
 
 <style scoped>
-.menu {
+.map-menu {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
@@ -51,40 +51,40 @@
   font-family: sans-serif;
 }
 
-.menu-box {
+.map-menu-box {
   padding: 0.7em;
 }
 
-.menu .menu-buildings {
+.map-menu .map-menu-buildings {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
 
-.menu .menu-buildings li {
+.map-menu .map-menu-buildings li {
   border-bottom: 1px solid #ccc;
 }
 
-.menu li,
-.menu a {
+.map-menu li,
+.map-menu a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu li:hover,
-.menu a:hover {
+.map-menu li:hover,
+.map-menu a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.menu .menu-buildings {
+.map-menu .map-menu-buildings {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.menu .menu-title,
-.menu .copyright {
+.map-menu .map-menu-title,
+.map-menu .copyright {
   font-size: 0.7em;
 }
 
-.menu a {
+.map-menu a {
   text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ li {
 
 /* --- pc --- */
 @media screen and (min-width: 741px) {
-  .menu {
+  .map-menu {
     color: #222;
     overflow: auto;
     width: 270px;
@@ -102,28 +102,28 @@ li {
     background-color: #f9f9fcf5;
   }
 
-  .menu .menu-buildings {
+  .map-menu .map-menu-buildings {
     height: calc(100vh - 10em);
   }
 
-  .menu a {
+  .map-menu a {
     color: #222;
   }
 }
 
 /* --- sp --- */
 @media screen and (max-width: 740px) {
-  .menu {
+  .map-menu {
     color: #f9f9fc;
     height: 80vh;
     overflow: auto;
   }
 
-  .menu .menu-buildings {
+  .map-menu .map-menu-buildings {
     height: calc(80vh - 10em);
   }
 
-  .menu a {
+  .map-menu a {
     color: #f9f9fc;
   }
 }
