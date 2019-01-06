@@ -43,8 +43,6 @@
 </template>
 
 <style scoped>
-@import url("../../assets/map/map.css");
-
 .menu {
   margin: 0;
   padding: 0;
