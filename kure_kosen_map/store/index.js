@@ -11,6 +11,7 @@ export const mutations = {
     state.map = payload;
     state.mapCreatedFlag = true;
   },
+
   addLayer: (state, payload) => {
     const { id, layer } = payload;
 
@@ -20,6 +21,7 @@ export const mutations = {
     state.map.addLayer(layer);
     state.mapLayerIds.push(id);
   },
+
   removeLayer: (state, payload) => {
     const { id, layer } = payload;
 
@@ -29,6 +31,13 @@ export const mutations = {
     state.map.removeLayer(layer);
     const index = state.mapLayerIds.findIndex(id);
     state.mapLayerIds.slice(index, 1);
+  }
+};
+
+export const getters = {
+  getLayers: state => {
+    if (!state.mapCreatedFlag) return;
+    return state.map.getLayers().getArray();
   }
 };
 
