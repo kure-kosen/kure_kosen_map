@@ -8,14 +8,14 @@
         <slot/>
       </nav>
       <span
-        v-show="isSideBarOpen/* && (vw < 740) */"
+        v-show="isSideBarOpen"
         class="cross-button cross-style"
         @click="closeMenu">
         <i class="fa fa-lg fa-times"/>
       </span>
     </div>
     <span
-      v-show="!isSideBarOpen/* && (vw < 740) */"
+      v-show="!isSideBarOpen"
       class="burger-button"
       @click="openMenu"
     >
@@ -115,6 +115,4 @@ export default {
   transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
 }
 
-@media screen and (max-width: 740px) {
-}
 </style>

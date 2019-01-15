@@ -8,14 +8,14 @@
         <slot/>
       </nav>
       <span
-        v-show="isSideBarOpen && (vw < 740)"
+        v-show="isSideBarOpen"
         class="cross-button cross-style"
         @click="closeMenu">
         <i class="fa fa-lg fa-times"/>
       </span>
     </div>
     <span
-      v-show="!isSideBarOpen && (vw < 740)"
+      v-show="!isSideBarOpen"
       class="burger-button"
       @click="openMenu"
     >
