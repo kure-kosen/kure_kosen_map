@@ -114,5 +114,4 @@ export default {
   background-color: #45575d61; /* Black*/
   transition: 0.5s; /*0.5 second transition effect to slide in the sidenav*/
 }
-
 </style>
