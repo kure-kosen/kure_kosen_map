@@ -1,12 +1,10 @@
 import "ol/ol.css";
 
-import Map from "ol/Map";
-import View from "ol/View";
-import { fromLonLat } from "ol/proj";
-import { ScaleLine } from "ol/control";
+import { defaults as defaultControls, FullScreen, ScaleLine, ZoomSlider } from "ol/control";
 import { defaults as defaultInteractions, DragRotateAndZoom } from "ol/interaction";
-
-import layers from "./layers/index";
+import Map from "ol/Map";
+import { fromLonLat } from "ol/proj";
+import View from "ol/View";
 
 const initMap = vm => {
   const view = new View({
@@ -16,15 +14,21 @@ const initMap = vm => {
   });
 
   const interactions = defaultInteractions().extend([new DragRotateAndZoom()]);
+  const controls = defaultControls().extend([
+    new FullScreen({
+      source: "fullscreen"
+    })
+  ]);
 
   const map = new Map({
-    target: "mymap",
+    target: "map",
+    controls,
     interactions,
-    layers,
     view
   });
 
   map.addControl(new ScaleLine());
+  map.addControl(new ZoomSlider());
 
   vm.$store.commit("setMap", map);
 };
